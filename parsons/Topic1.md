@@ -37,7 +37,7 @@ title: Michelle
       parsonsPuzzle.getFeedback(); 
   }); 
 })(); 
-</script
+</script>
 
 
 
