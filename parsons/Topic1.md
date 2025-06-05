@@ -2,7 +2,7 @@
 layout: default
 title: Michelle
 ---
-# # puzzle12
+## puzzle12
 <div id="parsons1-sortableTrash" class="sortable-code"></div> 
 <div id="parsons1-sortable" class="sortable-code"></div> 
 <div style="clear:both;"></div> 
