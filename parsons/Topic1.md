@@ -39,7 +39,7 @@ title: Michelle
 })(); 
 </script
 
-Puzzle 2
+## Puzzle 2
 
 <div id="parsons2-sortableTrash" class="sortable-code"></div> 
 <div id="parsons2-sortable" class="sortable-code"></div> 
