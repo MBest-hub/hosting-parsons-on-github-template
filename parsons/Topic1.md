@@ -42,4 +42,39 @@ Construct a program that swaps the values of variables <code>x</code> and <code>
 })();
 </script>
 
-[Next](./example2.html)
+## 22
+
+<div id="1test-sortableTrash" class="sortable-code"></div> 
+<div id="1test-sortable" class="sortable-code"></div> 
+<div style="clear:both;"></div> 
+<p> 
+    <input id="1test-feedbackLink" value="Get Feedback" type="button" /> 
+    <input id="1test-newInstanceLink" value="Reset Problem" type="button" /> 
+</p> 
+<script type="text/javascript"> 
+(function(){
+  var initial = "boui\n" +
+    "j k   #distractor";
+  var parsonsPuzzle = new ParsonsWidget({
+    "sortableId": "1test-sortable",
+    "max_wrong_lines": 10,
+    "grader": ParsonsWidget._graders.LineBasedGrader,
+    "exec_limit": 2500,
+    "can_indent": true,
+    "x_indent": 50,
+    "lang": "en",
+    "show_feedback": true,
+    "trashId": "1test-sortableTrash"
+  });
+  parsonsPuzzle.init(initial);
+  parsonsPuzzle.shuffleLines();
+  $("#1test-newInstanceLink").click(function(event){ 
+      event.preventDefault(); 
+      parsonsPuzzle.shuffleLines(); 
+  }); 
+  $("#1test-feedbackLink").click(function(event){ 
+      event.preventDefault(); 
+      parsonsPuzzle.getFeedback(); 
+  }); 
+})(); 
+</script>
