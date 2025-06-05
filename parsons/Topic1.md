@@ -39,9 +39,7 @@ title: Michelle
 })(); 
 </script
 
-layout: default
-title: Michelle
----
+
 
 ## Puzzle 2
 
