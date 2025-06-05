@@ -121,6 +121,45 @@ title: Michelle
 })(); 
 </script>
 
+## Puzzle 4
+
+<div id="parsons4-sortableTrash" class="sortable-code"></div> 
+<div id="parsons4-sortable" class="sortable-code"></div> 
+<div style="clear:both;"></div> 
+<p> 
+    <input id="parsons4-feedbackLink" value="Get Feedback" type="button" /> 
+    <input id="parsons4-newInstanceLink" value="Reset Problem" type="button" /> 
+</p> 
+<script type="text/javascript"> 
+(function(){
+  var initial = "total_pets=0\n" +
+    "dogs = 1\n" +
+    "cats = 4\n" +
+    "total_pets = dogs + cats\n" +
+    "print (&quot;Total number of pets is:&quot;,total_pets)";
+  var parsonsPuzzle = new ParsonsWidget({
+    "sortableId": "parsons4-sortable",
+    "max_wrong_lines": 10,
+    "grader": ParsonsWidget._graders.LineBasedGrader,
+    "exec_limit": 2500,
+    "can_indent": true,
+    "x_indent": 50,
+    "lang": "en",
+    "show_feedback": true,
+    "trashId": "parsons4-sortableTrash"
+  });
+  parsonsPuzzle.init(initial);
+  parsonsPuzzle.shuffleLines();
+  $("#parsons4-newInstanceLink").click(function(event){ 
+      event.preventDefault(); 
+      parsonsPuzzle.shuffleLines(); 
+  }); 
+  $("#parsons4-feedbackLink").click(function(event){ 
+      event.preventDefault(); 
+      parsonsPuzzle.getFeedback(); 
+  }); 
+})(); 
+</script>
 
 
 
