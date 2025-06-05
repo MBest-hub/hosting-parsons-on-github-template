@@ -39,6 +39,10 @@ title: Michelle
 })(); 
 </script
 
+layout: default
+title: Michelle
+---
+
 ## Puzzle 2
 
 <div id="parsons2-sortableTrash" class="sortable-code"></div> 
