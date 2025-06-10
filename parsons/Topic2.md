@@ -2,11 +2,6 @@
 layout: default
 title: Michelle
 ---
-## Puzzle 1
----
-layout: default
-title: Michelle
----
 
 
 ## Puzzle 1
