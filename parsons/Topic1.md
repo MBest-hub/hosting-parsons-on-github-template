@@ -43,6 +43,7 @@ title: Michelle
 
 
 ## Puzzle 2
+## Place the correct coding in the correct order!
 
 <div id="parsons2-sortableTrash" class="sortable-code"></div> 
 <div id="parsons2-sortable" class="sortable-code"></div> 
