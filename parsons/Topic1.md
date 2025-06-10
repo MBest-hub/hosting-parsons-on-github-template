@@ -209,6 +209,50 @@ title: Michelle
 })(); 
 </script>
 
+## Puzzle 6
+## Place the correct coding in the correct order!
+
+<div id="puzzle6-sortableTrash" class="sortable-code"></div> 
+<div id="puzzle6-sortable" class="sortable-code"></div> 
+<div style="clear:both;"></div> 
+<p> 
+    <input id="puzzle6-feedbackLink" value="Get Feedback" type="button" /> 
+    <input id="puzzle6-newInstanceLink" value="Reset Problem" type="button" /> 
+</p> 
+<script type="text/javascript"> 
+(function(){
+  var initial = "forename=input(&quot;What is your first name? &quot;)\n" +
+    "surname=input(&quot;What is your surname? &quot;)\n" +
+    "height=input(&quot;What is your height? &quot;)\n" +
+    "print(&quot;Hello &quot;,forename,surname,&quot;at &quot;,height,&quot;we are about the same height&quot;)\n" +
+    "pets=input(&quot;Do you have any pets? &quot;) #distractor\n" +
+    "forename=(&quot;What is your first name? &quot;) #distractor\n" +
+    "surname=input(What is your surname? &quot;) #distractor\n" +
+    "height=input(&quot;What is your height? &quot; #distractor\n" +
+    "print(&quot;Hello &quot;,forename,surname,&quot;at &quot;height,&quot;we are about the same height&quot;) #distractor";
+  var parsonsPuzzle = new ParsonsWidget({
+    "sortableId": "puzzle6-sortable",
+    "max_wrong_lines": 10,
+    "grader": ParsonsWidget._graders.LineBasedGrader,
+    "exec_limit": 2500,
+    "can_indent": true,
+    "x_indent": 50,
+    "lang": "en",
+    "show_feedback": true,
+    "trashId": "puzzle6-sortableTrash"
+  });
+  parsonsPuzzle.init(initial);
+  parsonsPuzzle.shuffleLines();
+  $("#puzzle6-newInstanceLink").click(function(event){ 
+      event.preventDefault(); 
+      parsonsPuzzle.shuffleLines(); 
+  }); 
+  $("#puzzle6-feedbackLink").click(function(event){ 
+      event.preventDefault(); 
+      parsonsPuzzle.getFeedback(); 
+  }); 
+})(); 
+</script>
 
 
 
