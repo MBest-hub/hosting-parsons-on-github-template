@@ -85,6 +85,7 @@ title: Michelle
 </script>
 
 ## Puzzle 3
+## Place the correct coding in the correct order!
 <div id="parsons3-sortableTrash" class="sortable-code"></div> 
 <div id="parsons3-sortable" class="sortable-code"></div> 
 <div style="clear:both;"></div> 
@@ -124,6 +125,7 @@ title: Michelle
 </script>
 
 ## Puzzle 4
+## Place in the correct order!
 
 <div id="parsons4-sortableTrash" class="sortable-code"></div> 
 <div id="parsons4-sortable" class="sortable-code"></div> 
