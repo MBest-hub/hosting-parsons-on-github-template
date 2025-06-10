@@ -1,3 +1,11 @@
+---
+layout: default
+title: Michelle
+---
+
+
+## Puzzle 1
+
 <div id="puzzle1part3-sortableTrash" class="sortable-code"></div> 
 <div id="puzzle1part3-sortable" class="sortable-code"></div> 
 <div style="clear:both;"></div> 
