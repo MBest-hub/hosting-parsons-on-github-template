@@ -165,6 +165,49 @@ title: Michelle
 })(); 
 </script>
 
+## Puzzle 5
+## Place the correct coding in the correct order!
+
+<div id="puzzle5-sortableTrash" class="sortable-code"></div> 
+<div id="puzzle5-sortable" class="sortable-code"></div> 
+<div style="clear:both;"></div> 
+<p> 
+    <input id="puzzle5-feedbackLink" value="Get Feedback" type="button" /> 
+    <input id="puzzle5-newInstanceLink" value="Reset Problem" type="button" /> 
+</p> 
+<script type="text/javascript"> 
+(function(){
+  var initial = "pets=input(&quot;Do you have any pets? &quot;)\n" +
+    "petType=input(&quot;What type of pets do you have? &quot;)\n" +
+    "petName=input(&quot;What&#039;s it&#039;s name? &quot;)\n" +
+    "print(&quot;I love &quot;+petType+&quot;&#039;s and &quot;+petName+&quot; is a lovely name&quot;)\n" +
+    "pets=input(&quot;Do you have any pets? &quot;) #distractor\n" +
+    "petType=input(What type of pets do you have? ) #distractor\n" +
+    "petName=input&quot;What&#039;s it&#039;s name? &quot; #distractor\n" +
+    "print(&quot;I love +petType+&quot;&#039;s and &quot;+petName+&quot; is a lovely name&quot;) #distractor";
+  var parsonsPuzzle = new ParsonsWidget({
+    "sortableId": "puzzle5-sortable",
+    "max_wrong_lines": 10,
+    "grader": ParsonsWidget._graders.LineBasedGrader,
+    "exec_limit": 2500,
+    "can_indent": true,
+    "x_indent": 50,
+    "lang": "en",
+    "show_feedback": true,
+    "trashId": "puzzle5-sortableTrash"
+  });
+  parsonsPuzzle.init(initial);
+  parsonsPuzzle.shuffleLines();
+  $("#puzzle5-newInstanceLink").click(function(event){ 
+      event.preventDefault(); 
+      parsonsPuzzle.shuffleLines(); 
+  }); 
+  $("#puzzle5-feedbackLink").click(function(event){ 
+      event.preventDefault(); 
+      parsonsPuzzle.getFeedback(); 
+  }); 
+})(); 
+</script>
 
 
 
