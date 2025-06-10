@@ -3,6 +3,14 @@ layout: default
 title: Michelle
 ---
 ## Puzzle 1
+---
+layout: default
+title: Michelle
+---
+
+
+## Puzzle 1
+
 <div id="parsons1-sortableTrash" class="sortable-code"></div> 
 <div id="parsons1-sortable" class="sortable-code"></div> 
 <div style="clear:both;"></div> 
@@ -160,6 +168,11 @@ title: Michelle
   }); 
 })(); 
 </script>
+
+
+
+
+
 
 
 
