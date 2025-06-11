@@ -41,8 +41,48 @@ title: Michelle
 </script>
 
 
-
 ## Puzzle 2
+## Place the correct coding in the correct order!
+<div id="parsons3-sortableTrash" class="sortable-code"></div> 
+<div id="parsons3-sortable" class="sortable-code"></div> 
+<div style="clear:both;"></div> 
+<p> 
+    <input id="parsons3-feedbackLink" value="Get Feedback" type="button" /> 
+    <input id="parsons3-newInstanceLink" value="Reset Problem" type="button" /> 
+</p> 
+<script type="text/javascript"> 
+(function(){
+  var initial = "eye_colour = input(&quot;What colour are your eyes? &quot;)\n" +
+    "print(eye_colour)\n" +
+    "eye_colour = input(What colour are your eyes? ) #distractor\n" +
+    "eye_colour = input&quot;What colour are your eyes? &quot; #distractor\n" +
+    "print eye_colour #distractor";
+  var parsonsPuzzle = new ParsonsWidget({
+    "sortableId": "parsons3-sortable",
+    "max_wrong_lines": 10,
+    "grader": ParsonsWidget._graders.LineBasedGrader,
+    "exec_limit": 2500,
+    "can_indent": true,
+    "x_indent": 50,
+    "lang": "en",
+    "show_feedback": true,
+    "trashId": "parsons3-sortableTrash"
+  });
+  parsonsPuzzle.init(initial);
+  parsonsPuzzle.shuffleLines();
+  $("#parsons3-newInstanceLink").click(function(event){ 
+      event.preventDefault(); 
+      parsonsPuzzle.shuffleLines(); 
+  }); 
+  $("#parsons3-feedbackLink").click(function(event){ 
+      event.preventDefault(); 
+      parsonsPuzzle.getFeedback(); 
+  }); 
+})(); 
+</script>
+
+
+## Puzzle 3
 ## Place the correct coding in the correct order!
 
 <div id="parsons2-sortableTrash" class="sortable-code"></div> 
@@ -84,45 +124,6 @@ title: Michelle
 })(); 
 </script>
 
-## Puzzle 3
-## Place the correct coding in the correct order!
-<div id="parsons3-sortableTrash" class="sortable-code"></div> 
-<div id="parsons3-sortable" class="sortable-code"></div> 
-<div style="clear:both;"></div> 
-<p> 
-    <input id="parsons3-feedbackLink" value="Get Feedback" type="button" /> 
-    <input id="parsons3-newInstanceLink" value="Reset Problem" type="button" /> 
-</p> 
-<script type="text/javascript"> 
-(function(){
-  var initial = "eye_colour = input(&quot;What colour are your eyes? &quot;)\n" +
-    "print(eye_colour)\n" +
-    "eye_colour = input(What colour are your eyes? ) #distractor\n" +
-    "eye_colour = input&quot;What colour are your eyes? &quot; #distractor\n" +
-    "print eye_colour #distractor";
-  var parsonsPuzzle = new ParsonsWidget({
-    "sortableId": "parsons3-sortable",
-    "max_wrong_lines": 10,
-    "grader": ParsonsWidget._graders.LineBasedGrader,
-    "exec_limit": 2500,
-    "can_indent": true,
-    "x_indent": 50,
-    "lang": "en",
-    "show_feedback": true,
-    "trashId": "parsons3-sortableTrash"
-  });
-  parsonsPuzzle.init(initial);
-  parsonsPuzzle.shuffleLines();
-  $("#parsons3-newInstanceLink").click(function(event){ 
-      event.preventDefault(); 
-      parsonsPuzzle.shuffleLines(); 
-  }); 
-  $("#parsons3-feedbackLink").click(function(event){ 
-      event.preventDefault(); 
-      parsonsPuzzle.getFeedback(); 
-  }); 
-})(); 
-</script>
 
 ## Puzzle 4
 ## Place in the correct order!
