@@ -254,5 +254,45 @@ title: Michelle
 })(); 
 </script>
 
+## Puzzle 6
+## Place the coding in the correct order!
+
+<div id="puzzle7-sortableTrash" class="sortable-code"></div> 
+<div id="puzzle7-sortable" class="sortable-code"></div> 
+<div style="clear:both;"></div> 
+<p> 
+    <input id="puzzle7-feedbackLink" value="Get Feedback" type="button" /> 
+    <input id="puzzle7-newInstanceLink" value="Reset Problem" type="button" /> 
+</p> 
+<script type="text/javascript"> 
+(function(){
+  var initial = "a = [3, 7, 45, 98]\n" +
+    "b = [13, 17, 2, 1, 9]\n" +
+    "c = a + b\n" +
+    "c.sort()\n" +
+    "print (c";
+  var parsonsPuzzle = new ParsonsWidget({
+    "sortableId": "puzzle7-sortable",
+    "max_wrong_lines": 10,
+    "grader": ParsonsWidget._graders.LineBasedGrader,
+    "exec_limit": 2500,
+    "can_indent": true,
+    "x_indent": 50,
+    "lang": "en",
+    "show_feedback": true,
+    "trashId": "puzzle7-sortableTrash"
+  });
+  parsonsPuzzle.init(initial);
+  parsonsPuzzle.shuffleLines();
+  $("#puzzle7-newInstanceLink").click(function(event){ 
+      event.preventDefault(); 
+      parsonsPuzzle.shuffleLines(); 
+  }); 
+  $("#puzzle7-feedbackLink").click(function(event){ 
+      event.preventDefault(); 
+      parsonsPuzzle.getFeedback(); 
+  }); 
+})(); 
+</script>
 
 
