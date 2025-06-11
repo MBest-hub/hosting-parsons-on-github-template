@@ -254,7 +254,7 @@ title: Michelle
 })(); 
 </script>
 
-## Puzzle 6
+## Puzzle 7
 ## Place the coding in the correct order!
 
 <div id="puzzle7-sortableTrash" class="sortable-code"></div> 
