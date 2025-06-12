@@ -211,3 +211,50 @@ title: Michelle
   }); 
 })(); 
 </script>
+
+## Puzzle 6
+## Drag the code in the correct order - don't forget the indents!
+
+<div id="puzzlepart2no6-sortableTrash" class="sortable-code"></div> 
+<div id="puzzlepart2no6-sortable" class="sortable-code"></div> 
+<div style="clear:both;"></div> 
+<p> 
+    <input id="puzzlepart2no6-feedbackLink" value="Get Feedback" type="button" /> 
+    <input id="puzzlepart2no6-newInstanceLink" value="Reset Problem" type="button" /> 
+</p> 
+<script type="text/javascript"> 
+(function(){
+  var initial = "print(&quot;Joe&#039;s car park&quot;)\n" +
+    "print(&quot;Please insert 8 for a ticket&quot;)\n" +
+    "totalcash=0\n" +
+    "while totalcash&lt;8:\n" +
+    "    coins=int(input(&quot;Enter pound coins &quot;))\n" +
+    "    totalcash=totalcash+coins\n" +
+    "print (&quot;Thank you&quot;)";
+  var parsonsPuzzle = new ParsonsWidget({
+    "sortableId": "puzzlepart2no6-sortable",
+    "max_wrong_lines": 10,
+    "grader": ParsonsWidget._graders.LineBasedGrader,
+    "exec_limit": 2500,
+    "can_indent": true,
+    "x_indent": 50,
+    "lang": "en",
+    "show_feedback": true,
+    "trashId": "puzzlepart2no6-sortableTrash"
+  });
+  parsonsPuzzle.init(initial);
+  parsonsPuzzle.shuffleLines();
+  $("#puzzlepart2no6-newInstanceLink").click(function(event){ 
+      event.preventDefault(); 
+      parsonsPuzzle.shuffleLines(); 
+  }); 
+  $("#puzzlepart2no6-feedbackLink").click(function(event){ 
+      event.preventDefault(); 
+      parsonsPuzzle.getFeedback(); 
+  }); 
+})(); 
+</script>
+
+## Puzzle 7
+## Drag the code in the correct order - don't forget the indents!
+
