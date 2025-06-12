@@ -128,30 +128,26 @@ title: Michelle
 })(); 
 </script>
 
-## Puzzle 10
+## Puzzle 4
+## Drag the code in the correct order - don't forget the indents!
 
-<div id="puzzle1part3-sortableTrash" class="sortable-code"></div> 
-<div id="puzzle1part3-sortable" class="sortable-code"></div> 
+<div id="puzzlepart2no4-sortableTrash" class="sortable-code"></div> 
+<div id="puzzlepart2no4-sortable" class="sortable-code"></div> 
 <div style="clear:both;"></div> 
 <p> 
-    <input id="puzzle1part3-feedbackLink" value="Get Feedback" type="button" /> 
-    <input id="puzzle1part3-newInstanceLink" value="Reset Problem" type="button" /> 
+    <input id="puzzlepart2no4-feedbackLink" value="Get Feedback" type="button" /> 
+    <input id="puzzlepart2no4-newInstanceLink" value="Reset Problem" type="button" /> 
 </p> 
 <script type="text/javascript"> 
 (function(){
-  var initial = "selection = &#039;&#039;\n" +
-    "while selection != &#039;C&#039;:\n" +
-    "    selection = display_menu()\n" +
-    "    if selection == &#039;A&#039;:\n" +
-    "        name = input(&quot;Please enter your name&quot;)\n" +
-    "        print(&quot;Hello &quot;,name)\n" +
-    "    elif selection == &#039;B&#039;:\n" +
-    "        print(&quot;Game is starting&quot;)\n" +
-    "if selection == &#039;C&#039;:\n" +
-    "    print(&quot;Thank you for playing&quot;)\n" +
-    "    sys.exit()";
+  var initial = "def multiply():\n" +
+    "    num1=int(input(&quot;Enter number 1? &quot;))\n" +
+    "    num2=int(input(&quot;Enter number 2? &quot;))\n" +
+    "    total=num1*num2\n" +
+    "    print(num1,&quot;muliplied by&quot;,num2,&quot;=&quot;,total)\n" +
+    "multiply()";
   var parsonsPuzzle = new ParsonsWidget({
-    "sortableId": "puzzle1part3-sortable",
+    "sortableId": "puzzlepart2no4-sortable",
     "max_wrong_lines": 10,
     "grader": ParsonsWidget._graders.LineBasedGrader,
     "exec_limit": 2500,
@@ -159,15 +155,15 @@ title: Michelle
     "x_indent": 50,
     "lang": "en",
     "show_feedback": true,
-    "trashId": "puzzle1part3-sortableTrash"
+    "trashId": "puzzlepart2no4-sortableTrash"
   });
   parsonsPuzzle.init(initial);
   parsonsPuzzle.shuffleLines();
-  $("#puzzle1part3-newInstanceLink").click(function(event){ 
+  $("#puzzlepart2no4-newInstanceLink").click(function(event){ 
       event.preventDefault(); 
       parsonsPuzzle.shuffleLines(); 
   }); 
-  $("#puzzle1part3-feedbackLink").click(function(event){ 
+  $("#puzzlepart2no4-feedbackLink").click(function(event){ 
       event.preventDefault(); 
       parsonsPuzzle.getFeedback(); 
   }); 
