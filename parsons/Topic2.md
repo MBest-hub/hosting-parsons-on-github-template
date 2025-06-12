@@ -169,3 +169,45 @@ title: Michelle
   }); 
 })(); 
 </script>
+
+## Puzzle 5
+## Drag the code in the correct order - don't forget the indents!
+
+<div id="puzzlepart2no5-sortableTrash" class="sortable-code"></div> 
+<div id="puzzlepart2no5-sortable" class="sortable-code"></div> 
+<div style="clear:both;"></div> 
+<p> 
+    <input id="puzzlepart2no5-feedbackLink" value="Get Feedback" type="button" /> 
+    <input id="puzzlepart2no5-newInstanceLink" value="Reset Problem" type="button" /> 
+</p> 
+<script type="text/javascript"> 
+(function(){
+  var initial = "levels=[1,2,3,4,5,6,7,8,9,10]\n" +
+    "if 4 in levels:\n" +
+    "    print (&quot;this is in the list&quot;)\n" +
+    "    \n" +
+    "else:\n" +
+    "    print(&quot;this is not in the list&quot;";
+  var parsonsPuzzle = new ParsonsWidget({
+    "sortableId": "puzzlepart2no5-sortable",
+    "max_wrong_lines": 10,
+    "grader": ParsonsWidget._graders.LineBasedGrader,
+    "exec_limit": 2500,
+    "can_indent": true,
+    "x_indent": 50,
+    "lang": "en",
+    "show_feedback": true,
+    "trashId": "puzzlepart2no5-sortableTrash"
+  });
+  parsonsPuzzle.init(initial);
+  parsonsPuzzle.shuffleLines();
+  $("#puzzlepart2no5-newInstanceLink").click(function(event){ 
+      event.preventDefault(); 
+      parsonsPuzzle.shuffleLines(); 
+  }); 
+  $("#puzzlepart2no5-feedbackLink").click(function(event){ 
+      event.preventDefault(); 
+      parsonsPuzzle.getFeedback(); 
+  }); 
+})(); 
+</script>
