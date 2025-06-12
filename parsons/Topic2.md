@@ -389,3 +389,227 @@ title: Michelle
   }); 
 })(); 
 </script>
+
+## Puzzle 10
+## Drag the code in the correct order - don't forget the indents!
+
+<div id="puzzlepart2no10-sortableTrash" class="sortable-code"></div> 
+<div id="puzzlepart2no10-sortable" class="sortable-code"></div> 
+<div style="clear:both;"></div> 
+<p> 
+    <input id="puzzlepart2no10-feedbackLink" value="Get Feedback" type="button" /> 
+    <input id="puzzlepart2no10-newInstanceLink" value="Reset Problem" type="button" /> 
+</p> 
+<script type="text/javascript"> 
+(function(){
+  var initial = "for i in range (0,10,2):\n" +
+    "    if i==6:\n" +
+    "        break\n" +
+    "    print (i)\n" +
+    "while True:\n" +
+    "    print(&quot;Hello World!&quot;)\n" +
+    "    x = input(&quot;&gt;&gt;&gt; &quot;)\n" +
+    "    if x==&quot;x&quot;:\n" +
+    "        break\n" +
+    "print(&quot;You have entered &#039;x&#039;!&quot;)";
+  var parsonsPuzzle = new ParsonsWidget({
+    "sortableId": "puzzlepart2no10-sortable",
+    "max_wrong_lines": 10,
+    "grader": ParsonsWidget._graders.LineBasedGrader,
+    "exec_limit": 2500,
+    "can_indent": true,
+    "x_indent": 50,
+    "lang": "en",
+    "show_feedback": true,
+    "trashId": "puzzlepart2no10-sortableTrash"
+  });
+  parsonsPuzzle.init(initial);
+  parsonsPuzzle.shuffleLines();
+  $("#puzzlepart2no10-newInstanceLink").click(function(event){ 
+      event.preventDefault(); 
+      parsonsPuzzle.shuffleLines(); 
+  }); 
+  $("#puzzlepart2no10-feedbackLink").click(function(event){ 
+      event.preventDefault(); 
+      parsonsPuzzle.getFeedback(); 
+  }); 
+})(); 
+</script>
+
+## Puzzle 11
+## Drag the code in the correct order - don't forget the indents!
+
+<div id="puzzlepart2no11-sortableTrash" class="sortable-code"></div> 
+<div id="puzzlepart2no11-sortable" class="sortable-code"></div> 
+<div style="clear:both;"></div> 
+<p> 
+    <input id="puzzlepart2no11-feedbackLink" value="Get Feedback" type="button" /> 
+    <input id="puzzlepart2no11-newInstanceLink" value="Reset Problem" type="button" /> 
+</p> 
+<script type="text/javascript"> 
+(function(){
+  var initial = "num = int(input(&#039;Please enter a whole number between 1 and 20 &gt;&gt;&gt; &#039;))\n" +
+    "    \n" +
+    "while num not in range(1,20):\n" +
+    "    if num &lt; 1 :\n" +
+    "        print(&#039;Range is too low.&#039;)\n" +
+    "        num = int(input(&#039;Please enter a whole number between 1 and 20 &gt;&gt;&gt; &#039;))\n" +
+    "    elif num &gt; 20:\n" +
+    "        print(&#039;Range is too high.&#039;)\n" +
+    "        num = int(input(&#039;Please enter a whole number between 1 and 20 &gt;&gt;&gt; &#039;))\n" +
+    "print(&#039;Thank you. Your entry is in the correct range&#039;";
+  var parsonsPuzzle = new ParsonsWidget({
+    "sortableId": "puzzlepart2no11-sortable",
+    "max_wrong_lines": 10,
+    "grader": ParsonsWidget._graders.LineBasedGrader,
+    "exec_limit": 2500,
+    "can_indent": true,
+    "x_indent": 50,
+    "lang": "en",
+    "show_feedback": true,
+    "trashId": "puzzlepart2no11-sortableTrash"
+  });
+  parsonsPuzzle.init(initial);
+  parsonsPuzzle.shuffleLines();
+  $("#puzzlepart2no11-newInstanceLink").click(function(event){ 
+      event.preventDefault(); 
+      parsonsPuzzle.shuffleLines(); 
+  }); 
+  $("#puzzlepart2no11-feedbackLink").click(function(event){ 
+      event.preventDefault(); 
+      parsonsPuzzle.getFeedback(); 
+  }); 
+})(); 
+</script>
+
+## Puzzle 12
+## Drag the code in the correct order - don't forget the indents!
+
+<div id="puzzlepart2no12-sortableTrash" class="sortable-code"></div> 
+<div id="puzzlepart2no12-sortable" class="sortable-code"></div> 
+<div style="clear:both;"></div> 
+<p> 
+    <input id="puzzlepart2no12-feedbackLink" value="Get Feedback" type="button" /> 
+    <input id="puzzlepart2no12-newInstanceLink" value="Reset Problem" type="button" /> 
+</p> 
+<script type="text/javascript"> 
+(function(){
+  var initial = "mark = int(input(&quot;Enter test score: &quot;))\n" +
+    "if mark &lt;= 49:\n" +
+    "    print (&quot;Grade D: Please attend resit&quot;)\n" +
+    "elif mark &gt;50 and mark &lt;56:\n" +
+    "    print (&quot;Grade C - needs improvement&quot;)\n" +
+    "elif mark &gt;=56 and mark &lt;65:\n" +
+    "    print (&quot;Grade B - good work&quot;)\n" +
+    "elif mark &gt;=65 and mark &lt;70:\n" +
+    "    print (&quot;Grade A - well done&quot;)\n" +
+    "else:\n" +
+    "    print (&quot;Grade A* - excellent!&quot;)";
+  var parsonsPuzzle = new ParsonsWidget({
+    "sortableId": "puzzlepart2no12-sortable",
+    "max_wrong_lines": 10,
+    "grader": ParsonsWidget._graders.LineBasedGrader,
+    "exec_limit": 2500,
+    "can_indent": true,
+    "x_indent": 50,
+    "lang": "en",
+    "show_feedback": true,
+    "trashId": "puzzlepart2no12-sortableTrash"
+  });
+  parsonsPuzzle.init(initial);
+  parsonsPuzzle.shuffleLines();
+  $("#puzzlepart2no12-newInstanceLink").click(function(event){ 
+      event.preventDefault(); 
+      parsonsPuzzle.shuffleLines(); 
+  }); 
+  $("#puzzlepart2no12-feedbackLink").click(function(event){ 
+      event.preventDefault(); 
+      parsonsPuzzle.getFeedback(); 
+  }); 
+})(); 
+</script>
+
+## Puzzle 13
+## Drag the code in the correct order - don't forget the indents!
+
+<div id="puzzlepart2no13-sortableTrash" class="sortable-code"></div> 
+<div id="puzzlepart2no13-sortable" class="sortable-code"></div> 
+<div style="clear:both;"></div> 
+<p> 
+    <input id="puzzlepart2no13-feedbackLink" value="Get Feedback" type="button" /> 
+    <input id="puzzlepart2no13-newInstanceLink" value="Reset Problem" type="button" /> 
+</p> 
+<script type="text/javascript"> 
+(function(){
+  var initial = "nums1 = [5,3,7,9,15,12]\n" +
+    "nums2 = [7,5,9,11,16,8]\n" +
+    "for x in nums1:\n" +
+    "    for y in nums2:\n" +
+    "        if x == y:\n" +
+    "            print(&quot;{0} in both arrays&quot;.format(x))";
+  var parsonsPuzzle = new ParsonsWidget({
+    "sortableId": "puzzlepart2no13-sortable",
+    "max_wrong_lines": 10,
+    "grader": ParsonsWidget._graders.LineBasedGrader,
+    "exec_limit": 2500,
+    "can_indent": true,
+    "x_indent": 50,
+    "lang": "en",
+    "show_feedback": true,
+    "trashId": "puzzlepart2no13-sortableTrash"
+  });
+  parsonsPuzzle.init(initial);
+  parsonsPuzzle.shuffleLines();
+  $("#puzzlepart2no13-newInstanceLink").click(function(event){ 
+      event.preventDefault(); 
+      parsonsPuzzle.shuffleLines(); 
+  }); 
+  $("#puzzlepart2no13-feedbackLink").click(function(event){ 
+      event.preventDefault(); 
+      parsonsPuzzle.getFeedback(); 
+  }); 
+})(); 
+</script>
+
+## Puzzle 14
+## Drag the code in the correct order - don't forget the indents!
+
+<div id="puzzlepart2no14-sortableTrash" class="sortable-code"></div> 
+<div id="puzzlepart2no14-sortable" class="sortable-code"></div> 
+<div style="clear:both;"></div> 
+<p> 
+    <input id="puzzlepart2no14-feedbackLink" value="Get Feedback" type="button" /> 
+    <input id="puzzlepart2no14-newInstanceLink" value="Reset Problem" type="button" /> 
+</p> 
+<script type="text/javascript"> 
+(function(){
+  var initial = "from random import*\n" +
+    "from time import*\n" +
+    "passwordslist=[&quot;Moat123&quot;,&quot;Banana110&quot;,&quot;East&amp;West!&quot;,&quot;MyO4word&quot;]\n" +
+    "while True:\n" +
+    "    password=choice(passwordslist)\n" +
+    "    print(password)\n" +
+    "    sleep(1)";
+  var parsonsPuzzle = new ParsonsWidget({
+    "sortableId": "puzzlepart2no14-sortable",
+    "max_wrong_lines": 10,
+    "grader": ParsonsWidget._graders.LineBasedGrader,
+    "exec_limit": 2500,
+    "can_indent": true,
+    "x_indent": 50,
+    "lang": "en",
+    "show_feedback": true,
+    "trashId": "puzzlepart2no14-sortableTrash"
+  });
+  parsonsPuzzle.init(initial);
+  parsonsPuzzle.shuffleLines();
+  $("#puzzlepart2no14-newInstanceLink").click(function(event){ 
+      event.preventDefault(); 
+      parsonsPuzzle.shuffleLines(); 
+  }); 
+  $("#puzzlepart2no14-feedbackLink").click(function(event){ 
+      event.preventDefault(); 
+      parsonsPuzzle.getFeedback(); 
+  }); 
+})(); 
+</script>
