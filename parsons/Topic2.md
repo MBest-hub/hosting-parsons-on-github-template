@@ -86,6 +86,48 @@ title: Michelle
 })(); 
 </script>
 
+## Puzzle 3
+## Drag the code in the correct order - don't forget the indents!
+
+<div id="puzzlepart2no3-sortableTrash" class="sortable-code"></div> 
+<div id="puzzlepart2no3-sortable" class="sortable-code"></div> 
+<div style="clear:both;"></div> 
+<p> 
+    <input id="puzzlepart2no3-feedbackLink" value="Get Feedback" type="button" /> 
+    <input id="puzzlepart2no3-newInstanceLink" value="Reset Problem" type="button" /> 
+</p> 
+<script type="text/javascript"> 
+(function(){
+  var initial = "while True:\n" +
+    "    choice=int(input(&quot;Enter a value &quot;))\n" +
+    "    for x in range(1,13):\n" +
+    "        print(x, &quot;times &quot;,choice,&quot;=&quot;, x*choice)\n" +
+    "        print()\n" +
+    "    ";
+  var parsonsPuzzle = new ParsonsWidget({
+    "sortableId": "puzzlepart2no3-sortable",
+    "max_wrong_lines": 10,
+    "grader": ParsonsWidget._graders.LineBasedGrader,
+    "exec_limit": 2500,
+    "can_indent": true,
+    "x_indent": 50,
+    "lang": "en",
+    "show_feedback": true,
+    "trashId": "puzzlepart2no3-sortableTrash"
+  });
+  parsonsPuzzle.init(initial);
+  parsonsPuzzle.shuffleLines();
+  $("#puzzlepart2no3-newInstanceLink").click(function(event){ 
+      event.preventDefault(); 
+      parsonsPuzzle.shuffleLines(); 
+  }); 
+  $("#puzzlepart2no3-feedbackLink").click(function(event){ 
+      event.preventDefault(); 
+      parsonsPuzzle.getFeedback(); 
+  }); 
+})(); 
+</script>
+
 ## Puzzle 10
 
 <div id="puzzle1part3-sortableTrash" class="sortable-code"></div> 
