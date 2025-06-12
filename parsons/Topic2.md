@@ -3,8 +3,46 @@ layout: default
 title: Michelle
 ---
 
-
 ## Puzzle 1
+
+<div id="puzzlepart2no1-sortableTrash" class="sortable-code"></div> 
+<div id="puzzlepart2no1-sortable" class="sortable-code"></div> 
+<div style="clear:both;"></div> 
+<p> 
+    <input id="puzzlepart2no1-feedbackLink" value="Get Feedback" type="button" /> 
+    <input id="puzzlepart2no1-newInstanceLink" value="Reset Problem" type="button" /> 
+</p> 
+<script type="text/javascript"> 
+(function(){
+  var initial = "for x in range(1,13):\n" +
+    "    for y in range(1,13):\n" +
+    "        print (x*y)\n" +
+    "        print()";
+  var parsonsPuzzle = new ParsonsWidget({
+    "sortableId": "puzzlepart2no1-sortable",
+    "max_wrong_lines": 10,
+    "grader": ParsonsWidget._graders.LineBasedGrader,
+    "exec_limit": 2500,
+    "can_indent": true,
+    "x_indent": 50,
+    "lang": "en",
+    "show_feedback": true,
+    "trashId": "puzzlepart2no1-sortableTrash"
+  });
+  parsonsPuzzle.init(initial);
+  parsonsPuzzle.shuffleLines();
+  $("#puzzlepart2no1-newInstanceLink").click(function(event){ 
+      event.preventDefault(); 
+      parsonsPuzzle.shuffleLines(); 
+  }); 
+  $("#puzzlepart2no1-feedbackLink").click(function(event){ 
+      event.preventDefault(); 
+      parsonsPuzzle.getFeedback(); 
+  }); 
+})(); 
+</script>
+
+## Puzzle 10
 
 <div id="puzzle1part3-sortableTrash" class="sortable-code"></div> 
 <div id="puzzle1part3-sortable" class="sortable-code"></div> 
