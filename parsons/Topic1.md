@@ -296,4 +296,39 @@ title: Michelle
 })(); 
 </script>
 
+## Puzzle 8
+## Place the coding in the correct order!
 
+<div id="parsons1Puzzle8-sortableTrash" class="sortable-code"></div> 
+<div id="parsons1Puzzle8-sortable" class="sortable-code"></div> 
+<div style="clear:both;"></div> 
+<p> 
+    <input id="parsons1Puzzle8-feedbackLink" value="Get Feedback" type="button" /> 
+    <input id="parsons1Puzzle8-newInstanceLink" value="Reset Problem" type="button" /> 
+</p> 
+<script type="text/javascript"> 
+(function(){
+  var initial = "age_input = input(&quot;Enter your age: &quot;)\n" +
+    "print(&quot;You entered:&quot;, age_input, &quot;which is a&quot;, type(age_input))";
+  var parsonsPuzzle = new ParsonsWidget({
+    "sortableId": "parsons1Puzzle8-sortable",
+    "max_wrong_lines": 10,
+    "grader": ParsonsWidget._graders.LineBasedGrader,
+    "exec_limit": 2500,
+    "can_indent": true,
+    "x_indent": 50,
+    "lang": "en",
+    "show_feedback": true
+  });
+  parsonsPuzzle.init(initial);
+  parsonsPuzzle.shuffleLines();
+  $("#parsons1Puzzle8-newInstanceLink").click(function(event){ 
+      event.preventDefault(); 
+      parsonsPuzzle.shuffleLines(); 
+  }); 
+  $("#parsons1Puzzle8-feedbackLink").click(function(event){ 
+      event.preventDefault(); 
+      parsonsPuzzle.getFeedback(); 
+  }); 
+})(); 
+</script>
