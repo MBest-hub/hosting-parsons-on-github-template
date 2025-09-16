@@ -5,6 +5,7 @@ title: Michelle
 
 
 ## Puzzle 1
+## Drag into order, beware of indents!
 
 <div id="puzzle1part3-sortableTrash" class="sortable-code"></div> 
 <div id="puzzle1part3-sortable" class="sortable-code"></div> 
@@ -51,6 +52,7 @@ title: Michelle
 </script>
 
 ## Puzzle 2
+## Drag into order, beware of indents!
 
 <div id="parsons3Puzzle2-sortableTrash" class="sortable-code"></div> 
 <div id="parsons3Puzzle2-sortable" class="sortable-code"></div> 
@@ -115,6 +117,7 @@ title: Michelle
 </script>
 
 ## Puzzle 3
+## Drag into order, beware of indents!
 
 <div id="parsons3Puzzle3-sortableTrash" class="sortable-code"></div> 
 <div id="parsons3Puzzle3-sortable" class="sortable-code"></div> 
@@ -183,6 +186,7 @@ title: Michelle
 </script>
 
 ## Puzzle 4
+## Drag into order, beware of indents!
 <div id="parsons3Puzzle4-sortableTrash" class="sortable-code"></div> 
 <div id="parsons3Puzzle4-sortable" class="sortable-code"></div> 
 <div style="clear:both;"></div> 
