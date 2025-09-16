@@ -414,7 +414,7 @@ title: Michelle
 </script>
 
 ## Puzzle 11
-## Place the coding in the correct order
+## Place the coding in the correct order!
 
 <div id="parsons1Puzzle11-sortableTrash" class="sortable-code"></div> 
 <div id="parsons1Puzzle11-sortable" class="sortable-code"></div> 
@@ -448,6 +448,46 @@ title: Michelle
       parsonsPuzzle.shuffleLines(); 
   }); 
   $("#parsons1Puzzle11-feedbackLink").click(function(event){ 
+      event.preventDefault(); 
+      parsonsPuzzle.getFeedback(); 
+  }); 
+})(); 
+</script>
+
+## Puzzle 12
+## Place the coding in order!
+
+<div id="parsons1Puzzle12-sortableTrash" class="sortable-code"></div> 
+<div id="parsons1Puzzle12-sortable" class="sortable-code"></div> 
+<div style="clear:both;"></div> 
+<p> 
+    <input id="parsons1Puzzle12-feedbackLink" value="Get Feedback" type="button" /> 
+    <input id="parsons1Puzzle12-newInstanceLink" value="Reset Problem" type="button" /> 
+</p> 
+<script type="text/javascript"> 
+(function(){
+  var initial = "print(&quot;\nCasting to bool:&quot;)\n" +
+    "print(&quot;bool(&#039;Hello&#039;) =&quot;, bool(&quot;Hello&quot;))   \n" +
+    "print(&quot;bool(&#039;&#039;) =&quot;, bool(&quot;&quot;))            \n" +
+    "print(&quot;bool(0) =&quot;, bool(0))               \n" +
+    "print(&quot;bool(5) =&quot;, bool(5))  ";
+  var parsonsPuzzle = new ParsonsWidget({
+    "sortableId": "parsons1Puzzle12-sortable",
+    "max_wrong_lines": 10,
+    "grader": ParsonsWidget._graders.LineBasedGrader,
+    "exec_limit": 2500,
+    "can_indent": true,
+    "x_indent": 50,
+    "lang": "en",
+    "show_feedback": true
+  });
+  parsonsPuzzle.init(initial);
+  parsonsPuzzle.shuffleLines();
+  $("#parsons1Puzzle12-newInstanceLink").click(function(event){ 
+      event.preventDefault(); 
+      parsonsPuzzle.shuffleLines(); 
+  }); 
+  $("#parsons1Puzzle12-feedbackLink").click(function(event){ 
       event.preventDefault(); 
       parsonsPuzzle.getFeedback(); 
   }); 
