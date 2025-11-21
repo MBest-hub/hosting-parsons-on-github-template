@@ -82,26 +82,31 @@ title: Michelle
 </script>
 
 
-## Puzzle 3
+## Puzzle 3 Ask for the user's name
 ## Place the correct coding in the correct order!
 
-<div id="parsons2-sortableTrash" class="sortable-code"></div> 
-<div id="parsons2-sortable" class="sortable-code"></div> 
+<div id="3-sortableTrash" class="sortable-code"></div> 
+<div id="3-sortable" class="sortable-code"></div> 
 <div style="clear:both;"></div> 
 <p> 
-    <input id="parsons2-feedbackLink" value="Get Feedback" type="button" /> 
-    <input id="parsons2-newInstanceLink" value="Reset Problem" type="button" /> 
+    <input id="3-feedbackLink" value="Get Feedback" type="button" /> 
+    <input id="3-newInstanceLink" value="Reset Problem" type="button" /> 
 </p> 
 <script type="text/javascript"> 
 (function(){
-  var initial = "answer = input(&quot;What has hands but can’t clap? &quot;)\n" +
-    "print(&quot;Interesting answer: &quot; + answer)\n" +
-    "print(&quot;The real answer is: A clock!&quot;)\n" +
-    "answer = input(What has hands but can’t clap? ) #distractor\n" +
-    "print&quot;Interesting answer: &quot; + answer #distractor\n" +
-    "print(&quot;The real answer is: A clock!) #distractor";
+  var initial = "name = input(&quot;What is your name? &quot;)
+\n" +
+    "print(&quot;Nice to meet you,&quot;, name)
+\n" +
+    "name = (&quot;What is your name? &quot;)
+\n" +
+    "#distractor
+\n" +
+    "print(&quot;Nice to meet you, name)
+\n" +
+    "#distractor";
   var parsonsPuzzle = new ParsonsWidget({
-    "sortableId": "parsons2-sortable",
+    "sortableId": "3-sortable",
     "max_wrong_lines": 10,
     "grader": ParsonsWidget._graders.LineBasedGrader,
     "exec_limit": 2500,
@@ -109,85 +114,60 @@ title: Michelle
     "x_indent": 50,
     "lang": "en",
     "show_feedback": true,
-    "trashId": "parsons2-sortableTrash"
+    "trashId": "3-sortableTrash"
   });
   parsonsPuzzle.init(initial);
   parsonsPuzzle.shuffleLines();
-  $("#parsons2-newInstanceLink").click(function(event){ 
+  $("#3-newInstanceLink").click(function(event){ 
       event.preventDefault(); 
       parsonsPuzzle.shuffleLines(); 
   }); 
-  $("#parsons2-feedbackLink").click(function(event){ 
+  $("#3-feedbackLink").click(function(event){ 
       event.preventDefault(); 
       parsonsPuzzle.getFeedback(); 
   }); 
 })(); 
 </script>
+## Puzzle 4 Add two numbers
+## Place in the correct order and use only the correct pieces of coding
+
+num1 = float(input("Enter a number: "))
+num2 = float(input("Enter another number: "))
+
+total = num1 + num2
+
+print("The total is:", total)
 
 
-## Puzzle 4
-## Place in the correct order!
-
-<div id="parsons4-sortableTrash" class="sortable-code"></div> 
-<div id="parsons4-sortable" class="sortable-code"></div> 
-<div style="clear:both;"></div> 
-<p> 
-    <input id="parsons4-feedbackLink" value="Get Feedback" type="button" /> 
-    <input id="parsons4-newInstanceLink" value="Reset Problem" type="button" /> 
-</p> 
-<script type="text/javascript"> 
-(function(){
-  var initial = "total_pets=0\n" +
-    "dogs = 1\n" +
-    "cats = 4\n" +
-    "total_pets = dogs + cats\n" +
-    "print (&quot;Total number of pets is:&quot;,total_pets)";
-  var parsonsPuzzle = new ParsonsWidget({
-    "sortableId": "parsons4-sortable",
-    "max_wrong_lines": 10,
-    "grader": ParsonsWidget._graders.LineBasedGrader,
-    "exec_limit": 2500,
-    "can_indent": true,
-    "x_indent": 50,
-    "lang": "en",
-    "show_feedback": true,
-    "trashId": "parsons4-sortableTrash"
-  });
-  parsonsPuzzle.init(initial);
-  parsonsPuzzle.shuffleLines();
-  $("#parsons4-newInstanceLink").click(function(event){ 
-      event.preventDefault(); 
-      parsonsPuzzle.shuffleLines(); 
-  }); 
-  $("#parsons4-feedbackLink").click(function(event){ 
-      event.preventDefault(); 
-      parsonsPuzzle.getFeedback(); 
-  }); 
-})(); 
-</script>
-
-## Puzzle 5
+## Puzzle 5 Ask the user's age
 ## Place the correct coding in the correct order!
 
-<div id="puzzle5-sortableTrash" class="sortable-code"></div> 
-<div id="puzzle5-sortable" class="sortable-code"></div> 
+<div id="5-sortableTrash" class="sortable-code"></div> 
+<div id="5-sortable" class="sortable-code"></div> 
 <div style="clear:both;"></div> 
 <p> 
-    <input id="puzzle5-feedbackLink" value="Get Feedback" type="button" /> 
-    <input id="puzzle5-newInstanceLink" value="Reset Problem" type="button" /> 
+    <input id="5-feedbackLink" value="Get Feedback" type="button" /> 
+    <input id="5-newInstanceLink" value="Reset Problem" type="button" /> 
 </p> 
 <script type="text/javascript"> 
 (function(){
-  var initial = "pets=input(&quot;Do you have any pets? &quot;)\n" +
-    "petType=input(&quot;What type of pets do you have? &quot;)\n" +
-    "petName=input(&quot;What&#039;s it&#039;s name? &quot;)\n" +
-    "print(&quot;I love &quot;+petType+&quot;&#039;s and &quot;+petName+&quot; is a lovely name&quot;)\n" +
-    "pets=input(&quot;Do you have any pets? &quot;) #distractor\n" +
-    "petType=input(What type of pets do you have? ) #distractor\n" +
-    "petName=input&quot;What&#039;s it&#039;s name? &quot; #distractor\n" +
-    "print(&quot;I love +petType+&quot;&#039;s and &quot;+petName+&quot; is a lovely name&quot;) #distractor";
+  var initial = "age = input(&quot;How old are you? &quot;)
+\n" +
+    "print(&quot;You are&quot;, age, &quot;years old.&quot;)
+\n" +
+    "age = input(How old are you? &quot;)
+\n" +
+    "#distractor
+\n" +
+    "print &quot;You are&quot;, age, &quot;years old.&quot;
+\n" +
+    "#distractor
+\n" +
+    "
+\n" +
+    "#distractor";
   var parsonsPuzzle = new ParsonsWidget({
-    "sortableId": "puzzle5-sortable",
+    "sortableId": "5-sortable",
     "max_wrong_lines": 10,
     "grader": ParsonsWidget._graders.LineBasedGrader,
     "exec_limit": 2500,
@@ -195,15 +175,15 @@ title: Michelle
     "x_indent": 50,
     "lang": "en",
     "show_feedback": true,
-    "trashId": "puzzle5-sortableTrash"
+    "trashId": "5-sortableTrash"
   });
   parsonsPuzzle.init(initial);
   parsonsPuzzle.shuffleLines();
-  $("#puzzle5-newInstanceLink").click(function(event){ 
+  $("#5-newInstanceLink").click(function(event){ 
       event.preventDefault(); 
       parsonsPuzzle.shuffleLines(); 
   }); 
-  $("#puzzle5-feedbackLink").click(function(event){ 
+  $("#5-feedbackLink").click(function(event){ 
       event.preventDefault(); 
       parsonsPuzzle.getFeedback(); 
   }); 
