@@ -4,6 +4,7 @@ title: Michelle
 ---
 ## Puzzle 1 
 ## Drag the correct coding
+
 <div id="parsons1-sortableTrash" class="sortable-code"></div> 
 <div id="parsons1-sortable" class="sortable-code"></div> 
 <div style="clear:both;"></div> 
@@ -43,38 +44,36 @@ title: Michelle
 
 ## Puzzle 2
 ## Place the correct coding in the correct order!
-<div id="parsons3-sortableTrash" class="sortable-code"></div> 
-<div id="parsons3-sortable" class="sortable-code"></div> 
+
+<div id="3-sortableTrash" class="sortable-code"></div> 
+<div id="3-sortable" class="sortable-code"></div> 
 <div style="clear:both;"></div> 
 <p> 
-    <input id="parsons3-feedbackLink" value="Get Feedback" type="button" /> 
-    <input id="parsons3-newInstanceLink" value="Reset Problem" type="button" /> 
+    <input id="3-feedbackLink" value="Get Feedback" type="button" /> 
+    <input id="3-newInstanceLink" value="Reset Problem" type="button" /> 
 </p> 
 <script type="text/javascript"> 
 (function(){
-  var initial = "eye_colour = input(&quot;What colour are your eyes? &quot;)\n" +
-    "print(eye_colour)\n" +
-    "eye_colour = input(What colour are your eyes? ) #distractor\n" +
-    "eye_colour = input&quot;What colour are your eyes? &quot; #distractor\n" +
-    "print eye_colour #distractor";
+  var initial = "name = input(&quot;What is your name? &quot;)
+\n" +
+    "print(&quot;Nice to meet you,&quot;, name)";
   var parsonsPuzzle = new ParsonsWidget({
-    "sortableId": "parsons3-sortable",
+    "sortableId": "3-sortable",
     "max_wrong_lines": 10,
     "grader": ParsonsWidget._graders.LineBasedGrader,
     "exec_limit": 2500,
     "can_indent": true,
     "x_indent": 50,
     "lang": "en",
-    "show_feedback": true,
-    "trashId": "parsons3-sortableTrash"
+    "show_feedback": true
   });
   parsonsPuzzle.init(initial);
   parsonsPuzzle.shuffleLines();
-  $("#parsons3-newInstanceLink").click(function(event){ 
+  $("#3-newInstanceLink").click(function(event){ 
       event.preventDefault(); 
       parsonsPuzzle.shuffleLines(); 
   }); 
-  $("#parsons3-feedbackLink").click(function(event){ 
+  $("#3-feedbackLink").click(function(event){ 
       event.preventDefault(); 
       parsonsPuzzle.getFeedback(); 
   }); 
