@@ -190,29 +190,41 @@ print("The total is:", total)
 })(); 
 </script>
 
-## Puzzle 6
+## Puzzle 6 Simple shopping program
 ## Place the correct coding in the correct order!
 
-<div id="puzzle6-sortableTrash" class="sortable-code"></div> 
-<div id="puzzle6-sortable" class="sortable-code"></div> 
+<div id="6-sortableTrash" class="sortable-code"></div> 
+<div id="6-sortable" class="sortable-code"></div> 
 <div style="clear:both;"></div> 
 <p> 
-    <input id="puzzle6-feedbackLink" value="Get Feedback" type="button" /> 
-    <input id="puzzle6-newInstanceLink" value="Reset Problem" type="button" /> 
+    <input id="6-feedbackLink" value="Get Feedback" type="button" /> 
+    <input id="6-newInstanceLink" value="Reset Problem" type="button" /> 
 </p> 
 <script type="text/javascript"> 
 (function(){
-  var initial = "forename=input(&quot;What is your first name? &quot;)\n" +
-    "surname=input(&quot;What is your surname? &quot;)\n" +
-    "height=input(&quot;What is your height? &quot;)\n" +
-    "print(&quot;Hello &quot;,forename,surname,&quot;at &quot;,height,&quot;we are about the same height&quot;)\n" +
-    "pets=input(&quot;Do you have any pets? &quot;) #distractor\n" +
-    "forename=(&quot;What is your first name? &quot;) #distractor\n" +
-    "surname=input(What is your surname? &quot;) #distractor\n" +
-    "height=input(&quot;What is your height? &quot; #distractor\n" +
-    "print(&quot;Hello &quot;,forename,surname,&quot;at &quot;height,&quot;we are about the same height&quot;) #distractor";
+  var initial = "print(&quot;Welcome to the mini shop!&quot;)
+\n" +
+    "
+\n" +
+    "item1 = float(input(&quot;Enter the price of item 1: &quot;))
+\n" +
+    "item2 = float(input(&quot;Enter the price of item 2: &quot;))
+\n" +
+    "item3 = float(input(&quot;Enter the price of item 3: &quot;))
+\n" +
+    "
+\n" +
+    "total = item1 + item2 + item3
+\n" +
+    "
+\n" +
+    "print(&quot;Your total is:&quot;, total)
+\n" +
+    "print(&quot;Thank you for shopping!&quot;)
+\n" +
+    "";
   var parsonsPuzzle = new ParsonsWidget({
-    "sortableId": "puzzle6-sortable",
+    "sortableId": "6-sortable",
     "max_wrong_lines": 10,
     "grader": ParsonsWidget._graders.LineBasedGrader,
     "exec_limit": 2500,
@@ -220,40 +232,52 @@ print("The total is:", total)
     "x_indent": 50,
     "lang": "en",
     "show_feedback": true,
-    "trashId": "puzzle6-sortableTrash"
+    "trashId": "6-sortableTrash"
   });
   parsonsPuzzle.init(initial);
   parsonsPuzzle.shuffleLines();
-  $("#puzzle6-newInstanceLink").click(function(event){ 
+  $("#6-newInstanceLink").click(function(event){ 
       event.preventDefault(); 
       parsonsPuzzle.shuffleLines(); 
   }); 
-  $("#puzzle6-feedbackLink").click(function(event){ 
+  $("#6-feedbackLink").click(function(event){ 
       event.preventDefault(); 
       parsonsPuzzle.getFeedback(); 
   }); 
 })(); 
 </script>
 
-## Puzzle 7
+## Puzzle 7 Temperature converter
 ## Place the coding in the correct order!
 
-<div id="puzzle7-sortableTrash" class="sortable-code"></div> 
-<div id="puzzle7-sortable" class="sortable-code"></div> 
+<div id="7-sortableTrash" class="sortable-code"></div> 
+<div id="7-sortable" class="sortable-code"></div> 
 <div style="clear:both;"></div> 
 <p> 
-    <input id="puzzle7-feedbackLink" value="Get Feedback" type="button" /> 
-    <input id="puzzle7-newInstanceLink" value="Reset Problem" type="button" /> 
+    <input id="7-feedbackLink" value="Get Feedback" type="button" /> 
+    <input id="7-newInstanceLink" value="Reset Problem" type="button" /> 
 </p> 
 <script type="text/javascript"> 
 (function(){
-  var initial = "a = [3, 7, 45, 98]\n" +
-    "b = [13, 17, 2, 1, 9]\n" +
-    "c = a + b\n" +
-    "c.sort()\n" +
-    "print (c";
+  var initial = "print(&quot;Temperature Converter&quot;)
+\n" +
+    "
+\n" +
+    "celsius = float(input(&quot;Enter temperature in Celsius: &quot;))
+\n" +
+    "
+\n" +
+    "fahrenheit = (celsius * 9/5) + 32
+\n" +
+    "
+\n" +
+    "print(&quot;In Fahrenheit, that is:&quot;, fahrenheit)
+\n" +
+    "
+\n" +
+    "";
   var parsonsPuzzle = new ParsonsWidget({
-    "sortableId": "puzzle7-sortable",
+    "sortableId": "7-sortable",
     "max_wrong_lines": 10,
     "grader": ParsonsWidget._graders.LineBasedGrader,
     "exec_limit": 2500,
@@ -261,59 +285,97 @@ print("The total is:", total)
     "x_indent": 50,
     "lang": "en",
     "show_feedback": true,
-    "trashId": "puzzle7-sortableTrash"
+    "trashId": "7-sortableTrash"
   });
   parsonsPuzzle.init(initial);
   parsonsPuzzle.shuffleLines();
-  $("#puzzle7-newInstanceLink").click(function(event){ 
+  $("#7-newInstanceLink").click(function(event){ 
       event.preventDefault(); 
       parsonsPuzzle.shuffleLines(); 
   }); 
-  $("#puzzle7-feedbackLink").click(function(event){ 
+  $("#7-feedbackLink").click(function(event){ 
       event.preventDefault(); 
       parsonsPuzzle.getFeedback(); 
   }); 
 })(); 
 </script>
-
-## Puzzle 8
+## Puzzle 8 Basic quiz program
 ## Place the coding in the correct order!
 
-<div id="parsons1Puzzle8-sortableTrash" class="sortable-code"></div> 
-<div id="parsons1Puzzle8-sortable" class="sortable-code"></div> 
+<div id="8-sortableTrash" class="sortable-code"></div> 
+<div id="8-sortable" class="sortable-code"></div> 
 <div style="clear:both;"></div> 
 <p> 
-    <input id="parsons1Puzzle8-feedbackLink" value="Get Feedback" type="button" /> 
-    <input id="parsons1Puzzle8-newInstanceLink" value="Reset Problem" type="button" /> 
+    <input id="8-feedbackLink" value="Get Feedback" type="button" /> 
+    <input id="8-newInstanceLink" value="Reset Problem" type="button" /> 
 </p> 
 <script type="text/javascript"> 
 (function(){
-  var initial = "age_input = input(&quot;Enter your age: &quot;)\n" +
-    "print(&quot;You entered:&quot;, age_input, &quot;which is a&quot;, type(age_input))";
+  var initial = "print(&quot;Welcome to the mini quiz!&quot;)
+\n" +
+    "
+\n" +
+    "score = 0
+\n" +
+    "
+\n" +
+    "answer1 = input(&quot;Q1: What colour is the sky? &quot;)
+\n" +
+    "if answer1.lower() == &quot;blue&quot;:
+\n" +
+    "    print(&quot;Correct!&quot;)
+\n" +
+    "    score = score + 1
+\n" +
+    "else:
+\n" +
+    "    print(&quot;Incorrect.&quot;)
+\n" +
+    "
+\n" +
+    "answer2 = input(&quot;Q2: How many days are in a week? &quot;)
+\n" +
+    "if answer2 == &quot;7&quot;:
+\n" +
+    "    print(&quot;Correct!&quot;)
+\n" +
+    "    score = score + 1
+\n" +
+    "else:
+\n" +
+    "    print(&quot;Incorrect.&quot;)
+\n" +
+    "
+\n" +
+    "print(&quot;You scored&quot;, score, &quot;out of 2!&quot;)
+\n" +
+    "
+\n" +
+    "";
   var parsonsPuzzle = new ParsonsWidget({
-    "sortableId": "parsons1Puzzle8-sortable",
+    "sortableId": "8-sortable",
     "max_wrong_lines": 10,
     "grader": ParsonsWidget._graders.LineBasedGrader,
     "exec_limit": 2500,
     "can_indent": true,
     "x_indent": 50,
     "lang": "en",
-    "show_feedback": true
+    "show_feedback": true,
+    "trashId": "8-sortableTrash"
   });
   parsonsPuzzle.init(initial);
   parsonsPuzzle.shuffleLines();
-  $("#parsons1Puzzle8-newInstanceLink").click(function(event){ 
+  $("#8-newInstanceLink").click(function(event){ 
       event.preventDefault(); 
       parsonsPuzzle.shuffleLines(); 
   }); 
-  $("#parsons1Puzzle8-feedbackLink").click(function(event){ 
+  $("#8-feedbackLink").click(function(event){ 
       event.preventDefault(); 
       parsonsPuzzle.getFeedback(); 
   }); 
 })(); 
 </script>
-
-## Puzzle 9
+## Puzzle 9 Casting your age
 ## Place the coding in the correct order!
 
 <div id="parsons1Puzzle9-sortableTrash" class="sortable-code"></div> 
@@ -354,120 +416,395 @@ print("The total is:", total)
 })(); 
 </script>
 
-## Puzzle 10
+## Puzzle 10 Name and age story generator
 ## Place the coding in the correct order!
 
-<div id="parsons1Puzzle10-sortableTrash" class="sortable-code"></div> 
-<div id="parsons1Puzzle10-sortable" class="sortable-code"></div> 
+<div id="10-sortableTrash" class="sortable-code"></div> 
+<div id="10-sortable" class="sortable-code"></div> 
 <div style="clear:both;"></div> 
 <p> 
-    <input id="parsons1Puzzle10-feedbackLink" value="Get Feedback" type="button" /> 
-    <input id="parsons1Puzzle10-newInstanceLink" value="Reset Problem" type="button" /> 
+    <input id="10-feedbackLink" value="Get Feedback" type="button" /> 
+    <input id="10-newInstanceLink" value="Reset Problem" type="button" /> 
 </p> 
 <script type="text/javascript"> 
 (function(){
-  var initial = "length_str = input(&quot;Enter the length of a rectangle (cm): &quot;)\n" +
-    "width_str = input(&quot;Enter the width of a rectangle (cm): &quot;)\n" +
-    "length = float(length_str)   \n" +
-    "width = float(width_str)";
+  var initial = "print(&quot;Story Generator&quot;)
+\n" +
+    "
+\n" +
+    "name = input(&quot;Enter your name: &quot;)
+\n" +
+    "age = input(&quot;Enter your age: &quot;)
+\n" +
+    "hobby = input(&quot;Enter a hobby: &quot;)
+\n" +
+    "
+\n" +
+    "print()
+\n" +
+    "print(&quot;Here is your story:&quot;)
+\n" +
+    "print(name, &quot;is&quot;, age, &quot;years old and loves&quot;, hobby + &quot;.&quot;)
+\n" +
+    "print(&quot;Every day,&quot;, name, &quot;practices&quot;, hobby, &quot;and gets better and better!&quot;)
+\n" +
+    "";
   var parsonsPuzzle = new ParsonsWidget({
-    "sortableId": "parsons1Puzzle10-sortable",
+    "sortableId": "10-sortable",
     "max_wrong_lines": 10,
     "grader": ParsonsWidget._graders.LineBasedGrader,
     "exec_limit": 2500,
     "can_indent": true,
     "x_indent": 50,
     "lang": "en",
-    "show_feedback": true
+    "show_feedback": true,
+    "trashId": "10-sortableTrash"
   });
   parsonsPuzzle.init(initial);
   parsonsPuzzle.shuffleLines();
-  $("#parsons1Puzzle10-newInstanceLink").click(function(event){ 
+  $("#10-newInstanceLink").click(function(event){ 
       event.preventDefault(); 
       parsonsPuzzle.shuffleLines(); 
   }); 
-  $("#parsons1Puzzle10-feedbackLink").click(function(event){ 
+  $("#10-feedbackLink").click(function(event){ 
       event.preventDefault(); 
       parsonsPuzzle.getFeedback(); 
   }); 
 })(); 
 </script>
 
-## Puzzle 11
+## Puzzle 11 Simple calculator
 ## Place the coding in the correct order!
 
-<div id="parsons1Puzzle11-sortableTrash" class="sortable-code"></div> 
-<div id="parsons1Puzzle11-sortable" class="sortable-code"></div> 
+<div id="11-sortableTrash" class="sortable-code"></div> 
+<div id="11-sortable" class="sortable-code"></div> 
 <div style="clear:both;"></div> 
 <p> 
-    <input id="parsons1Puzzle11-feedbackLink" value="Get Feedback" type="button" /> 
-    <input id="parsons1Puzzle11-newInstanceLink" value="Reset Problem" type="button" /> 
+    <input id="11-feedbackLink" value="Get Feedback" type="button" /> 
+    <input id="11-newInstanceLink" value="Reset Problem" type="button" /> 
 </p> 
 <script type="text/javascript"> 
 (function(){
-  var initial = "num_str = &quot;42&quot;\n" +
-    "print(&quot;Original:&quot;, num_str, &quot;Type:&quot;, type(num_str))\n" +
-    "num_int = int(num_str)      \n" +
-    "num_float = float(num_str)   \n" +
-    "print(&quot;As int:&quot;, num_int, &quot;Type:&quot;, type(num_int))\n" +
-    "print(&quot;As float:&quot;, num_float, &quot;Type:&quot;, type(num_float))";
+  var initial = "print(&quot;Simple Calculator&quot;)
+\n" +
+    "print(&quot;1 = Add&quot;)
+\n" +
+    "print(&quot;2 = Subtract&quot;)
+\n" +
+    "print(&quot;3 = Multiply&quot;)
+\n" +
+    "print(&quot;4 = Divide&quot;)
+\n" +
+    "
+\n" +
+    "choice = input(&quot;Choose an option (1-4): &quot;)
+\n" +
+    "
+\n" +
+    "num1 = float(input(&quot;Enter first number: &quot;))
+\n" +
+    "num2 = float(input(&quot;Enter second number: &quot;))
+\n" +
+    "
+\n" +
+    "if choice == &quot;1&quot;:
+\n" +
+    "    print(&quot;Answer:&quot;, num1 + num2)
+\n" +
+    "elif choice == &quot;2&quot;:
+\n" +
+    "    print(&quot;Answer:&quot;, num1 - num2)
+\n" +
+    "elif choice == &quot;3&quot;:
+\n" +
+    "    print(&quot;Answer:&quot;, num1 * num2)
+\n" +
+    "elif choice == &quot;4&quot;:
+\n" +
+    "    print(&quot;Answer:&quot;, num1 / num2)
+\n" +
+    "else:
+\n" +
+    "    print(&quot;Invalid choice!&quot;)
+\n" +
+    "";
   var parsonsPuzzle = new ParsonsWidget({
-    "sortableId": "parsons1Puzzle11-sortable",
+    "sortableId": "11-sortable",
     "max_wrong_lines": 10,
     "grader": ParsonsWidget._graders.LineBasedGrader,
     "exec_limit": 2500,
     "can_indent": true,
     "x_indent": 50,
     "lang": "en",
-    "show_feedback": true
+    "show_feedback": true,
+    "trashId": "11-sortableTrash"
   });
   parsonsPuzzle.init(initial);
   parsonsPuzzle.shuffleLines();
-  $("#parsons1Puzzle11-newInstanceLink").click(function(event){ 
+  $("#11-newInstanceLink").click(function(event){ 
       event.preventDefault(); 
       parsonsPuzzle.shuffleLines(); 
   }); 
-  $("#parsons1Puzzle11-feedbackLink").click(function(event){ 
+  $("#11-feedbackLink").click(function(event){ 
       event.preventDefault(); 
       parsonsPuzzle.getFeedback(); 
   }); 
 })(); 
 </script>
 
-## Puzzle 12
+## Puzzle 12 Total price calculator
 ## Place the coding in order!
 
-<div id="parsons1Puzzle12-sortableTrash" class="sortable-code"></div> 
-<div id="parsons1Puzzle12-sortable" class="sortable-code"></div> 
+<div id="12-sortableTrash" class="sortable-code"></div> 
+<div id="12-sortable" class="sortable-code"></div> 
 <div style="clear:both;"></div> 
 <p> 
-    <input id="parsons1Puzzle12-feedbackLink" value="Get Feedback" type="button" /> 
-    <input id="parsons1Puzzle12-newInstanceLink" value="Reset Problem" type="button" /> 
+    <input id="12-feedbackLink" value="Get Feedback" type="button" /> 
+    <input id="12-newInstanceLink" value="Reset Problem" type="button" /> 
 </p> 
 <script type="text/javascript"> 
 (function(){
-  var initial = "print(&quot;\nCasting to bool:&quot;)\n" +
-    "print(&quot;bool(&#039;Hello&#039;) =&quot;, bool(&quot;Hello&quot;))   \n" +
-    "print(&quot;bool(&#039;&#039;) =&quot;, bool(&quot;&quot;))            \n" +
-    "print(&quot;bool(0) =&quot;, bool(0))               \n" +
-    "print(&quot;bool(5) =&quot;, bool(5))  ";
+  var initial = "price1 = float(input(&quot;Price 1: &quot;))
+\n" +
+    "price2 = float(input(&quot;Price 2: &quot;))
+\n" +
+    "price3 = float(input(&quot;Price 3: &quot;))
+\n" +
+    "
+\n" +
+    "total = price1 + price2 + price3
+\n" +
+    "print(&quot;Total cost =&quot;, total)
+\n" +
+    "
+\n" +
+    "";
   var parsonsPuzzle = new ParsonsWidget({
-    "sortableId": "parsons1Puzzle12-sortable",
+    "sortableId": "12-sortable",
     "max_wrong_lines": 10,
     "grader": ParsonsWidget._graders.LineBasedGrader,
     "exec_limit": 2500,
     "can_indent": true,
     "x_indent": 50,
     "lang": "en",
-    "show_feedback": true
+    "show_feedback": true,
+    "trashId": "12-sortableTrash"
   });
   parsonsPuzzle.init(initial);
   parsonsPuzzle.shuffleLines();
-  $("#parsons1Puzzle12-newInstanceLink").click(function(event){ 
+  $("#12-newInstanceLink").click(function(event){ 
       event.preventDefault(); 
       parsonsPuzzle.shuffleLines(); 
   }); 
-  $("#parsons1Puzzle12-feedbackLink").click(function(event){ 
+  $("#12-feedbackLink").click(function(event){ 
+      event.preventDefault(); 
+      parsonsPuzzle.getFeedback(); 
+  }); 
+})(); 
+</script>
+
+## Puzzle 13 Simple greeting story
+## Place the coding in order!
+
+<div id="13-sortableTrash" class="sortable-code"></div> 
+<div id="13-sortable" class="sortable-code"></div> 
+<div style="clear:both;"></div> 
+<p> 
+    <input id="13-feedbackLink" value="Get Feedback" type="button" /> 
+    <input id="13-newInstanceLink" value="Reset Problem" type="button" /> 
+</p> 
+<script type="text/javascript"> 
+(function(){
+  var initial = "name = input(&quot;Enter your name: &quot;)
+\n" +
+    "age = input(&quot;Enter your age: &quot;)
+\n" +
+    "
+\n" +
+    "print(&quot;Hello&quot;, name)
+\n" +
+    "print(&quot;You are&quot;, age, &quot;years old&quot;)
+\n" +
+    "print(&quot;Nice to meet you!&quot;)
+\n" +
+    "
+\n" +
+    "";
+  var parsonsPuzzle = new ParsonsWidget({
+    "sortableId": "13-sortable",
+    "max_wrong_lines": 10,
+    "grader": ParsonsWidget._graders.LineBasedGrader,
+    "exec_limit": 2500,
+    "can_indent": true,
+    "x_indent": 50,
+    "lang": "en",
+    "show_feedback": true,
+    "trashId": "13-sortableTrash"
+  });
+  parsonsPuzzle.init(initial);
+  parsonsPuzzle.shuffleLines();
+  $("#13-newInstanceLink").click(function(event){ 
+      event.preventDefault(); 
+      parsonsPuzzle.shuffleLines(); 
+  }); 
+  $("#13-feedbackLink").click(function(event){ 
+      event.preventDefault(); 
+      parsonsPuzzle.getFeedback(); 
+  }); 
+})(); 
+</script>
+
+## Puzzle 14 Convert minutes to hours/minutes
+## Place the coding in order!
+
+<div id="14-sortableTrash" class="sortable-code"></div> 
+<div id="14-sortable" class="sortable-code"></div> 
+<div style="clear:both;"></div> 
+<p> 
+    <input id="14-feedbackLink" value="Get Feedback" type="button" /> 
+    <input id="14-newInstanceLink" value="Reset Problem" type="button" /> 
+</p> 
+<script type="text/javascript"> 
+(function(){
+  var initial = "mins = int(input(&quot;Enter minutes: &quot;))
+\n" +
+    "
+\n" +
+    "hours = mins // 60
+\n" +
+    "leftover = mins % 60
+\n" +
+    "
+\n" +
+    "print(&quot;Hours:&quot;, hours)
+\n" +
+    "print(&quot;Minutes:&quot;, leftover)
+\n" +
+    "
+\n" +
+    "";
+  var parsonsPuzzle = new ParsonsWidget({
+    "sortableId": "14-sortable",
+    "max_wrong_lines": 10,
+    "grader": ParsonsWidget._graders.LineBasedGrader,
+    "exec_limit": 2500,
+    "can_indent": true,
+    "x_indent": 50,
+    "lang": "en",
+    "show_feedback": true,
+    "trashId": "14-sortableTrash"
+  });
+  parsonsPuzzle.init(initial);
+  parsonsPuzzle.shuffleLines();
+  $("#14-newInstanceLink").click(function(event){ 
+      event.preventDefault(); 
+      parsonsPuzzle.shuffleLines(); 
+  }); 
+  $("#14-feedbackLink").click(function(event){ 
+      event.preventDefault(); 
+      parsonsPuzzle.getFeedback(); 
+  }); 
+})(); 
+</script>
+
+## Puzzle 15 Temperature check
+## Place the coding in order!
+
+<div id="15-sortableTrash" class="sortable-code"></div> 
+<div id="15-sortable" class="sortable-code"></div> 
+<div style="clear:both;"></div> 
+<p> 
+    <input id="15-feedbackLink" value="Get Feedback" type="button" /> 
+    <input id="15-newInstanceLink" value="Reset Problem" type="button" /> 
+</p> 
+<script type="text/javascript"> 
+(function(){
+  var initial = "temp = int(input(&quot;Enter temperature: &quot;))
+\n" +
+    "
+\n" +
+    "if temp &gt; 20:
+\n" +
+    "    print(&quot;Warm&quot;)
+\n" +
+    "else:
+\n" +
+    "    print(&quot;Cold&quot;)
+\n" +
+    "
+\n" +
+    "";
+  var parsonsPuzzle = new ParsonsWidget({
+    "sortableId": "15-sortable",
+    "max_wrong_lines": 10,
+    "grader": ParsonsWidget._graders.LineBasedGrader,
+    "exec_limit": 2500,
+    "can_indent": true,
+    "x_indent": 50,
+    "lang": "en",
+    "show_feedback": true,
+    "trashId": "15-sortableTrash"
+  });
+  parsonsPuzzle.init(initial);
+  parsonsPuzzle.shuffleLines();
+  $("#15-newInstanceLink").click(function(event){ 
+      event.preventDefault(); 
+      parsonsPuzzle.shuffleLines(); 
+  }); 
+  $("#15-feedbackLink").click(function(event){ 
+      event.preventDefault(); 
+      parsonsPuzzle.getFeedback(); 
+  }); 
+})(); 
+</script>
+
+## Puzzle 16 Item quantity multiplier
+## Place the coding in order!
+
+<div id="16-sortableTrash" class="sortable-code"></div> 
+<div id="16-sortable" class="sortable-code"></div> 
+<div style="clear:both;"></div> 
+<p> 
+    <input id="16-feedbackLink" value="Get Feedback" type="button" /> 
+    <input id="16-newInstanceLink" value="Reset Problem" type="button" /> 
+</p> 
+<script type="text/javascript"> 
+(function(){
+  var initial = "item = input(&quot;Item name: &quot;)
+\n" +
+    "amount = int(input(&quot;How many? &quot;))
+\n" +
+    "price = float(input(&quot;Price each: &quot;))
+\n" +
+    "
+\n" +
+    "total = amount * price
+\n" +
+    "print(&quot;You spent £&quot;, total)
+\n" +
+    "
+\n" +
+    "  
+\n" +
+    "";
+  var parsonsPuzzle = new ParsonsWidget({
+    "sortableId": "16-sortable",
+    "max_wrong_lines": 10,
+    "grader": ParsonsWidget._graders.LineBasedGrader,
+    "exec_limit": 2500,
+    "can_indent": true,
+    "x_indent": 50,
+    "lang": "en",
+    "show_feedback": true,
+    "trashId": "16-sortableTrash"
+  });
+  parsonsPuzzle.init(initial);
+  parsonsPuzzle.shuffleLines();
+  $("#16-newInstanceLink").click(function(event){ 
+      event.preventDefault(); 
+      parsonsPuzzle.shuffleLines(); 
+  }); 
+  $("#16-feedbackLink").click(function(event){ 
       event.preventDefault(); 
       parsonsPuzzle.getFeedback(); 
   }); 
