@@ -45,6 +45,44 @@ title: Michelle
 ## Puzzle 2
 ## Place the correct coding in the correct order!
 
+
+<div id="3-sortableTrash" class="sortable-code"></div> 
+<div id="3-sortable" class="sortable-code"></div> 
+<div style="clear:both;"></div> 
+<p> 
+    <input id="3-feedbackLink" value="Get Feedback" type="button" /> 
+    <input id="3-newInstanceLink" value="Reset Problem" type="button" /> 
+</p> 
+<script type="text/javascript"> 
+(function(){
+  var initial = "name = input(&quot;What is your name? &quot;)
+\n" +
+    "print(&quot;Nice to meet you,&quot;, name)";
+  var parsonsPuzzle = new ParsonsWidget({
+    "sortableId": "3-sortable",
+    "max_wrong_lines": 10,
+    "grader": ParsonsWidget._graders.LineBasedGrader,
+    "exec_limit": 2500,
+    "can_indent": true,
+    "x_indent": 50,
+    "lang": "en",
+    "show_feedback": true,
+    "trashId": "3-sortableTrash"
+  });
+  parsonsPuzzle.init(initial);
+  parsonsPuzzle.shuffleLines();
+  $("#3-newInstanceLink").click(function(event){ 
+      event.preventDefault(); 
+      parsonsPuzzle.shuffleLines(); 
+  }); 
+  $("#3-feedbackLink").click(function(event){ 
+      event.preventDefault(); 
+      parsonsPuzzle.getFeedback(); 
+  }); 
+})(); 
+</script>
+
+
 <div id="3-sortableTrash" class="sortable-code"></div> 
 <div id="3-sortable" class="sortable-code"></div> 
 <div style="clear:both;"></div> 
