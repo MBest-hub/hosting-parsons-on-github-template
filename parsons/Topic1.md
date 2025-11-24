@@ -41,6 +41,89 @@ title: Michelle
 })(); 
 </script>
 
+
+## Puzzle 9 Casting your age
+## Place the coding in the correct order!
+
+<div id="parsons1Puzzle9-sortableTrash" class="sortable-code"></div> 
+<div id="parsons1Puzzle9-sortable" class="sortable-code"></div> 
+<div style="clear:both;"></div> 
+<p> 
+    <input id="parsons1Puzzle9-feedbackLink" value="Get Feedback" type="button" /> 
+    <input id="parsons1Puzzle9-newInstanceLink" value="Reset Problem" type="button" /> 
+</p> 
+<script type="text/javascript"> 
+(function(){
+  var initial = "age = int(age_input)\n" +
+    "print(&quot;After casting, your age is:&quot;, age, &quot;which is a&quot;, type(age))\n" +
+    "age_float = float(age_input)\n" +
+    "print(&quot;As a float, your age is:&quot;, age_float, &quot;which is a&quot;, type(age_float))\n" +
+    "age_str = str(age)\n" +
+    "print(&quot;Back to string:&quot;, age_str, &quot;which is a&quot;, type(age_str))";
+  var parsonsPuzzle = new ParsonsWidget({
+    "sortableId": "parsons1Puzzle9-sortable",
+    "max_wrong_lines": 10,
+    "grader": ParsonsWidget._graders.LineBasedGrader,
+    "exec_limit": 2500,
+    "can_indent": true,
+    "x_indent": 50,
+    "lang": "en",
+    "show_feedback": true
+  });
+  parsonsPuzzle.init(initial);
+  parsonsPuzzle.shuffleLines();
+  $("#parsons1Puzzle9-newInstanceLink").click(function(event){ 
+      event.preventDefault(); 
+      parsonsPuzzle.shuffleLines(); 
+  }); 
+  $("#parsons1Puzzle9-feedbackLink").click(function(event){ 
+      event.preventDefault(); 
+      parsonsPuzzle.getFeedback(); 
+  }); 
+})(); 
+</script>
+
+## Puzzle 9 Casting your age
+## Place the coding in the correct order!
+
+<div id="parsons1Puzzle9-sortableTrash" class="sortable-code"></div> 
+<div id="parsons1Puzzle9-sortable" class="sortable-code"></div> 
+<div style="clear:both;"></div> 
+<p> 
+    <input id="parsons1Puzzle9-feedbackLink" value="Get Feedback" type="button" /> 
+    <input id="parsons1Puzzle9-newInstanceLink" value="Reset Problem" type="button" /> 
+</p> 
+<script type="text/javascript"> 
+(function(){
+  var initial = "age = int(age_input)\n" +
+    "print(&quot;After casting, your age is:&quot;, age, &quot;which is a&quot;, type(age))\n" +
+    "age_float = float(age_input)\n" +
+    "print(&quot;As a float, your age is:&quot;, age_float, &quot;which is a&quot;, type(age_float))\n" +
+    "age_str = str(age)\n" +
+    "print(&quot;Back to string:&quot;, age_str, &quot;which is a&quot;, type(age_str))";
+  var parsonsPuzzle = new ParsonsWidget({
+    "sortableId": "parsons1Puzzle9-sortable",
+    "max_wrong_lines": 10,
+    "grader": ParsonsWidget._graders.LineBasedGrader,
+    "exec_limit": 2500,
+    "can_indent": true,
+    "x_indent": 50,
+    "lang": "en",
+    "show_feedback": true
+  });
+  parsonsPuzzle.init(initial);
+  parsonsPuzzle.shuffleLines();
+  $("#parsons1Puzzle9-newInstanceLink").click(function(event){ 
+      event.preventDefault(); 
+      parsonsPuzzle.shuffleLines(); 
+  }); 
+  $("#parsons1Puzzle9-feedbackLink").click(function(event){ 
+      event.preventDefault(); 
+      parsonsPuzzle.getFeedback(); 
+  }); 
+})(); 
+</script>
+
 ## Puzzle 2
 ## Place the correct coding in the correct order!
 
