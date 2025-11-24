@@ -95,15 +95,7 @@ title: Michelle
 (function(){
   var initial = "name = input(&quot;What is your name? &quot;)
 \n" +
-    "print(&quot;Nice to meet you,&quot;, name)
-\n" +
-    "name = (&quot;What is your name? &quot;)
-\n" +
-    "#distractor
-\n" +
-    "print(&quot;Nice to meet you, name)
-\n" +
-    "#distractor";
+    "print(&quot;Nice to meet you,&quot;, name)";
   var parsonsPuzzle = new ParsonsWidget({
     "sortableId": "3-sortable",
     "max_wrong_lines": 10,
@@ -127,6 +119,8 @@ title: Michelle
   }); 
 })(); 
 </script>
+
+
 ## Puzzle 4 Add two numbers
 ## Place in the correct order and use only the correct pieces of coding
 
