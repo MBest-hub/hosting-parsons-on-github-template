@@ -41,7 +41,6 @@ title: Michelle
 })(); 
 </script>
 
-
 ## Puzzle 2
 ## Place the correct coding in the correct order!
 
@@ -82,6 +81,8 @@ title: Michelle
 })(); 
 </script>
 
+## Puzzle 2
+## Place the correct coding in the correct order!
 
 <div id="3-sortableTrash" class="sortable-code"></div> 
 <div id="3-sortable" class="sortable-code"></div> 
@@ -162,12 +163,6 @@ title: Michelle
 ## Puzzle 4 Add two numbers
 ## Place in the correct order and use only the correct pieces of coding
 
-num1 = float(input("Enter a number: "))
-num2 = float(input("Enter another number: "))
-
-total = num1 + num2
-
-print("The total is:", total)
 
 
 ## Puzzle 5 Ask the user's age
