@@ -126,12 +126,12 @@ title: Michelle
 ## Puzzle 9 Casting your age
 ## Place the coding in the correct order!
 
-<div id="parsons1Puzzle9-sortableTrash" class="sortable-code"></div> 
-<div id="parsons1Puzzle9-sortable" class="sortable-code"></div> 
+<div id="parsons1Puzzle91-sortableTrash" class="sortable-code"></div> 
+<div id="parsons1Puzzle91-sortable" class="sortable-code"></div> 
 <div style="clear:both;"></div> 
 <p> 
-    <input id="parsons1Puzzle9-feedbackLink" value="Get Feedback" type="button" /> 
-    <input id="parsons1Puzzle9-newInstanceLink" value="Reset Problem" type="button" /> 
+    <input id="parsons1Puzzle91-feedbackLink" value="Get Feedback" type="button" /> 
+    <input id="parsons1Puzzle91-newInstanceLink" value="Reset Problem" type="button" /> 
 </p> 
 <script type="text/javascript"> 
 (function(){
