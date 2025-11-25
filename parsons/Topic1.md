@@ -2,7 +2,7 @@
 layout: default
 title: Michelle
 ---
-## Puzzle 1 
+## Puzzle 10
 ## Drag the correct coding
 
 <div id="100-sortableTrash" class="sortable-code"></div> 
