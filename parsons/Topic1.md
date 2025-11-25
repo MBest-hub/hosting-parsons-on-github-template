@@ -2,46 +2,6 @@
 layout: default
 title: Michelle
 ---
-## Puzzle 10
-## Drag the correct coding
-
-<div id="100-sortableTrash" class="sortable-code"></div> 
-<div id="100-sortable" class="sortable-code"></div> 
-<div style="clear:both;"></div> 
-<p> 
-    <input id="100-feedbackLink" value="Get Feedback" type="button" /> 
-    <input id="100-newInstanceLink" value="Reset Problem" type="button" /> 
-</p> 
-<script type="text/javascript"> 
-(function(){
-  var initial = "age = input(&quot;How old are you? &quot;)
-\n" +
-    "print(&quot;You are&quot;, age, &quot;years old.&quot;)
-\n" +
-    "";
-  var parsonsPuzzle = new ParsonsWidget({
-    "sortableId": "100-sortable",
-    "max_wrong_lines": 10,
-    "grader": ParsonsWidget._graders.LineBasedGrader,
-    "exec_limit": 2500,
-    "can_indent": true,
-    "x_indent": 50,
-    "lang": "en",
-    "show_feedback": true
-  });
-  parsonsPuzzle.init(initial);
-  parsonsPuzzle.shuffleLines();
-  $("#100-newInstanceLink").click(function(event){ 
-      event.preventDefault(); 
-      parsonsPuzzle.shuffleLines(); 
-  }); 
-  $("#100-feedbackLink").click(function(event){ 
-      event.preventDefault(); 
-      parsonsPuzzle.getFeedback(); 
-  }); 
-})(); 
-</script>
-
 
 ## Puzzle 1
 
@@ -81,171 +41,6 @@ title: Michelle
 })(); 
 </script>
 
-
-## Puzzle 9 Casting your age
-## Place the coding in the correct order!
-
-<div id="parsons1Puzzle9-sortableTrash" class="sortable-code"></div> 
-<div id="parsons1Puzzle9-sortable" class="sortable-code"></div> 
-<div style="clear:both;"></div> 
-<p> 
-    <input id="parsons1Puzzle9-feedbackLink" value="Get Feedback" type="button" /> 
-    <input id="parsons1Puzzle9-newInstanceLink" value="Reset Problem" type="button" /> 
-</p> 
-<script type="text/javascript"> 
-(function(){
-  var initial = "age = int(age_input)\n" +
-    "print(&quot;After casting, your age is:&quot;, age, &quot;which is a&quot;, type(age))\n" +
-    "age_float = float(age_input)\n" +
-    "print(&quot;As a float, your age is:&quot;, age_float, &quot;which is a&quot;, type(age_float))\n" +
-    "age_str = str(age)\n" +
-    "print(&quot;Back to string:&quot;, age_str, &quot;which is a&quot;, type(age_str))";
-  var parsonsPuzzle = new ParsonsWidget({
-    "sortableId": "parsons1Puzzle9-sortable",
-    "max_wrong_lines": 10,
-    "grader": ParsonsWidget._graders.LineBasedGrader,
-    "exec_limit": 2500,
-    "can_indent": true,
-    "x_indent": 50,
-    "lang": "en",
-    "show_feedback": true
-  });
-  parsonsPuzzle.init(initial);
-  parsonsPuzzle.shuffleLines();
-  $("#parsons1Puzzle9-newInstanceLink").click(function(event){ 
-      event.preventDefault(); 
-      parsonsPuzzle.shuffleLines(); 
-  }); 
-  $("#parsons1Puzzle9-feedbackLink").click(function(event){ 
-      event.preventDefault(); 
-      parsonsPuzzle.getFeedback(); 
-  }); 
-})(); 
-</script>
-
-## Puzzle 9 Casting your age
-## Place the coding in the correct order!
-
-<div id="parsons1Puzzle91-sortableTrash" class="sortable-code"></div> 
-<div id="parsons1Puzzle91-sortable" class="sortable-code"></div> 
-<div style="clear:both;"></div> 
-<p> 
-    <input id="parsons1Puzzle91-feedbackLink" value="Get Feedback" type="button" /> 
-    <input id="parsons1Puzzle91-newInstanceLink" value="Reset Problem" type="button" /> 
-</p> 
-<script type="text/javascript"> 
-(function(){
-  var initial = "age = int(age_input)\n" +
-    "print(&quot;After casting, your age is:&quot;, age, &quot;which is a&quot;, type(age))\n" +
-    "age_float = float(age_input)\n" +
-    "print(&quot;As a float, your age is:&quot;, age_float, &quot;which is a&quot;, type(age_float))\n" +
-    "age_str = str(age)\n" +
-    "print(&quot;Back to string:&quot;, age_str, &quot;which is a&quot;, type(age_str))";
-  var parsonsPuzzle = new ParsonsWidget({
-    "sortableId": "parsons1Puzzle9-sortable",
-    "max_wrong_lines": 10,
-    "grader": ParsonsWidget._graders.LineBasedGrader,
-    "exec_limit": 2500,
-    "can_indent": true,
-    "x_indent": 50,
-    "lang": "en",
-    "show_feedback": true
-  });
-  parsonsPuzzle.init(initial);
-  parsonsPuzzle.shuffleLines();
-  $("#parsons1Puzzle9-newInstanceLink").click(function(event){ 
-      event.preventDefault(); 
-      parsonsPuzzle.shuffleLines(); 
-  }); 
-  $("#parsons1Puzzle9-feedbackLink").click(function(event){ 
-      event.preventDefault(); 
-      parsonsPuzzle.getFeedback(); 
-  }); 
-})(); 
-</script>
-
-## Puzzle 200
-## Drag the code in the correct order - don't forget the indents!
-
-<div id="puzzlepart2no2-sortableTrash" class="sortable-code"></div> 
-<div id="puzzlepart2no2-sortable" class="sortable-code"></div> 
-<div style="clear:both;"></div> 
-<p> 
-    <input id="puzzlepart2no2-feedbackLink" value="Get Feedback" type="button" /> 
-    <input id="puzzlepart2no2-newInstanceLink" value="Reset Problem" type="button" /> 
-</p> 
-<script type="text/javascript"> 
-(function(){
-  var initial = "loan=int(input(&quot;Enter Amount of Loan&gt; &quot;))\n" +
-    "days=int(input(&quot;Enter Number of days &quot;))\n" +
-    "print(&quot;Day   Amount&quot;)\n" +
-    "for x in range(1,days+1):\n" +
-    "    loan=loan*1.01\n" +
-    "    print(x,&quot;\t&quot;,loan)\n" +
-    "    ";
-  var parsonsPuzzle = new ParsonsWidget({
-    "sortableId": "puzzlepart2no2-sortable",
-    "max_wrong_lines": 10,
-    "grader": ParsonsWidget._graders.LineBasedGrader,
-    "exec_limit": 2500,
-    "can_indent": true,
-    "x_indent": 50,
-    "lang": "en",
-    "show_feedback": true,
-    "trashId": "puzzlepart2no2-sortableTrash"
-  });
-  parsonsPuzzle.init(initial);
-  parsonsPuzzle.shuffleLines();
-  $("#puzzlepart2no2-newInstanceLink").click(function(event){ 
-      event.preventDefault(); 
-      parsonsPuzzle.shuffleLines(); 
-  }); 
-  $("#puzzlepart2no2-feedbackLink").click(function(event){ 
-      event.preventDefault(); 
-      parsonsPuzzle.getFeedback(); 
-  }); 
-})(); 
-</script>
-
-## Puzzle 2
-## Place the correct coding in the correct order!
-
-
-<div id="3-sortableTrash" class="sortable-code"></div> 
-<div id="3-sortable" class="sortable-code"></div> 
-<div style="clear:both;"></div> 
-<p> 
-    <input id="3-feedbackLink" value="Get Feedback" type="button" /> 
-    <input id="3-newInstanceLink" value="Reset Problem" type="button" /> 
-</p> 
-<script type="text/javascript"> 
-(function(){
-  var initial = "name = input(&quot;What is your name? &quot;)
-\n" +
-    "print(&quot;Nice to meet you,&quot;, name)";
-  var parsonsPuzzle = new ParsonsWidget({
-    "sortableId": "3-sortable",
-    "max_wrong_lines": 10,
-    "grader": ParsonsWidget._graders.LineBasedGrader,
-    "exec_limit": 2500,
-    "can_indent": true,
-    "x_indent": 50,
-    "lang": "en",
-    "show_feedback": true,
-    "trashId": "3-sortableTrash"
-  });
-  parsonsPuzzle.init(initial);
-  parsonsPuzzle.shuffleLines();
-  $("#3-newInstanceLink").click(function(event){ 
-      event.preventDefault(); 
-      parsonsPuzzle.shuffleLines(); 
-  }); 
-  $("#3-feedbackLink").click(function(event){ 
-      event.preventDefault(); 
-      parsonsPuzzle.getFeedback(); 
-  }); 
-})(); 
-</script>
 
 ## Puzzle 2
 ## Place the correct coding in the correct order!
@@ -329,7 +124,48 @@ title: Michelle
 ## Puzzle 4 Add two numbers
 ## Place in the correct order and use only the correct pieces of coding
 
-
+<div id="4-sortableTrash" class="sortable-code"></div> 
+<div id="4-sortable" class="sortable-code"></div> 
+<div style="clear:both;"></div> 
+<p> 
+    <input id="4-feedbackLink" value="Get Feedback" type="button" /> 
+    <input id="4-newInstanceLink" value="Reset Problem" type="button" /> 
+</p> 
+<script type="text/javascript"> 
+(function(){
+  var initial = "num1 = float(input(&quot;Enter a number: &quot;))
+\n" +
+    "num2 = float(input(&quot;Enter another number: &quot;))
+\n" +
+    "
+\n" +
+    "total = num1 + num2
+\n" +
+    "
+\n" +
+    "print(&quot;The total is:&quot;, total)";
+  var parsonsPuzzle = new ParsonsWidget({
+    "sortableId": "4-sortable",
+    "max_wrong_lines": 10,
+    "grader": ParsonsWidget._graders.LineBasedGrader,
+    "exec_limit": 2500,
+    "can_indent": true,
+    "x_indent": 50,
+    "lang": "en",
+    "show_feedback": true
+  });
+  parsonsPuzzle.init(initial);
+  parsonsPuzzle.shuffleLines();
+  $("#4-newInstanceLink").click(function(event){ 
+      event.preventDefault(); 
+      parsonsPuzzle.shuffleLines(); 
+  }); 
+  $("#4-feedbackLink").click(function(event){ 
+      event.preventDefault(); 
+      parsonsPuzzle.getFeedback(); 
+  }); 
+})(); 
+</script>
 
 ## Puzzle 5 Ask the user's age
 ## Place the correct coding in the correct order!
