@@ -55,20 +55,13 @@ title: Michelle
 </p> 
 <script type="text/javascript"> 
 (function(){
-  var initial = "num1 = float(input(&quot;Enter a number: &quot;))
-\n" +
-    "num2 = float(input(&quot;Enter another number: &quot;))
-\n" +
-    "
-\n" +
-    "total = num1 + num2
-\n" +
-    "
-\n" +
-    "print(&quot;The total is:&quot;, total)
-\n" +
-    "
-\n" +
+  var initial = "num1 = float(input(&quot;Enter a number: &quot;))\n" +
+    "num2 = float(input(&quot;Enter another number: &quot;))\n" +
+    "\n" +
+    "total = num1 + num2\n" +
+    "\n" +
+    "print(&quot;The total is:&quot;, total)\n" +
+    "\n" +
     "#distractor";
   var parsonsPuzzle = new ParsonsWidget({
     "sortableId": "2a-sortable",
