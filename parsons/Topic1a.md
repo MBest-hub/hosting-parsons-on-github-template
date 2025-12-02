@@ -15,17 +15,9 @@ title: Michelle
 </p> 
 <script type="text/javascript"> 
 (function(){
-  var initial = "name = input(&quot;What is your name? &quot;)
-\n" +
-    "print(&quot;Nice to meet you,&quot;, name)
-\n" +
-    "name = input(What is your name? )
-\n" +
-    "#distractor
-\n" +
-    "print&quot;Nice to meet you,&quot;, name
-\n" +
-    "#distractor";
+  var initial = "print (&quot;Hello world!&quot;)\n" +
+    "print &quot;Hello world!&quot; #distractor\n" +
+    "print (Hello world!) #distractor";
   var parsonsPuzzle = new ParsonsWidget({
     "sortableId": "1a-sortable",
     "max_wrong_lines": 10,
@@ -48,6 +40,7 @@ title: Michelle
       parsonsPuzzle.getFeedback(); 
   }); 
 })(); 
+
 </script>
 
 ## Puzzle 2
