@@ -99,16 +99,11 @@ title: Michelle
 </p> 
 <script type="text/javascript"> 
 (function(){
-  var initial = "age = input(&quot;How old are you? &quot;)
-\n" +
-    "print(&quot;You are&quot;, age, &quot;years old.&quot;)
-\n" +
-    "age = input(How old are you? &quot;)
-\n" +
-    "#distractor
-\n" +
-    "print(&quot;You are&quot;, age, &quot;years old.)
-\n" +
+  var initial = "age = input(&quot;How old are you? &quot;)\n" +
+    "print(&quot;You are&quot;, age, &quot;years old.&quot;)\n" +
+    "age = input(How old are you? &quot;)\n" +
+    "#distractor\n" +
+    "print(&quot;You are&quot;, age, &quot;years old.)\n" +
     "#distractor";
   var parsonsPuzzle = new ParsonsWidget({
     "sortableId": "3a-sortable",
