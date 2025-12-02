@@ -3,7 +3,7 @@ layout: default
 title: Michelle
 ---
 
-## Puzzle 100
+## Puzzle 1
 
 <div id="parsons1-sortableTrash" class="sortable-code"></div> 
 <div id="parsons1-sortable" class="sortable-code"></div> 
@@ -54,8 +54,7 @@ title: Michelle
 </p> 
 <script type="text/javascript"> 
 (function(){
-  var initial = "name = input(&quot;What is your name? &quot;)
-\n" +
+  var initial = "name = input(&quot;What is your name? &quot;)\n" +
     "print(&quot;Nice to meet you,&quot;, name)";
   var parsonsPuzzle = new ParsonsWidget({
     "sortableId": "3-sortable",
@@ -93,8 +92,7 @@ title: Michelle
 </p> 
 <script type="text/javascript"> 
 (function(){
-  var initial = "name = input(&quot;What is your name? &quot;)
-\n" +
+  var initial = "name = input(&quot;What is your name? &quot;)\n" +
     "print(&quot;Nice to meet you,&quot;, name)";
   var parsonsPuzzle = new ParsonsWidget({
     "sortableId": "3-sortable",
@@ -133,16 +131,9 @@ title: Michelle
 </p> 
 <script type="text/javascript"> 
 (function(){
-  var initial = "num1 = float(input(&quot;Enter a number: &quot;))
-\n" +
-    "num2 = float(input(&quot;Enter another number: &quot;))
-\n" +
-    "
-\n" +
-    "total = num1 + num2
-\n" +
-    "
-\n" +
+  var initial = "num1 = float(input(&quot;Enter a number: &quot;))\n" +
+    "num2 = float(input(&quot;Enter another number: &quot;))\n" +"\n" +
+    "total = num1 + num2\n" +"\n" +
     "print(&quot;The total is:&quot;, total)";
   var parsonsPuzzle = new ParsonsWidget({
     "sortableId": "4-sortable",
@@ -179,20 +170,13 @@ title: Michelle
 </p> 
 <script type="text/javascript"> 
 (function(){
-  var initial = "age = input(&quot;How old are you? &quot;)
-\n" +
-    "print(&quot;You are&quot;, age, &quot;years old.&quot;)
-\n" +
-    "age = input(How old are you? &quot;)
-\n" +
-    "#distractor
-\n" +
-    "print &quot;You are&quot;, age, &quot;years old.&quot;
-\n" +
-    "#distractor
-\n" +
-    "
-\n" +
+  var initial = "age = input(&quot;How old are you? &quot;)\n" +
+    "print(&quot;You are&quot;, age, &quot;years old.&quot;)\n" +
+    "age = input(How old are you? &quot;)\n" +
+    "#distractor\n" +
+    "print &quot;You are&quot;, age, &quot;years old.&quot;\n" +
+    "#distractor\n" +
+    "\n" +
     "#distractor";
   var parsonsPuzzle = new ParsonsWidget({
     "sortableId": "5-sortable",
@@ -230,26 +214,16 @@ title: Michelle
 </p> 
 <script type="text/javascript"> 
 (function(){
-  var initial = "print(&quot;Welcome to the mini shop!&quot;)
-\n" +
-    "
-\n" +
-    "item1 = float(input(&quot;Enter the price of item 1: &quot;))
-\n" +
-    "item2 = float(input(&quot;Enter the price of item 2: &quot;))
-\n" +
-    "item3 = float(input(&quot;Enter the price of item 3: &quot;))
-\n" +
-    "
-\n" +
-    "total = item1 + item2 + item3
-\n" +
-    "
-\n" +
-    "print(&quot;Your total is:&quot;, total)
-\n" +
-    "print(&quot;Thank you for shopping!&quot;)
-\n" +
+  var initial = "print(&quot;Welcome to the mini shop!&quot;)\n" +
+    "\n" +
+    "item1 = float(input(&quot;Enter the price of item 1: &quot;))\n" +
+    "item2 = float(input(&quot;Enter the price of item 2: &quot;))\n" +
+    "item3 = float(input(&quot;Enter the price of item 3: &quot;))\n" +
+    "\n" +
+    "total = item1 + item2 + item3\n" +
+    "\n" +
+    "print(&quot;Your total is:&quot;, total)\n" +
+    "print(&quot;Thank you for shopping!&quot;)\n" +
     "";
   var parsonsPuzzle = new ParsonsWidget({
     "sortableId": "6-sortable",
