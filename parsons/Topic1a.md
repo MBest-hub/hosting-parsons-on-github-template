@@ -4,7 +4,7 @@ title: Michelle
 ---
 
 ## Puzzle 1 
-##Ask the users name. Drag and drop the correct code to the correct order.
+## Ask the users name. Drag and drop the correct code to the correct order.
 
 <div id="1a-sortableTrash" class="sortable-code"></div> 
 <div id="1a-sortable" class="sortable-code"></div> 
@@ -44,7 +44,7 @@ title: Michelle
 </script>
 
 ## Puzzle 2
-##Add 2 numbers. Drag and drop the correct code to the correct order.
+## Add 2 numbers. Drag and drop the correct code to the correct order.
 
 <div id="2a-sortableTrash" class="sortable-code"></div> 
 <div id="2a-sortable" class="sortable-code"></div> 
@@ -130,7 +130,7 @@ title: Michelle
 </script>
 
 ## Puzzle 4
-##Drag and drop - Simple Shopping List
+## Drag and drop - Simple Shopping List
 
 <div id="4a-sortableTrash" class="sortable-code"></div> 
 <div id="4a-sortable" class="sortable-code"></div> 
