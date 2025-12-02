@@ -214,14 +214,11 @@ title: Michelle
 </p> 
 <script type="text/javascript"> 
 (function(){
-  var initial = "print(&quot;Welcome to the mini shop!&quot;)\n" +
-    "\n" +
+  var initial = "print(&quot;Welcome to the mini shop!&quot;)\n" +"\n" +
     "item1 = float(input(&quot;Enter the price of item 1: &quot;))\n" +
     "item2 = float(input(&quot;Enter the price of item 2: &quot;))\n" +
-    "item3 = float(input(&quot;Enter the price of item 3: &quot;))\n" +
-    "\n" +
-    "total = item1 + item2 + item3\n" +
-    "\n" +
+    "item3 = float(input(&quot;Enter the price of item 3: &quot;))\n" +"\n" +
+    "total = item1 + item2 + item3\n" +"\n" +
     "print(&quot;Your total is:&quot;, total)\n" +
     "print(&quot;Thank you for shopping!&quot;)\n" +
     "";
@@ -261,22 +258,12 @@ title: Michelle
 </p> 
 <script type="text/javascript"> 
 (function(){
-  var initial = "print(&quot;Temperature Converter&quot;)
-\n" +
-    "
-\n" +
-    "celsius = float(input(&quot;Enter temperature in Celsius: &quot;))
-\n" +
-    "
-\n" +
-    "fahrenheit = (celsius * 9/5) + 32
-\n" +
-    "
-\n" +
-    "print(&quot;In Fahrenheit, that is:&quot;, fahrenheit)
-\n" +
-    "
-\n" +
+  var initial = "print(&quot;Temperature Converter&quot;)\n" +"\n" +
+    "celsius = float(input(&quot;Enter temperature in Celsius: &quot;))\n" +\n" +
+    "fahrenheit = (celsius * 9/5) + 32\n" +
+    "\n" +
+    "print(&quot;In Fahrenheit, that is:&quot;, fahrenheit)\n" +
+    "\n" +
     "";
   var parsonsPuzzle = new ParsonsWidget({
     "sortableId": "7-sortable",
@@ -314,46 +301,26 @@ title: Michelle
 </p> 
 <script type="text/javascript"> 
 (function(){
-  var initial = "print(&quot;Welcome to the mini quiz!&quot;)
-\n" +
-    "
-\n" +
-    "score = 0
-\n" +
-    "
-\n" +
-    "answer1 = input(&quot;Q1: What colour is the sky? &quot;)
-\n" +
-    "if answer1.lower() == &quot;blue&quot;:
-\n" +
-    "    print(&quot;Correct!&quot;)
-\n" +
-    "    score = score + 1
-\n" +
-    "else:
-\n" +
-    "    print(&quot;Incorrect.&quot;)
-\n" +
-    "
-\n" +
-    "answer2 = input(&quot;Q2: How many days are in a week? &quot;)
-\n" +
-    "if answer2 == &quot;7&quot;:
-\n" +
-    "    print(&quot;Correct!&quot;)
-\n" +
-    "    score = score + 1
-\n" +
-    "else:
-\n" +
-    "    print(&quot;Incorrect.&quot;)
-\n" +
-    "
-\n" +
-    "print(&quot;You scored&quot;, score, &quot;out of 2!&quot;)
-\n" +
-    "
-\n" +
+  var initial = "print(&quot;Welcome to the mini quiz!&quot;)\n" +
+    "\n" +
+    "score = 0\n" +
+    "\n" +
+    "answer1 = input(&quot;Q1: What colour is the sky? &quot;)\n" +
+    "if answer1.lower() == &quot;blue&quot;:\n" +
+    "    print(&quot;Correct!&quot;)\n" +
+    "    score = score + 1\n" +
+    "else:\n" +
+    "    print(&quot;Incorrect.&quot;)\n" +
+    "\n" +
+    "answer2 = input(&quot;Q2: How many days are in a week? &quot;)\n" +
+    "if answer2 == &quot;7&quot;:\n" +
+    "    print(&quot;Correct!&quot;)\n" +
+    "    score = score + 1\n" +
+    "else:\n" +
+    "    print(&quot;Incorrect.&quot;)\n" +
+    "\n" +
+    "print(&quot;You scored&quot;, score, &quot;out of 2!&quot;)\n" +
+    "\n" +
     "";
   var parsonsPuzzle = new ParsonsWidget({
     "sortableId": "8-sortable",
@@ -432,26 +399,16 @@ title: Michelle
 </p> 
 <script type="text/javascript"> 
 (function(){
-  var initial = "print(&quot;Story Generator&quot;)
-\n" +
-    "
-\n" +
-    "name = input(&quot;Enter your name: &quot;)
-\n" +
-    "age = input(&quot;Enter your age: &quot;)
-\n" +
-    "hobby = input(&quot;Enter a hobby: &quot;)
-\n" +
-    "
-\n" +
-    "print()
-\n" +
-    "print(&quot;Here is your story:&quot;)
-\n" +
-    "print(name, &quot;is&quot;, age, &quot;years old and loves&quot;, hobby + &quot;.&quot;)
-\n" +
-    "print(&quot;Every day,&quot;, name, &quot;practices&quot;, hobby, &quot;and gets better and better!&quot;)
-\n" +
+  var initial = "print(&quot;Story Generator&quot;)\n" +
+    "\n" +
+    "name = input(&quot;Enter your name: &quot;)\n" +
+    "age = input(&quot;Enter your age: &quot;)\n" +
+    "hobby = input(&quot;Enter a hobby: &quot;)\n" +
+    "\n" +
+    "print()\n" +
+    "print(&quot;Here is your story:&quot;)\n" +
+    "print(name, &quot;is&quot;, age, &quot;years old and loves&quot;, hobby + &quot;.&quot;)\n" +
+    "print(&quot;Every day,&quot;, name, &quot;practices&quot;, hobby, &quot;and gets better and better!&quot;)\n" +
     "";
   var parsonsPuzzle = new ParsonsWidget({
     "sortableId": "10-sortable",
@@ -489,48 +446,27 @@ title: Michelle
 </p> 
 <script type="text/javascript"> 
 (function(){
-  var initial = "print(&quot;Simple Calculator&quot;)
-\n" +
-    "print(&quot;1 = Add&quot;)
-\n" +
-    "print(&quot;2 = Subtract&quot;)
-\n" +
-    "print(&quot;3 = Multiply&quot;)
-\n" +
-    "print(&quot;4 = Divide&quot;)
-\n" +
-    "
-\n" +
-    "choice = input(&quot;Choose an option (1-4): &quot;)
-\n" +
-    "
-\n" +
-    "num1 = float(input(&quot;Enter first number: &quot;))
-\n" +
-    "num2 = float(input(&quot;Enter second number: &quot;))
-\n" +
-    "
-\n" +
-    "if choice == &quot;1&quot;:
-\n" +
-    "    print(&quot;Answer:&quot;, num1 + num2)
-\n" +
-    "elif choice == &quot;2&quot;:
-\n" +
-    "    print(&quot;Answer:&quot;, num1 - num2)
-\n" +
-    "elif choice == &quot;3&quot;:
-\n" +
-    "    print(&quot;Answer:&quot;, num1 * num2)
-\n" +
-    "elif choice == &quot;4&quot;:
-\n" +
-    "    print(&quot;Answer:&quot;, num1 / num2)
-\n" +
-    "else:
-\n" +
-    "    print(&quot;Invalid choice!&quot;)
-\n" +
+  var initial = "print(&quot;Simple Calculator&quot;)\n" +
+    "print(&quot;1 = Add&quot;)\n" +
+    "print(&quot;2 = Subtract&quot;)\n" +
+    "print(&quot;3 = Multiply&quot;)\n" +
+    "print(&quot;4 = Divide&quot;)\n" +
+    "\n" +
+    "choice = input(&quot;Choose an option (1-4): &quot;)\n" +
+    "\n" +
+    "num1 = float(input(&quot;Enter first number: &quot;))\n" +
+    "num2 = float(input(&quot;Enter second number: &quot;))\n" +
+    "\n" +
+    "if choice == &quot;1&quot;:\n" +
+    "    print(&quot;Answer:&quot;, num1 + num2)\n" +
+    "elif choice == &quot;2&quot;:\n" +
+    "    print(&quot;Answer:&quot;, num1 - num2)\n" +
+    "elif choice == &quot;3&quot;:\n" +
+    "    print(&quot;Answer:&quot;, num1 * num2)\n" +
+    "elif choice == &quot;4&quot;:\n" +
+    "    print(&quot;Answer:&quot;, num1 / num2)\n" +
+    "else:\n" +
+    "    print(&quot;Invalid choice!&quot;)\n" +
     "";
   var parsonsPuzzle = new ParsonsWidget({
     "sortableId": "11-sortable",
@@ -568,20 +504,13 @@ title: Michelle
 </p> 
 <script type="text/javascript"> 
 (function(){
-  var initial = "price1 = float(input(&quot;Price 1: &quot;))
-\n" +
-    "price2 = float(input(&quot;Price 2: &quot;))
-\n" +
-    "price3 = float(input(&quot;Price 3: &quot;))
-\n" +
-    "
-\n" +
-    "total = price1 + price2 + price3
-\n" +
-    "print(&quot;Total cost =&quot;, total)
-\n" +
-    "
-\n" +
+  var initial = "price1 = float(input(&quot;Price 1: &quot;))\n" +
+    "price2 = float(input(&quot;Price 2: &quot;))\n" +
+    "price3 = float(input(&quot;Price 3: &quot;))\n" +
+    "\n" +
+    "total = price1 + price2 + price3\n" +
+    "print(&quot;Total cost =&quot;, total)\n" +
+    "\n" +
     "";
   var parsonsPuzzle = new ParsonsWidget({
     "sortableId": "12-sortable",
@@ -619,20 +548,13 @@ title: Michelle
 </p> 
 <script type="text/javascript"> 
 (function(){
-  var initial = "name = input(&quot;Enter your name: &quot;)
-\n" +
-    "age = input(&quot;Enter your age: &quot;)
-\n" +
-    "
-\n" +
-    "print(&quot;Hello&quot;, name)
-\n" +
-    "print(&quot;You are&quot;, age, &quot;years old&quot;)
-\n" +
-    "print(&quot;Nice to meet you!&quot;)
-\n" +
-    "
-\n" +
+  var initial = "name = input(&quot;Enter your name: &quot;)\n" +
+    "age = input(&quot;Enter your age: &quot;)\n" +
+    "\n" +
+    "print(&quot;Hello&quot;, name)\n" +
+    "print(&quot;You are&quot;, age, &quot;years old&quot;)\n" +
+    "print(&quot;Nice to meet you!&quot;)\n" +
+    "\n" +
     "";
   var parsonsPuzzle = new ParsonsWidget({
     "sortableId": "13-sortable",
@@ -670,22 +592,14 @@ title: Michelle
 </p> 
 <script type="text/javascript"> 
 (function(){
-  var initial = "mins = int(input(&quot;Enter minutes: &quot;))
-\n" +
-    "
-\n" +
-    "hours = mins // 60
-\n" +
-    "leftover = mins % 60
-\n" +
-    "
-\n" +
-    "print(&quot;Hours:&quot;, hours)
-\n" +
-    "print(&quot;Minutes:&quot;, leftover)
-\n" +
-    "
-\n" +
+  var initial = "mins = int(input(&quot;Enter minutes: &quot;))\n" +
+    "\n" +
+    "hours = mins // 60\n" +
+    "leftover = mins % 60\n" +
+    "\n" +
+    "print(&quot;Hours:&quot;, hours)\n" +
+    "print(&quot;Minutes:&quot;, leftover)\n" +
+    "\n" +
     "";
   var parsonsPuzzle = new ParsonsWidget({
     "sortableId": "14-sortable",
@@ -723,20 +637,13 @@ title: Michelle
 </p> 
 <script type="text/javascript"> 
 (function(){
-  var initial = "temp = int(input(&quot;Enter temperature: &quot;))
-\n" +
-    "
-\n" +
-    "if temp &gt; 20:
-\n" +
-    "    print(&quot;Warm&quot;)
-\n" +
-    "else:
-\n" +
-    "    print(&quot;Cold&quot;)
-\n" +
-    "
-\n" +
+  var initial = "temp = int(input(&quot;Enter temperature: &quot;))\n" +
+    "\n" +
+    "if temp &gt; 20:\n" +
+    "    print(&quot;Warm&quot;)\n" +
+    "else:\n" +
+    "    print(&quot;Cold&quot;)\n" +
+    "\n" +
     "";
   var parsonsPuzzle = new ParsonsWidget({
     "sortableId": "15-sortable",
@@ -774,22 +681,14 @@ title: Michelle
 </p> 
 <script type="text/javascript"> 
 (function(){
-  var initial = "item = input(&quot;Item name: &quot;)
-\n" +
-    "amount = int(input(&quot;How many? &quot;))
-\n" +
-    "price = float(input(&quot;Price each: &quot;))
-\n" +
-    "
-\n" +
-    "total = amount * price
-\n" +
-    "print(&quot;You spent £&quot;, total)
-\n" +
-    "
-\n" +
-    "  
-\n" +
+  var initial = "item = input(&quot;Item name: &quot;)\n" +
+    "amount = int(input(&quot;How many? &quot;))\n" +
+    "price = float(input(&quot;Price each: &quot;))\n" +
+    "\n" +
+    "total = amount * price\n" +
+    "print(&quot;You spent £&quot;, total)\n" +
+    "\n" +
+    "  \n" +
     "";
   var parsonsPuzzle = new ParsonsWidget({
     "sortableId": "16-sortable",
