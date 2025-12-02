@@ -259,7 +259,8 @@ title: Michelle
 <script type="text/javascript"> 
 (function(){
   var initial = "print(&quot;Temperature Converter&quot;)\n" +"\n" +
-    "celsius = float(input(&quot;Enter temperature in Celsius: &quot;))\n" +\n" +
+    "celsius = float(input(&quot;Enter temperature in Celsius: &quot;))\n" +
+      \n" +
     "fahrenheit = (celsius * 9/5) + 32\n" +
     "\n" +
     "print(&quot;In Fahrenheit, that is:&quot;, fahrenheit)\n" +
