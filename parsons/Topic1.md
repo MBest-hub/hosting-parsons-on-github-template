@@ -715,4 +715,170 @@ title: Michelle
 })(); 
 </script>
 
+## Puzzle 17 Greeting Function
+## Place the coding in order!
+
+<div id="17-sortableTrash" class="sortable-code"></div> 
+<div id="17-sortable" class="sortable-code"></div> 
+<div style="clear:both;"></div> 
+<p> 
+    <input id="17-feedbackLink" value="Get Feedback" type="button" /> 
+    <input id="17-newInstanceLink" value="Reset Problem" type="button" /> 
+</p> 
+<script type="text/javascript"> 
+(function(){
+  var initial = "def greeting():\n" +
+    "\n" +
+    "    name=input(&quot;What is your name? &quot;)\n" +
+    "\n" +
+    "    print (&quot;Hello&quot;,name,&quot;How are you today?&quot;)\n" +
+    "\n" +
+    "\n" +
+    "greeting()";
+  var parsonsPuzzle = new ParsonsWidget({
+    "sortableId": "17-sortable",
+    "max_wrong_lines": 10,
+    "grader": ParsonsWidget._graders.LineBasedGrader,
+    "exec_limit": 2500,
+    "can_indent": true,
+    "x_indent": 50,
+    "lang": "en",
+    "show_feedback": true
+  });
+  parsonsPuzzle.init(initial);
+  parsonsPuzzle.shuffleLines();
+  $("#17-newInstanceLink").click(function(event){ 
+      event.preventDefault(); 
+      parsonsPuzzle.shuffleLines(); 
+  }); 
+  $("#17-feedbackLink").click(function(event){ 
+      event.preventDefault(); 
+      parsonsPuzzle.getFeedback(); 
+  }); 
+})(); 
+</script>
+
+## Puzzle 18 add 2 numbers function
+## Place the coding in order
+
+<div id="18-sortableTrash" class="sortable-code"></div> 
+<div id="18-sortable" class="sortable-code"></div> 
+<div style="clear:both;"></div> 
+<p> 
+    <input id="18-feedbackLink" value="Get Feedback" type="button" /> 
+    <input id="18-newInstanceLink" value="Reset Problem" type="button" /> 
+</p> 
+<script type="text/javascript"> 
+(function(){
+  var initial = "def add_numbers():\n" +
+    "    a = int(input(&quot;Enter first number: &quot;))\n" +
+    "    b = int(input(&quot;Enter second number: &quot;))\n" +
+    "    print(&quot;The sum is:&quot;, a + b)  \n" +
+    "\n" +
+    "add_numbers()\n" +
+    "";
+  var parsonsPuzzle = new ParsonsWidget({
+    "sortableId": "18-sortable",
+    "max_wrong_lines": 10,
+    "grader": ParsonsWidget._graders.LineBasedGrader,
+    "exec_limit": 2500,
+    "can_indent": true,
+    "x_indent": 50,
+    "lang": "en",
+    "show_feedback": true
+  });
+  parsonsPuzzle.init(initial);
+  parsonsPuzzle.shuffleLines();
+  $("#18-newInstanceLink").click(function(event){ 
+      event.preventDefault(); 
+      parsonsPuzzle.shuffleLines(); 
+  }); 
+  $("#18-feedbackLink").click(function(event){ 
+      event.preventDefault(); 
+      parsonsPuzzle.getFeedback(); 
+  }); 
+})(); 
+</script>
+
+## Puzzle 19 Create a full name function
+## Place the coding in order
+
+<div id="19-sortableTrash" class="sortable-code"></div> 
+<div id="19-sortable" class="sortable-code"></div> 
+<div style="clear:both;"></div> 
+<p> 
+    <input id="19-feedbackLink" value="Get Feedback" type="button" /> 
+    <input id="19-newInstanceLink" value="Reset Problem" type="button" /> 
+</p> 
+<script type="text/javascript"> 
+(function(){
+  var initial = "def full_name():\n" +
+    "    first = input(&quot;Enter first name: &quot;)\n" +
+    "    last = input(&quot;Enter last name: &quot;)\n" +
+    "    print (&quot;Your full name is&quot;, first + &quot; &quot; + last)\n" +
+    "\n" +
+    "full_name()";
+  var parsonsPuzzle = new ParsonsWidget({
+    "sortableId": "19-sortable",
+    "max_wrong_lines": 10,
+    "grader": ParsonsWidget._graders.LineBasedGrader,
+    "exec_limit": 2500,
+    "can_indent": true,
+    "x_indent": 50,
+    "lang": "en",
+    "show_feedback": true
+  });
+  parsonsPuzzle.init(initial);
+  parsonsPuzzle.shuffleLines();
+  $("#19-newInstanceLink").click(function(event){ 
+      event.preventDefault(); 
+      parsonsPuzzle.shuffleLines(); 
+  }); 
+  $("#19-feedbackLink").click(function(event){ 
+      event.preventDefault(); 
+      parsonsPuzzle.getFeedback(); 
+  }); 
+})(); 
+</script>
+
+## Puzzle 20 Function to concatenate two words
+## Place the coding in order
+
+<div id="20-sortableTrash" class="sortable-code"></div> 
+<div id="20-sortable" class="sortable-code"></div> 
+<div style="clear:both;"></div> 
+<p> 
+    <input id="20-feedbackLink" value="Get Feedback" type="button" /> 
+    <input id="20-newInstanceLink" value="Reset Problem" type="button" /> 
+</p> 
+<script type="text/javascript"> 
+(function(){
+  var initial = "def join_words():\n" +
+    "    word1 = input(&quot;Enter the first word: &quot;)\n" +
+    "    word2 = input(&quot;Enter the second word: &quot;)\n" +
+    "    print(&quot;Combined:&quot;, word1 + &quot; &quot; + word2)\n" +
+    "\n" +
+    "join_words()";
+  var parsonsPuzzle = new ParsonsWidget({
+    "sortableId": "20-sortable",
+    "max_wrong_lines": 10,
+    "grader": ParsonsWidget._graders.LineBasedGrader,
+    "exec_limit": 2500,
+    "can_indent": true,
+    "x_indent": 50,
+    "lang": "en",
+    "show_feedback": true
+  });
+  parsonsPuzzle.init(initial);
+  parsonsPuzzle.shuffleLines();
+  $("#20-newInstanceLink").click(function(event){ 
+      event.preventDefault(); 
+      parsonsPuzzle.shuffleLines(); 
+  }); 
+  $("#20-feedbackLink").click(function(event){ 
+      event.preventDefault(); 
+      parsonsPuzzle.getFeedback(); 
+  }); 
+})(); 
+</script>
 
