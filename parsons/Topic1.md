@@ -258,14 +258,13 @@ title: Michelle
 </p> 
 <script type="text/javascript"> 
 (function(){
-  var initial = "print(&quot;Temperature Converter&quot;)\n" +"\n" +
+  var initial = "print(&quot;Temperature Converter&quot;)\n" +
+    "\n" +
     "celsius = float(input(&quot;Enter temperature in Celsius: &quot;))\n" +
-      \n" +
+    "\n" +
     "fahrenheit = (celsius * 9/5) + 32\n" +
     "\n" +
-    "print(&quot;In Fahrenheit, that is:&quot;, fahrenheit)\n" +
-    "\n" +
-    "";
+    "print(&quot;In Fahrenheit, that is:&quot;, fahrenheit)";
   var parsonsPuzzle = new ParsonsWidget({
     "sortableId": "7-sortable",
     "max_wrong_lines": 10,
@@ -274,8 +273,7 @@ title: Michelle
     "can_indent": true,
     "x_indent": 50,
     "lang": "en",
-    "show_feedback": true,
-    "trashId": "7-sortableTrash"
+    "show_feedback": true
   });
   parsonsPuzzle.init(initial);
   parsonsPuzzle.shuffleLines();
