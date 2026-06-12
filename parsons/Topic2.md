@@ -1024,16 +1024,11 @@ title: Michelle
 </p> 
 <script type="text/javascript"> 
 (function(){
-  var initial = "import random
-\n" +
-    "num1 = random.randint(1,12)
-\n" +
-    "num2 = random.randint(1,12)
-\n" +
-    "nswer = int(input(f&quot;{num1} x {num2}: &quot;))
-\n" +
-    "if answer == num1 * num2:
-\n" +
+  var initial = "import random\n" +
+    "num1 = random.randint(1,12)\n" +
+    "num2 = random.randint(1,12)\n" +
+    "nswer = int(input(f&quot;{num1} x {num2}: &quot;))\n" +
+    "if answer == num1 * num2:\n" +
     "    print(&quot;Correct&quot;)";
   var parsonsPuzzle = new ParsonsWidget({
     "sortableId": "puzzle24-sortable",
