@@ -1012,7 +1012,6 @@ title: Michelle
 
 ## Puzzle 24
 ## Random Multiplication Quiz
-
 ## Drag the code in the correct order - don't forget the indents
 
 <div id="puzzle24-sortableTrash" class="sortable-code"></div> 
