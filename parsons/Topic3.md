@@ -669,3 +669,136 @@ title: Michelle
   }); 
 })(); 
 </script>
+
+
+## 16. Menu System (6 marks)
+## This program will create a menu until Exit.
+
+<div id="puzzle3no16-sortableTrash" class="sortable-code"></div> 
+<div id="puzzle3no16-sortable" class="sortable-code"></div> 
+<div style="clear:both;"></div> 
+<p> 
+    <input id="puzzle3no16-feedbackLink" value="Get Feedback" type="button" /> 
+    <input id="puzzle3no16-newInstanceLink" value="Reset Problem" type="button" /> 
+</p> 
+<script type="text/javascript"> 
+(function(){
+  var initial = "choice = &quot;&quot;\n" +
+    "while choice != &quot;3&quot;:\n" +
+    "    print(&quot;1 Add&quot;)\n" +
+    "    print(&quot;2 Remove&quot;)\n" +
+    "    print(&quot;3 Exit&quot;)\n" +
+    "    choice = input()\n" +
+    "print(&quot;Finished&quot;)";
+  var parsonsPuzzle = new ParsonsWidget({
+    "sortableId": "puzzle3no16-sortable",
+    "max_wrong_lines": 10,
+    "grader": ParsonsWidget._graders.LineBasedGrader,
+    "exec_limit": 2500,
+    "can_indent": true,
+    "x_indent": 50,
+    "lang": "en",
+    "show_feedback": true,
+    "python3": true
+  });
+  parsonsPuzzle.init(initial);
+  parsonsPuzzle.shuffleLines();
+  $("#puzzle3no16-newInstanceLink").click(function(event){ 
+      event.preventDefault(); 
+      parsonsPuzzle.shuffleLines(); 
+  }); 
+  $("#puzzle3no16-feedbackLink").click(function(event){ 
+      event.preventDefault(); 
+      parsonsPuzzle.getFeedback(); 
+  }); 
+})(); 
+</script>
+
+
+## 17. Caesar Cipher (6 marks)
+## This program will shift letters by +1.
+
+<div id="puzzle3no17-sortableTrash" class="sortable-code"></div> 
+<div id="puzzle3no17-sortable" class="sortable-code"></div> 
+<div style="clear:both;"></div> 
+<p> 
+    <input id="puzzle3no17-feedbackLink" value="Get Feedback" type="button" /> 
+    <input id="puzzle3no17-newInstanceLink" value="Reset Problem" type="button" /> 
+</p> 
+<script type="text/javascript"> 
+(function(){
+  var initial = "message = input()\n" +
+    "encrypted = &quot;&quot;\n" +
+    "for letter in message:\n" +
+    "    encrypted += chr(\n" +
+    "        ord(letter) + 1)\n" +
+    "print(encrypted)";
+  var parsonsPuzzle = new ParsonsWidget({
+    "sortableId": "puzzle3no17-sortable",
+    "max_wrong_lines": 10,
+    "grader": ParsonsWidget._graders.LineBasedGrader,
+    "exec_limit": 2500,
+    "can_indent": true,
+    "x_indent": 50,
+    "lang": "en",
+    "show_feedback": true,
+    "python3": true
+  });
+  parsonsPuzzle.init(initial);
+  parsonsPuzzle.shuffleLines();
+  $("#puzzle3no17-newInstanceLink").click(function(event){ 
+      event.preventDefault(); 
+      parsonsPuzzle.shuffleLines(); 
+  }); 
+  $("#puzzle3no17-feedbackLink").click(function(event){ 
+      event.preventDefault(); 
+      parsonsPuzzle.getFeedback(); 
+  }); 
+})(); 
+</script>
+
+
+## 18. Number Frequency Counter (6 marks)
+## This program counts even numbers.
+
+<div id="puzzle3no18-sortableTrash" class="sortable-code"></div> 
+<div id="puzzle3no18-sortable" class="sortable-code"></div> 
+<div style="clear:both;"></div> 
+<p> 
+    <input id="puzzle3no18-feedbackLink" value="Get Feedback" type="button" /> 
+    <input id="puzzle3no18-newInstanceLink" value="Reset Problem" type="button" /> 
+</p> 
+<script type="text/javascript"> 
+(function(){
+  var initial = "count = 0\n" +
+    "for i in range(10):\n" +
+    "    number = int(input())\n" +
+    "    if number % 2 == 0:\n" +
+    "        count += 1\n" +
+    "print(count)";
+  var parsonsPuzzle = new ParsonsWidget({
+    "sortableId": "puzzle3no18-sortable",
+    "max_wrong_lines": 10,
+    "grader": ParsonsWidget._graders.LineBasedGrader,
+    "exec_limit": 2500,
+    "can_indent": true,
+    "x_indent": 50,
+    "lang": "en",
+    "show_feedback": true,
+    "python3": true
+  });
+  parsonsPuzzle.init(initial);
+  parsonsPuzzle.shuffleLines();
+  $("#puzzle3no18-newInstanceLink").click(function(event){ 
+      event.preventDefault(); 
+      parsonsPuzzle.shuffleLines(); 
+  }); 
+  $("#puzzle3no18-feedbackLink").click(function(event){ 
+      event.preventDefault(); 
+      parsonsPuzzle.getFeedback(); 
+  }); 
+})(); 
+</script>
+
+
+
