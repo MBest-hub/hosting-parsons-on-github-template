@@ -1385,6 +1385,11 @@ title: Michelle
 <div style="clear:both;"></div> 
 <p> 
     <input id="puzzle33-feedbackLink" value="Get Feedback" type="button" /> 
+    <input id="puzzle33-newInstanceLink" value="<div id="puzzle33-sortableTrash" class="sortable-code"></div> 
+<div id="puzzle33-sortable" class="sortable-code"></div> 
+<div style="clear:both;"></div> 
+<p> 
+    <input id="puzzle33-feedbackLink" value="Get Feedback" type="button" /> 
     <input id="puzzle33-newInstanceLink" value="Reset Problem" type="button" /> 
 </p> 
 <script type="text/javascript"> 
@@ -1551,8 +1556,10 @@ title: Michelle
 </p> 
 <script type="text/javascript"> 
 (function(){
-  var initial = "words = [&quot;cat&quot;,&quot;dog&quot;,&quot;rabbit&quot;]\n" +
-    "for i in range(2, -1, -1):\n" +
+  var initial = "words = [&quot;cat&quot;,&quot;dog&quot;,&quot;rabbit&quot;]
+\n" +
+    "for i in range(2, -1, -1):
+\n" +
     "    print(words[i])";
   var parsonsPuzzle = new ParsonsWidget({
     "sortableId": "puzzle37-sortable",
