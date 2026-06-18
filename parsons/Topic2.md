@@ -1052,3 +1052,695 @@ title: Michelle
   }); 
 })(); 
 </script>
+
+## Arrays and Lists
+## Puzzle 25 Display every item
+
+<div id="puzzle25-sortableTrash" class="sortable-code"></div> 
+<div id="puzzle25-sortable" class="sortable-code"></div> 
+<div style="clear:both;"></div> 
+<p> 
+    <input id="puzzle25-feedbackLink" value="Get Feedback" type="button" /> 
+    <input id="puzzle25-newInstanceLink" value="Reset Problem" type="button" /> 
+</p> 
+<script type="text/javascript"> 
+(function(){
+  var initial = "names = [&quot;Ben&quot;, &quot;Ali&quot;, &quot;Jess&quot;]\n" +
+    "for name in names:\n" +
+    "    print(name)";
+  var parsonsPuzzle = new ParsonsWidget({
+    "sortableId": "puzzle25-sortable",
+    "max_wrong_lines": 10,
+    "grader": ParsonsWidget._graders.LineBasedGrader,
+    "exec_limit": 2500,
+    "can_indent": true,
+    "x_indent": 50,
+    "lang": "en",
+    "show_feedback": true,
+    "python3": true
+  });
+  parsonsPuzzle.init(initial);
+  parsonsPuzzle.shuffleLines();
+  $("#puzzle25-newInstanceLink").click(function(event){ 
+      event.preventDefault(); 
+      parsonsPuzzle.shuffleLines(); 
+  }); 
+  $("#puzzle25-feedbackLink").click(function(event){ 
+      event.preventDefault(); 
+      parsonsPuzzle.getFeedback(); 
+  }); 
+})(); 
+</script>
+
+## Puzzle 26 Build a list
+
+<div id="puzzle26-sortableTrash" class="sortable-code"></div> 
+<div id="puzzle26-sortable" class="sortable-code"></div> 
+<div style="clear:both;"></div> 
+<p> 
+    <input id="puzzle26-feedbackLink" value="Get Feedback" type="button" /> 
+    <input id="puzzle26-newInstanceLink" value="Reset Problem" type="button" /> 
+</p> 
+<script type="text/javascript"> 
+(function(){
+  var initial = "numbers = []\n" +
+    "for i in range(3):\n" +
+    "    value = int(input())\n" +
+    "    numbers.append(value)\n" +
+    "print(numbers)";
+  var parsonsPuzzle = new ParsonsWidget({
+    "sortableId": "puzzle26-sortable",
+    "max_wrong_lines": 10,
+    "grader": ParsonsWidget._graders.LineBasedGrader,
+    "exec_limit": 2500,
+    "can_indent": true,
+    "x_indent": 50,
+    "lang": "en",
+    "show_feedback": true,
+    "python3": true
+  });
+  parsonsPuzzle.init(initial);
+  parsonsPuzzle.shuffleLines();
+  $("#puzzle26-newInstanceLink").click(function(event){ 
+      event.preventDefault(); 
+      parsonsPuzzle.shuffleLines(); 
+  }); 
+  $("#puzzle26-feedbackLink").click(function(event){ 
+      event.preventDefault(); 
+      parsonsPuzzle.getFeedback(); 
+  }); 
+})(); 
+</script>
+
+## Puzzle 27 Total values
+
+<div id="puzzle27-sortableTrash" class="sortable-code"></div> 
+<div id="puzzle27-sortable" class="sortable-code"></div> 
+<div style="clear:both;"></div> 
+<p> 
+    <input id="puzzle27-feedbackLink" value="Get Feedback" type="button" /> 
+    <input id="puzzle27-newInstanceLink" value="Reset Problem" type="button" /> 
+</p> 
+<script type="text/javascript"> 
+(function(){
+  var initial = "scores = [12, 8, 15, 10]\n" +
+    "total = 0\n" +
+    "for score in scores:\n" +
+    "    total += score\n" +
+    "print(total)";
+  var parsonsPuzzle = new ParsonsWidget({
+    "sortableId": "puzzle27-sortable",
+    "max_wrong_lines": 10,
+    "grader": ParsonsWidget._graders.LineBasedGrader,
+    "exec_limit": 2500,
+    "can_indent": true,
+    "x_indent": 50,
+    "lang": "en",
+    "show_feedback": true,
+    "python3": true
+  });
+  parsonsPuzzle.init(initial);
+  parsonsPuzzle.shuffleLines();
+  $("#puzzle27-newInstanceLink").click(function(event){ 
+      event.preventDefault(); 
+      parsonsPuzzle.shuffleLines(); 
+  }); 
+  $("#puzzle27-feedbackLink").click(function(event){ 
+      event.preventDefault(); 
+      parsonsPuzzle.getFeedback(); 
+  }); 
+})(); 
+</script>
+
+## Puzzle 28 Find the largest value
+
+<div id="puzzle28-sortableTrash" class="sortable-code"></div> 
+<div id="puzzle28-sortable" class="sortable-code"></div> 
+<div style="clear:both;"></div> 
+<p> 
+    <input id="puzzle28-feedbackLink" value="Get Feedback" type="button" /> 
+    <input id="puzzle28-newInstanceLink" value="Reset Problem" type="button" /> 
+</p> 
+<script type="text/javascript"> 
+(function(){
+  var initial = "numbers = [7, 13, 4, 21, 8]\n" +
+    "largest = numbers[0]\n" +
+    "for number in numbers:\n" +
+    "    if number &gt; largest:\n" +
+    "        largest = number\n" +
+    "print(largest)";
+  var parsonsPuzzle = new ParsonsWidget({
+    "sortableId": "puzzle28-sortable",
+    "max_wrong_lines": 10,
+    "grader": ParsonsWidget._graders.LineBasedGrader,
+    "exec_limit": 2500,
+    "can_indent": true,
+    "x_indent": 50,
+    "lang": "en",
+    "show_feedback": true,
+    "python3": true
+  });
+  parsonsPuzzle.init(initial);
+  parsonsPuzzle.shuffleLines();
+  $("#puzzle28-newInstanceLink").click(function(event){ 
+      event.preventDefault(); 
+      parsonsPuzzle.shuffleLines(); 
+  }); 
+  $("#puzzle28-feedbackLink").click(function(event){ 
+      event.preventDefault(); 
+      parsonsPuzzle.getFeedback(); 
+  }); 
+})(); 
+</script>
+
+## Puzzle 29 Counting matching values
+
+<div id="puzzle29-sortableTrash" class="sortable-code"></div> 
+<div id="puzzle29-sortable" class="sortable-code"></div> 
+<div style="clear:both;"></div> 
+<p> 
+    <input id="puzzle29-feedbackLink" value="Get Feedback" type="button" /> 
+    <input id="puzzle29-newInstanceLink" value="Reset Problem" type="button" /> 
+</p> 
+<script type="text/javascript"> 
+(function(){
+  var initial = "colours = [&quot;red&quot;,&quot;blue&quot;,&quot;red&quot;,&quot;green&quot;]\n" +
+    "count = 0\n" +
+    "for colour in colours:\n" +
+    "    if colour == &quot;red&quot;:\n" +
+    "        count += 1\n" +
+    "print(count)";
+  var parsonsPuzzle = new ParsonsWidget({
+    "sortableId": "puzzle29-sortable",
+    "max_wrong_lines": 10,
+    "grader": ParsonsWidget._graders.LineBasedGrader,
+    "exec_limit": 2500,
+    "can_indent": true,
+    "x_indent": 50,
+    "lang": "en",
+    "show_feedback": true,
+    "python3": true
+  });
+  parsonsPuzzle.init(initial);
+  parsonsPuzzle.shuffleLines();
+  $("#puzzle29-newInstanceLink").click(function(event){ 
+      event.preventDefault(); 
+      parsonsPuzzle.shuffleLines(); 
+  }); 
+  $("#puzzle29-feedbackLink").click(function(event){ 
+      event.preventDefault(); 
+      parsonsPuzzle.getFeedback(); 
+  }); 
+})(); 
+</script>
+
+## 30 Linear search
+
+<div id="puzzle30-sortableTrash" class="sortable-code"></div> 
+<div id="puzzle30-sortable" class="sortable-code"></div> 
+<div style="clear:both;"></div> 
+<p> 
+    <input id="puzzle30-feedbackLink" value="Get Feedback" type="button" /> 
+    <input id="puzzle30-newInstanceLink" value="Reset Problem" type="button" /> 
+</p> 
+<script type="text/javascript"> 
+(function(){
+  var initial = "names = [&quot;Ali&quot;,&quot;Ben&quot;,&quot;Eva&quot;,&quot;Jess&quot;]\n" +
+    "search = input()\n" +
+    "found = False\n" +
+    "for person in names:\n" +
+    "    if person == search:\n" +
+    "        found = True\n" +
+    "if found:\n" +
+    "    print(&quot;Found&quot;)\n" +
+    "else:\n" +
+    "    print(&quot;Not Found&quot;)";
+  var parsonsPuzzle = new ParsonsWidget({
+    "sortableId": "puzzle30-sortable",
+    "max_wrong_lines": 10,
+    "grader": ParsonsWidget._graders.LineBasedGrader,
+    "exec_limit": 2500,
+    "can_indent": true,
+    "x_indent": 50,
+    "lang": "en",
+    "show_feedback": true,
+    "python3": true
+  });
+  parsonsPuzzle.init(initial);
+  parsonsPuzzle.shuffleLines();
+  $("#puzzle30-newInstanceLink").click(function(event){ 
+      event.preventDefault(); 
+      parsonsPuzzle.shuffleLines(); 
+  }); 
+  $("#puzzle30-feedbackLink").click(function(event){ 
+      event.preventDefault(); 
+      parsonsPuzzle.getFeedback(); 
+  }); 
+})(); 
+</script>
+
+## Puzzle 31 Average of a list
+
+<div id="puzzle31-sortableTrash" class="sortable-code"></div> 
+<div id="puzzle31-sortable" class="sortable-code"></div> 
+<div style="clear:both;"></div> 
+<p> 
+    <input id="puzzle31-feedbackLink" value="Get Feedback" type="button" /> 
+    <input id="puzzle31-newInstanceLink" value="Reset Problem" type="button" /> 
+</p> 
+<script type="text/javascript"> 
+(function(){
+  var initial = "marks = [20, 30, 40, 50]\n" +
+    "total = 0\n" +
+    "for mark in marks:\n" +
+    "    total += mark\n" +
+    "average = total / len(marks)\n" +
+    "print(average)";
+  var parsonsPuzzle = new ParsonsWidget({
+    "sortableId": "puzzle31-sortable",
+    "max_wrong_lines": 10,
+    "grader": ParsonsWidget._graders.LineBasedGrader,
+    "exec_limit": 2500,
+    "can_indent": true,
+    "x_indent": 50,
+    "lang": "en",
+    "show_feedback": true,
+    "python3": true
+  });
+  parsonsPuzzle.init(initial);
+  parsonsPuzzle.shuffleLines();
+  $("#puzzle31-newInstanceLink").click(function(event){ 
+      event.preventDefault(); 
+      parsonsPuzzle.shuffleLines(); 
+  }); 
+  $("#puzzle31-feedbackLink").click(function(event){ 
+      event.preventDefault(); 
+      parsonsPuzzle.getFeedback(); 
+  }); 
+})(); 
+</script>
+
+## Puzzle 32 Replace a value
+
+<div id="puzzle32-sortableTrash" class="sortable-code"></div> 
+<div id="puzzle32-sortable" class="sortable-code"></div> 
+<div style="clear:both;"></div> 
+<p> 
+    <input id="puzzle32-feedbackLink" value="Get Feedback" type="button" /> 
+    <input id="puzzle32-newInstanceLink" value="Reset Problem" type="button" /> 
+</p> 
+<script type="text/javascript"> 
+(function(){
+  var initial = "animals = [&quot;dog&quot;,&quot;cat&quot;,&quot;rabbit&quot;]\n" +
+    "print(animals)\n" +
+    "animals[1] = &quot;hamster&quot;";
+  var parsonsPuzzle = new ParsonsWidget({
+    "sortableId": "puzzle32-sortable",
+    "max_wrong_lines": 10,
+    "grader": ParsonsWidget._graders.LineBasedGrader,
+    "exec_limit": 2500,
+    "can_indent": true,
+    "x_indent": 50,
+    "lang": "en",
+    "show_feedback": true,
+    "python3": true
+  });
+  parsonsPuzzle.init(initial);
+  parsonsPuzzle.shuffleLines();
+  $("#puzzle32-newInstanceLink").click(function(event){ 
+      event.preventDefault(); 
+      parsonsPuzzle.shuffleLines(); 
+  }); 
+  $("#puzzle32-feedbackLink").click(function(event){ 
+      event.preventDefault(); 
+      parsonsPuzzle.getFeedback(); 
+  }); 
+})(); 
+</script>
+
+## Puzzle 33 Count even numbers
+
+<div id="puzzle33-sortableTrash" class="sortable-code"></div> 
+<div id="puzzle33-sortable" class="sortable-code"></div> 
+<div style="clear:both;"></div> 
+<p> 
+    <input id="puzzle33-feedbackLink" value="Get Feedback" type="button" /> 
+    <input id="puzzle33-newInstanceLink" value="Reset Problem" type="button" /> 
+</p> 
+<script type="text/javascript"> 
+(function(){
+  var initial = "numbers = [4, 7, 12, 15, 20]\n" +
+    "count = 0\n" +
+    "for number in numbers:\n" +
+    "    if number % 2 == 0:\n" +
+    "        count += 1\n" +
+    "print(count)";
+  var parsonsPuzzle = new ParsonsWidget({
+    "sortableId": "puzzle33-sortable",
+    "max_wrong_lines": 10,
+    "grader": ParsonsWidget._graders.LineBasedGrader,
+    "exec_limit": 2500,
+    "can_indent": true,
+    "x_indent": 50,
+    "lang": "en",
+    "show_feedback": true,
+    "python3": true
+  });
+  parsonsPuzzle.init(initial);
+  parsonsPuzzle.shuffleLines();
+  $("#puzzle33-newInstanceLink").click(function(event){ 
+      event.preventDefault(); 
+      parsonsPuzzle.shuffleLines(); 
+  }); 
+  $("#puzzle33-feedbackLink").click(function(event){ 
+      event.preventDefault(); 
+      parsonsPuzzle.getFeedback(); 
+  }); 
+})(); 
+</script>
+
+## Puzzle 34 Find the smallest value
+
+<div id="puzzle34-sortableTrash" class="sortable-code"></div> 
+<div id="puzzle34-sortable" class="sortable-code"></div> 
+<div style="clear:both;"></div> 
+<p> 
+    <input id="puzzle34-feedbackLink" value="Get Feedback" type="button" /> 
+    <input id="puzzle34-newInstanceLink" value="Reset Problem" type="button" /> 
+</p> 
+<script type="text/javascript"> 
+(function(){
+  var initial = "numbers = [11, 6, 19, 4, 13]\n" +
+    "lowest = numbers[0]\n" +
+    "for value in numbers:\n" +
+    "    if value &lt; lowest:\n" +
+    "        lowest = value\n" +
+    "print(lowest)";
+  var parsonsPuzzle = new ParsonsWidget({
+    "sortableId": "puzzle34-sortable",
+    "max_wrong_lines": 10,
+    "grader": ParsonsWidget._graders.LineBasedGrader,
+    "exec_limit": 2500,
+    "can_indent": true,
+    "x_indent": 50,
+    "lang": "en",
+    "show_feedback": true,
+    "python3": true
+  });
+  parsonsPuzzle.init(initial);
+  parsonsPuzzle.shuffleLines();
+  $("#puzzle34-newInstanceLink").click(function(event){ 
+      event.preventDefault(); 
+      parsonsPuzzle.shuffleLines(); 
+  }); 
+  $("#puzzle34-feedbackLink").click(function(event){ 
+      event.preventDefault(); 
+      parsonsPuzzle.getFeedback(); 
+  }); 
+})(); 
+</script>
+
+## Puzzle 35 Count items less than 10
+
+<div id="puzzle35-sortableTrash" class="sortable-code"></div> 
+<div id="puzzle35-sortable" class="sortable-code"></div> 
+<div style="clear:both;"></div> 
+<p> 
+    <input id="puzzle35-feedbackLink" value="Get Feedback" type="button" /> 
+    <input id="puzzle35-newInstanceLink" value="Reset Problem" type="button" /> 
+</p> 
+<script type="text/javascript"> 
+(function(){
+  var initial = "numbers = [6, 15, 12, 4, 18]\n" +
+    "count = 0\n" +
+    "for number in numbers:\n" +
+    "    if number &gt; 10:\n" +
+    "        count += 1\n" +
+    "print(count)";
+  var parsonsPuzzle = new ParsonsWidget({
+    "sortableId": "puzzle35-sortable",
+    "max_wrong_lines": 10,
+    "grader": ParsonsWidget._graders.LineBasedGrader,
+    "exec_limit": 2500,
+    "can_indent": true,
+    "x_indent": 50,
+    "lang": "en",
+    "show_feedback": true,
+    "python3": true
+  });
+  parsonsPuzzle.init(initial);
+  parsonsPuzzle.shuffleLines();
+  $("#puzzle35-newInstanceLink").click(function(event){ 
+      event.preventDefault(); 
+      parsonsPuzzle.shuffleLines(); 
+  }); 
+  $("#puzzle35-feedbackLink").click(function(event){ 
+      event.preventDefault(); 
+      parsonsPuzzle.getFeedback(); 
+  }); 
+})(); 
+</script>
+
+## Puzzle 36 Replace multiple items
+
+<div id="puzzle36-sortableTrash" class="sortable-code"></div> 
+<div id="puzzle36-sortable" class="sortable-code"></div> 
+<div style="clear:both;"></div> 
+<p> 
+    <input id="puzzle36-feedbackLink" value="Get Feedback" type="button" /> 
+    <input id="puzzle36-newInstanceLink" value="Reset Problem" type="button" /> 
+</p> 
+<script type="text/javascript"> 
+(function(){
+  var initial = "colours = [&quot;red&quot;,&quot;green&quot;,&quot;blue&quot;]\n" +
+    "colours[0] = &quot;purple&quot;\n" +
+    "colours[2] = &quot;yellow&quot;\n" +
+    "print(colours)";
+  var parsonsPuzzle = new ParsonsWidget({
+    "sortableId": "puzzle36-sortable",
+    "max_wrong_lines": 10,
+    "grader": ParsonsWidget._graders.LineBasedGrader,
+    "exec_limit": 2500,
+    "can_indent": true,
+    "x_indent": 50,
+    "lang": "en",
+    "show_feedback": true,
+    "python3": true
+  });
+  parsonsPuzzle.init(initial);
+  parsonsPuzzle.shuffleLines();
+  $("#puzzle36-newInstanceLink").click(function(event){ 
+      event.preventDefault(); 
+      parsonsPuzzle.shuffleLines(); 
+  }); 
+  $("#puzzle36-feedbackLink").click(function(event){ 
+      event.preventDefault(); 
+      parsonsPuzzle.getFeedback(); 
+  }); 
+})(); 
+</script>
+
+## Puzzle 37 Reverse display using indexes
+
+<div id="puzzle37-sortableTrash" class="sortable-code"></div> 
+<div id="puzzle37-sortable" class="sortable-code"></div> 
+<div style="clear:both;"></div> 
+<p> 
+    <input id="puzzle37-feedbackLink" value="Get Feedback" type="button" /> 
+    <input id="puzzle37-newInstanceLink" value="Reset Problem" type="button" /> 
+</p> 
+<script type="text/javascript"> 
+(function(){
+  var initial = "words = [&quot;cat&quot;,&quot;dog&quot;,&quot;rabbit&quot;]\n" +
+    "for i in range(2, -1, -1):\n" +
+    "    print(words[i])";
+  var parsonsPuzzle = new ParsonsWidget({
+    "sortableId": "puzzle37-sortable",
+    "max_wrong_lines": 10,
+    "grader": ParsonsWidget._graders.LineBasedGrader,
+    "exec_limit": 2500,
+    "can_indent": true,
+    "x_indent": 50,
+    "lang": "en",
+    "show_feedback": true,
+    "python3": true
+  });
+  parsonsPuzzle.init(initial);
+  parsonsPuzzle.shuffleLines();
+  $("#puzzle37-newInstanceLink").click(function(event){ 
+      event.preventDefault(); 
+      parsonsPuzzle.shuffleLines(); 
+  }); 
+  $("#puzzle37-feedbackLink").click(function(event){ 
+      event.preventDefault(); 
+      parsonsPuzzle.getFeedback(); 
+  }); 
+})(); 
+</script>
+
+## Puzzle 38 Count vowels stored in a list
+
+<div id="puzzle38-sortableTrash" class="sortable-code"></div> 
+<div id="puzzle38-sortable" class="sortable-code"></div> 
+<div style="clear:both;"></div> 
+<p> 
+    <input id="puzzle38-feedbackLink" value="Get Feedback" type="button" /> 
+    <input id="puzzle38-newInstanceLink" value="Reset Problem" type="button" /> 
+</p> 
+<script type="text/javascript"> 
+(function(){
+  var initial = "letters = [&quot;a&quot;,&quot;b&quot;,&quot;e&quot;,&quot;f&quot;,&quot;i&quot;]\n" +
+    "count = 0\n" +
+    "for letter in letters:\n" +
+    "    if letter in &quot;aeiou&quot;:\n" +
+    "        count += 1\n" +
+    "print(count)";
+  var parsonsPuzzle = new ParsonsWidget({
+    "sortableId": "puzzle38-sortable",
+    "max_wrong_lines": 10,
+    "grader": ParsonsWidget._graders.LineBasedGrader,
+    "exec_limit": 2500,
+    "can_indent": true,
+    "x_indent": 50,
+    "lang": "en",
+    "show_feedback": true,
+    "python3": true
+  });
+  parsonsPuzzle.init(initial);
+  parsonsPuzzle.shuffleLines();
+  $("#puzzle38-newInstanceLink").click(function(event){ 
+      event.preventDefault(); 
+      parsonsPuzzle.shuffleLines(); 
+  }); 
+  $("#puzzle38-feedbackLink").click(function(event){ 
+      event.preventDefault(); 
+      parsonsPuzzle.getFeedback(); 
+  }); 
+})(); 
+</script>
+
+## Puzzle 39 Calculate the average from user input
+
+<div id="puzzle39-sortableTrash" class="sortable-code"></div> 
+<div id="puzzle39-sortable" class="sortable-code"></div> 
+<div style="clear:both;"></div> 
+<p> 
+    <input id="puzzle39-feedbackLink" value="Get Feedback" type="button" /> 
+    <input id="puzzle39-newInstanceLink" value="Reset Problem" type="button" /> 
+</p> 
+<script type="text/javascript"> 
+(function(){
+  var initial = "numbers = []\n" +
+    "for i in range(4):\n" +
+    "    value = int(input())\n" +
+    "    numbers.append(value)\n" +
+    "average = sum(numbers) / len(numbers)\n" +
+    "print(average)";
+  var parsonsPuzzle = new ParsonsWidget({
+    "sortableId": "puzzle39-sortable",
+    "max_wrong_lines": 10,
+    "grader": ParsonsWidget._graders.LineBasedGrader,
+    "exec_limit": 2500,
+    "can_indent": true,
+    "x_indent": 50,
+    "lang": "en",
+    "show_feedback": true,
+    "python3": true
+  });
+  parsonsPuzzle.init(initial);
+  parsonsPuzzle.shuffleLines();
+  $("#puzzle39-newInstanceLink").click(function(event){ 
+      event.preventDefault(); 
+      parsonsPuzzle.shuffleLines(); 
+  }); 
+  $("#puzzle39-feedbackLink").click(function(event){ 
+      event.preventDefault(); 
+      parsonsPuzzle.getFeedback(); 
+  }); 
+})(); 
+</script>
+
+## Puzzle 40 Linear search with indexes
+
+<div id="puzzle40-sortableTrash" class="sortable-code"></div> 
+<div id="puzzle40-sortable" class="sortable-code"></div> 
+<div style="clear:both;"></div> 
+<p> 
+    <input id="puzzle40-feedbackLink" value="Get Feedback" type="button" /> 
+    <input id="puzzle40-newInstanceLink" value="Reset Problem" type="button" /> 
+</p> 
+<script type="text/javascript"> 
+(function(){
+  var initial = "numbers = [4, 8, 11, 15]\n" +
+    "search = int(input())\n" +
+    "for i in range(len(numbers)):\n" +
+    "    if numbers[i] == search:\n" +
+    "        print(&quot;Found&quot;)";
+  var parsonsPuzzle = new ParsonsWidget({
+    "sortableId": "puzzle40-sortable",
+    "max_wrong_lines": 10,
+    "grader": ParsonsWidget._graders.LineBasedGrader,
+    "exec_limit": 2500,
+    "can_indent": true,
+    "x_indent": 50,
+    "lang": "en",
+    "show_feedback": true,
+    "python3": true
+  });
+  parsonsPuzzle.init(initial);
+  parsonsPuzzle.shuffleLines();
+  $("#puzzle40-newInstanceLink").click(function(event){ 
+      event.preventDefault(); 
+      parsonsPuzzle.shuffleLines(); 
+  }); 
+  $("#puzzle40-feedbackLink").click(function(event){ 
+      event.preventDefault(); 
+      parsonsPuzzle.getFeedback(); 
+  }); 
+})(); 
+</script>
+
+## Puzzle 41 Highest and lowest together
+
+<div id="puzzle41-sortableTrash" class="sortable-code"></div> 
+<div id="puzzle41-sortable" class="sortable-code"></div> 
+<div style="clear:both;"></div> 
+<p> 
+    <input id="puzzle41-feedbackLink" value="Get Feedback" type="button" /> 
+    <input id="puzzle41-newInstanceLink" value="Reset Problem" type="button" /> 
+</p> 
+<script type="text/javascript"> 
+(function(){
+  var initial = "numbers = [8, 16, 4, 12]\n" +
+    "highest = numbers[0]\n" +
+    "lowest = numbers[0]\n" +
+    "for value in numbers:\n" +
+    "    if value &gt; highest:\n" +
+    "        highest = value\n" +
+    "    if value &lt; lowest:\n" +
+    "        lowest = value\n" +
+    "print(highest)\n" +
+    "print(lowest)";
+  var parsonsPuzzle = new ParsonsWidget({
+    "sortableId": "puzzle41-sortable",
+    "max_wrong_lines": 10,
+    "grader": ParsonsWidget._graders.LineBasedGrader,
+    "exec_limit": 2500,
+    "can_indent": true,
+    "x_indent": 50,
+    "lang": "en",
+    "show_feedback": true,
+    "python3": true
+  });
+  parsonsPuzzle.init(initial);
+  parsonsPuzzle.shuffleLines();
+  $("#puzzle41-newInstanceLink").click(function(event){ 
+      event.preventDefault(); 
+      parsonsPuzzle.shuffleLines(); 
+  }); 
+  $("#puzzle41-feedbackLink").click(function(event){ 
+      event.preventDefault(); 
+      parsonsPuzzle.getFeedback(); 
+  }); 
+})(); 
+</script>
