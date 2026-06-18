@@ -800,5 +800,323 @@ title: Michelle
 })(); 
 </script>
 
+## Puzzle 19 Ticket booking system (6 marks)
+## A cinema sells tickets. Asks for the number of tickets, charges £8 per ticket, gives 10% discount if buying 5 or more, outputs the final price.
 
+<div id="puzzle19-sortableTrash" class="sortable-code"></div> 
+<div id="puzzle19-sortable" class="sortable-code"></div> 
+<div style="clear:both;"></div> 
+<p> 
+    <input id="puzzle19-feedbackLink" value="Get Feedback" type="button" /> 
+    <input id="puzzle19-newInstanceLink" value="Reset Problem" type="button" /> 
+</p> 
+<script type="text/javascript"> 
+(function(){
+  var initial = "tickets = int(input(&quot;Number of tickets: &quot;))\n" +
+    "price = tickets * 8\n" +
+    "if tickets &gt;= 5:\n" +
+    "    price = price * 0.9\n" +
+    "print(&quot;Total price = £&quot;, round(price, 2))";
+  var parsonsPuzzle = new ParsonsWidget({
+    "sortableId": "puzzle19-sortable",
+    "max_wrong_lines": 10,
+    "grader": ParsonsWidget._graders.LineBasedGrader,
+    "exec_limit": 2500,
+    "can_indent": true,
+    "x_indent": 50,
+    "lang": "en",
+    "show_feedback": true,
+    "python3": true
+  });
+  parsonsPuzzle.init(initial);
+  parsonsPuzzle.shuffleLines();
+  $("#puzzle19-newInstanceLink").click(function(event){ 
+      event.preventDefault(); 
+      parsonsPuzzle.shuffleLines(); 
+  }); 
+  $("#puzzle19-feedbackLink").click(function(event){ 
+      event.preventDefault(); 
+      parsonsPuzzle.getFeedback(); 
+  }); 
+})(); 
+</script>
+
+## Puzzle 20 Password strength checker (6 marks)
+## This program asks for a password, checks whether it contains at least 8 characters, outputs "Strong" or "Weak".
+
+<div id="puzzle20-sortableTrash" class="sortable-code"></div> 
+<div id="puzzle20-sortable" class="sortable-code"></div> 
+<div style="clear:both;"></div> 
+<p> 
+    <input id="puzzle20-feedbackLink" value="Get Feedback" type="button" /> 
+    <input id="puzzle20-newInstanceLink" value="Reset Problem" type="button" /> 
+</p> 
+<script type="text/javascript"> 
+(function(){
+  var initial = "password = input(&quot;Enter password: &quot;)\n" +
+    "if len(password) &gt;= 8:\n" +
+    "    print(&quot;Strong&quot;)\n" +
+    "else:\n" +
+    "    print(&quot;Weak&quot;)";
+  var parsonsPuzzle = new ParsonsWidget({
+    "sortableId": "puzzle20-sortable",
+    "max_wrong_lines": 10,
+    "grader": ParsonsWidget._graders.LineBasedGrader,
+    "exec_limit": 2500,
+    "can_indent": true,
+    "x_indent": 50,
+    "lang": "en",
+    "show_feedback": true,
+    "python3": true
+  });
+  parsonsPuzzle.init(initial);
+  parsonsPuzzle.shuffleLines();
+  $("#puzzle20-newInstanceLink").click(function(event){ 
+      event.preventDefault(); 
+      parsonsPuzzle.shuffleLines(); 
+  }); 
+  $("#puzzle20-feedbackLink").click(function(event){ 
+      event.preventDefault(); 
+      parsonsPuzzle.getFeedback(); 
+  }); 
+})(); 
+</script>
+
+## Puzzle 21 Find the largest number in a list (7 marks)
+## This program A list stores five numbers. Output the largest value.
+
+<div id="puzzle21-sortableTrash" class="sortable-code"></div> 
+<div id="puzzle21-sortable" class="sortable-code"></div> 
+<div style="clear:both;"></div> 
+<p> 
+    <input id="puzzle21-feedbackLink" value="Get Feedback" type="button" /> 
+    <input id="puzzle21-newInstanceLink" value="Reset Problem" type="button" /> 
+</p> 
+<script type="text/javascript"> 
+(function(){
+  var initial = "numbers = [12, 45, 9, 77, 32]\n" +
+    "largest = numbers[0]\n" +
+    "for value in numbers:\n" +
+    "    if value &gt; largest:\n" +
+    "        largest = value\n" +
+    "print(&quot;Largest =&quot;, largest)";
+  var parsonsPuzzle = new ParsonsWidget({
+    "sortableId": "puzzle21-sortable",
+    "max_wrong_lines": 10,
+    "grader": ParsonsWidget._graders.LineBasedGrader,
+    "exec_limit": 2500,
+    "can_indent": true,
+    "x_indent": 50,
+    "lang": "en",
+    "show_feedback": true,
+    "python3": true
+  });
+  parsonsPuzzle.init(initial);
+  parsonsPuzzle.shuffleLines();
+  $("#puzzle21-newInstanceLink").click(function(event){ 
+      event.preventDefault(); 
+      parsonsPuzzle.shuffleLines(); 
+  }); 
+  $("#puzzle21-feedbackLink").click(function(event){ 
+      event.preventDefault(); 
+      parsonsPuzzle.getFeedback(); 
+  }); 
+})(); 
+</script>
+
+## Puzzle 22 Guess the random number (6 marks)
+## This program generates a random number between 1 and 10, allows the user up to 3 guesses, tells them if they win.
+
+<div id="puzzle22-sortableTrash" class="sortable-code"></div> 
+<div id="puzzle22-sortable" class="sortable-code"></div> 
+<div style="clear:both;"></div> 
+<p> 
+    <input id="puzzle22-feedbackLink" value="Get Feedback" type="button" /> 
+    <input id="puzzle22-newInstanceLink" value="Reset Problem" type="button" /> 
+</p> 
+<script type="text/javascript"> 
+(function(){
+  var initial = "import random\n" +
+    "secret = random.randint(1, 10)\n" +
+    "found = False\n" +
+    "for attempt in range(3):\n" +
+    "    guess = int(input(&quot;Guess: &quot;))\n" +
+    "    if guess == secret:\n" +
+    "        found = True\n" +
+    "        break\n" +
+    "if found:\n" +
+    "    print(&quot;Correct&quot;)\n" +
+    "else:\n" +
+    "    print(&quot;Number was&quot;, secret";
+  var parsonsPuzzle = new ParsonsWidget({
+    "sortableId": "puzzle22-sortable",
+    "max_wrong_lines": 10,
+    "grader": ParsonsWidget._graders.LineBasedGrader,
+    "exec_limit": 2500,
+    "can_indent": true,
+    "x_indent": 50,
+    "lang": "en",
+    "show_feedback": true,
+    "python3": true
+  });
+  parsonsPuzzle.init(initial);
+  parsonsPuzzle.shuffleLines();
+  $("#puzzle22-newInstanceLink").click(function(event){ 
+      event.preventDefault(); 
+      parsonsPuzzle.shuffleLines(); 
+  }); 
+  $("#puzzle22-feedbackLink").click(function(event){ 
+      event.preventDefault(); 
+      parsonsPuzzle.getFeedback(); 
+  }); 
+})(); 
+</script>
+
+## Puzzle 23 Frequency counter (6 marks)
+## This program Write stores names in a list and counts how many times "Sam" appears.
+
+<div id="puzzle23-sortableTrash" class="sortable-code"></div> 
+<div id="puzzle23-sortable" class="sortable-code"></div> 
+<div style="clear:both;"></div> 
+<p> 
+    <input id="puzzle23-feedbackLink" value="Get Feedback" type="button" /> 
+    <input id="puzzle23-newInstanceLink" value="Reset Problem" type="button" /> 
+</p> 
+<script type="text/javascript"> 
+(function(){
+  var initial = "names = [&quot;Sam&quot;, &quot;Alex&quot;, &quot;Sam&quot;, &quot;Jess&quot;, &quot;Sam&quot;]\n" +
+    "\n" +
+    "count = 0\n" +
+    "\n" +
+    "for person in names:\n" +
+    "    if person == &quot;Sam&quot;:\n" +
+    "        count += 1\n" +
+    "\n" +
+    "print(count)";
+  var parsonsPuzzle = new ParsonsWidget({
+    "sortableId": "puzzle23-sortable",
+    "max_wrong_lines": 10,
+    "grader": ParsonsWidget._graders.LineBasedGrader,
+    "exec_limit": 2500,
+    "can_indent": true,
+    "x_indent": 50,
+    "lang": "en",
+    "show_feedback": true,
+    "python3": true
+  });
+  parsonsPuzzle.init(initial);
+  parsonsPuzzle.shuffleLines();
+  $("#puzzle23-newInstanceLink").click(function(event){ 
+      event.preventDefault(); 
+      parsonsPuzzle.shuffleLines(); 
+  }); 
+  $("#puzzle23-feedbackLink").click(function(event){ 
+      event.preventDefault(); 
+      parsonsPuzzle.getFeedback(); 
+  }); 
+})(); 
+</script>
+
+## Puzzle 24 Menu system using functions (8 marks)
+## This program has a menu that can add, multiply and exit
+
+<div id="puzzle24-sortableTrash" class="sortable-code"></div> 
+<div id="puzzle24-sortable" class="sortable-code"></div> 
+<div style="clear:both;"></div> 
+<p> 
+    <input id="puzzle24-feedbackLink" value="Get Feedback" type="button" /> 
+    <input id="puzzle24-newInstanceLink" value="Reset Problem" type="button" /> 
+</p> 
+<script type="text/javascript"> 
+(function(){
+  var initial = "def add(a, b):\n" +
+    "    return a + b\n" +
+    "def multiply(a, b):\n" +
+    "    return a * b\n" +
+    "choice = 0\n" +
+    "while choice != 3:\n" +
+    "    print(&quot;1 Add&quot;)\n" +
+    "    print(&quot;2 Multiply&quot;)\n" +
+    "    print(&quot;3 Exit&quot;)\n" +
+    "    choice = int(input())\n" +
+    "    if choice == 1:\n" +
+    "        x = int(input())\n" +
+    "        y = int(input())\n" +
+    "        print(add(x, y))\n" +
+    "    elif choice == 2:\n" +    
+      "        x = int(input())\n" +
+    "        y = int(input())\n" +
+    "        print(multiply(x, y))";
+  var parsonsPuzzle = new ParsonsWidget({
+    "sortableId": "puzzle24-sortable",
+    "max_wrong_lines": 10,
+    "grader": ParsonsWidget._graders.LineBasedGrader,
+    "exec_limit": 2500,
+    "can_indent": true,
+    "x_indent": 50,
+    "lang": "en",
+    "show_feedback": true,
+    "python3": true
+  });
+  parsonsPuzzle.init(initial);
+  parsonsPuzzle.shuffleLines();
+  $("#puzzle24-newInstanceLink").click(function(event){ 
+      event.preventDefault(); 
+      parsonsPuzzle.shuffleLines(); 
+  }); 
+  $("#puzzle24-feedbackLink").click(function(event){ 
+      event.preventDefault(); 
+      parsonsPuzzle.getFeedback(); 
+  }); 
+})(); 
+</script>
+
+## Puzzle 25 Two-Dimensional Array Seating Plan (8 marks)
+## This program stores a seating plan
+
+<div id="puzzle25-sortableTrash" class="sortable-code"></div> 
+<div id="puzzle25-sortable" class="sortable-code"></div> 
+<div style="clear:both;"></div> 
+<p> 
+    <input id="puzzle25-feedbackLink" value="Get Feedback" type="button" /> 
+    <input id="puzzle25-newInstanceLink" value="Reset Problem" type="button" /> 
+</p> 
+<script type="text/javascript"> 
+(function(){
+  var initial = "seats = [\n" +
+    "    [&quot;X&quot;, &quot;X&quot;, &quot;O&quot;],\n" +
+    "    [&quot;O&quot;, &quot;X&quot;, &quot;O&quot;]\n" +
+    "]\n" +
+    "\n" +
+    "available = 0\n" +
+    "\n" +
+    "for row in seats:\n" +
+    "    for seat in row:\n" +
+    "        if seat == &quot;O&quot;:\n" +
+    "            available += 1\n" +
+    "\n" +
+    "print(&quot;Available =&quot;, available)";
+  var parsonsPuzzle = new ParsonsWidget({
+    "sortableId": "puzzle25-sortable",
+    "max_wrong_lines": 10,
+    "grader": ParsonsWidget._graders.LineBasedGrader,
+    "exec_limit": 2500,
+    "can_indent": true,
+    "x_indent": 50,
+    "lang": "en",
+    "show_feedback": true,
+    "python3": true
+  });
+  parsonsPuzzle.init(initial);
+  parsonsPuzzle.shuffleLines();
+  $("#puzzle25-newInstanceLink").click(function(event){ 
+      event.preventDefault(); 
+      parsonsPuzzle.shuffleLines(); 
+  }); 
+  $("#puzzle25-feedbackLink").click(function(event){ 
+      event.preventDefault(); 
+      parsonsPuzzle.getFeedback(); 
+  }); 
+})(); 
+</script>
 
