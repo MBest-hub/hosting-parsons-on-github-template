@@ -1902,3 +1902,115 @@ title: Michelle
   }); 
 })(); 
 </script>
+
+## These are GCSE style exam questions higher marks!
+## Puzzle 44  - Student Score Analysis (8 marks)
+## This program asks the user to enter 10 test scores, stores them in a list outputs: highest score, lowest score, average score and number of scores above average
+
+<div id="puzzle44-sortableTrash" class="sortable-code"></div> 
+<div id="puzzle44-sortable" class="sortable-code"></div> 
+<div style="clear:both;"></div> 
+<p> 
+    <input id="puzzle44-feedbackLink" value="Get Feedback" type="button" /> 
+    <input id="puzzle44-newInstanceLink" value="Reset Problem" type="button" /> 
+</p> 
+<script type="text/javascript"> 
+(function(){
+  var initial = "scores = []\n" +
+    "for count in range(10):\n" +
+    "\n" +
+    "    score = int(input(&quot;Enter score: &quot;))\n" +
+    "    scores.append(score)\n" +
+    "\n" +
+    "highest = scores[0]\n" +
+    "lowest = scores[0]\n" +
+    "total = 0\n" +
+    "for score in scores:\n" +
+    "    total += score\n" +
+    "    if score &gt; highest:\n" +
+    "        highest = score\n" +
+    "    if score &lt; lowest:\n" +
+    "        lowest = score\n" +
+    "average = total / len(scores)\n" +
+    "above = 0\n" +
+    "for score in scores:\n" +
+    "    if score &gt; average:\n" +
+    "        above += 1\n" +
+    "print(&quot;Highest =&quot;, highest)\n" +
+    "print(&quot;Lowest =&quot;, lowest)\n" +
+    "print(&quot;Average =&quot;, average)\n" +
+    "print(&quot;Above Average =&quot;, above)";
+  var parsonsPuzzle = new ParsonsWidget({
+    "sortableId": "puzzle44-sortable",
+    "max_wrong_lines": 10,
+    "grader": ParsonsWidget._graders.LineBasedGrader,
+    "exec_limit": 2500,
+    "can_indent": true,
+    "x_indent": 50,
+    "lang": "en",
+    "show_feedback": true,
+    "python3": true
+  });
+  parsonsPuzzle.init(initial);
+  parsonsPuzzle.shuffleLines();
+  $("#puzzle44-newInstanceLink").click(function(event){ 
+      event.preventDefault(); 
+      parsonsPuzzle.shuffleLines(); 
+  }); 
+  $("#puzzle44-feedbackLink").click(function(event){ 
+      event.preventDefault(); 
+      parsonsPuzzle.getFeedback(); 
+  }); 
+})(); 
+</script>
+
+## Puzzle 45  - Ticket Booking with Remaining Seats (8 marks) A theatre has 50 seats.
+## This program repeatedly asks users how many tickets they want, subtracts tickets from available seats, stops when: seats reach 0 OR user enters 0, output seats remaining
+
+<div id="puzzle45-sortableTrash" class="sortable-code"></div> 
+<div id="puzzle45-sortable" class="sortable-code"></div> 
+<div style="clear:both;"></div> 
+<p> 
+    <input id="puzzle45-feedbackLink" value="Get Feedback" type="button" /> 
+    <input id="puzzle45-newInstanceLink" value="Reset Problem" type="button" /> 
+</p> 
+<script type="text/javascript"> 
+(function(){
+  var initial = "seats = 50\n" +
+    "while seats &gt; 0:\n" +
+    "    print(&quot;Seats remaining:&quot;, seats)\n" +
+    "    booking = int(input(&quot;Tickets (0 to stop): &quot;))\n" +
+    "    if booking == 0:\n" +
+    "        break\n" +
+    "    while booking &gt; seats:\n" +
+    "        print(&quot;Not enough seats&quot;)\n" +
+    "        booking = int(input())\n" +
+    "    seats -= booking\n" +
+    "print(&quot;Booking closed&quot;)\n" +
+    "print(&quot;Remaining =&quot;, seats)";
+  var parsonsPuzzle = new ParsonsWidget({
+    "sortableId": "puzzle45-sortable",
+    "max_wrong_lines": 10,
+    "grader": ParsonsWidget._graders.LineBasedGrader,
+    "exec_limit": 2500,
+    "can_indent": true,
+    "x_indent": 50,
+    "lang": "en",
+    "show_feedback": true,
+    "python3": true
+  });
+  parsonsPuzzle.init(initial);
+  parsonsPuzzle.shuffleLines();
+  $("#puzzle45-newInstanceLink").click(function(event){ 
+      event.preventDefault(); 
+      parsonsPuzzle.shuffleLines(); 
+  }); 
+  $("#puzzle45-feedbackLink").click(function(event){ 
+      event.preventDefault(); 
+      parsonsPuzzle.getFeedback(); 
+  }); 
+})(); 
+</script>
+
+## Puzzle 46  - 
+## This program
