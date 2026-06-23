@@ -2012,5 +2012,215 @@ title: Michelle
 })(); 
 </script>
 
-## Puzzle 46  - 
-## This program
+## Puzzle 46  - Number Frequency Counter (8 marks)
+## This program asks for 8 numbers, stores them in a list, asks for a number to search, outputs how many times that number occurs.
+
+<div id="puzzle46-sortableTrash" class="sortable-code"></div> 
+<div id="puzzle46-sortable" class="sortable-code"></div> 
+<div style="clear:both;"></div> 
+<p> 
+    <input id="puzzle46-feedbackLink" value="Get Feedback" type="button" /> 
+    <input id="puzzle46-newInstanceLink" value="Reset Problem" type="button" /> 
+</p> 
+<script type="text/javascript"> 
+(function(){
+  var initial = "numbers = []\n" +
+    "for count in range(8):\n" +
+    "    value = int(input(&quot;Enter number: &quot;))\n" +
+    "    numbers.append(value)\n" +
+    "search = int(input(&quot;Find: &quot;))\n" +
+    "frequency = 0\n" +
+    "for value in numbers:\n" +
+    "    if value == search:\n" +
+    "        frequency += 1\n" +
+    "print(&quot;Occurrences =&quot;, frequency)";
+  var parsonsPuzzle = new ParsonsWidget({
+    "sortableId": "puzzle46-sortable",
+    "max_wrong_lines": 10,
+    "grader": ParsonsWidget._graders.LineBasedGrader,
+    "exec_limit": 2500,
+    "can_indent": true,
+    "x_indent": 50,
+    "lang": "en",
+    "show_feedback": true,
+    "python3": true
+  });
+  parsonsPuzzle.init(initial);
+  parsonsPuzzle.shuffleLines();
+  $("#puzzle46-newInstanceLink").click(function(event){ 
+      event.preventDefault(); 
+      parsonsPuzzle.shuffleLines(); 
+  }); 
+  $("#puzzle46-feedbackLink").click(function(event){ 
+      event.preventDefault(); 
+      parsonsPuzzle.getFeedback(); 
+  }); 
+})(); 
+</script>
+
+## Puzzle 47  - PIN Entry System (9 marks)
+## This program astores PIN "4832", allows 3 attempts and displays: "Incorrect", "Card Locked" after 3 failures, "Welcome" if correct
+
+<div id="puzzle47-sortableTrash" class="sortable-code"></div> 
+<div id="puzzle47-sortable" class="sortable-code"></div> 
+<div style="clear:both;"></div> 
+<p> 
+    <input id="puzzle47-feedbackLink" value="Get Feedback" type="button" /> 
+    <input id="puzzle47-newInstanceLink" value="Reset Problem" type="button" /> 
+</p> 
+<script type="text/javascript"> 
+(function(){
+  var initial = "pin = &quot;4832&quot;\n" +
+    "\n" +
+    "attempts = 0\n" +
+    "success = False\n" +
+    "\n" +
+    "while attempts &lt; 3 and success == False:\n" +
+    "\n" +
+    "    entry = input(&quot;PIN: &quot;)\n" +
+    "\n" +
+    "    if entry == pin:\n" +
+    "\n" +
+    "        success = True\n" +
+    "\n" +
+    "    else:\n" +
+    "\n" +
+    "        print(&quot;Incorrect&quot;)\n" +
+    "\n" +
+    "    attempts += 1\n" +
+    "\n" +
+    "if success:\n" +
+    "\n" +
+    "    print(&quot;Welcome&quot;)\n" +
+    "\n" +
+    "else:\n" +
+    "\n" +
+    "    print(&quot;Card Locked&quot;)";
+  var parsonsPuzzle = new ParsonsWidget({
+    "sortableId": "puzzle47-sortable",
+    "max_wrong_lines": 10,
+    "grader": ParsonsWidget._graders.LineBasedGrader,
+    "exec_limit": 2500,
+    "can_indent": true,
+    "x_indent": 50,
+    "lang": "en",
+    "show_feedback": true,
+    "python3": true
+  });
+  parsonsPuzzle.init(initial);
+  parsonsPuzzle.shuffleLines();
+  $("#puzzle47-newInstanceLink").click(function(event){ 
+      event.preventDefault(); 
+      parsonsPuzzle.shuffleLines(); 
+  }); 
+  $("#puzzle47-feedbackLink").click(function(event){ 
+      event.preventDefault(); 
+      parsonsPuzzle.getFeedback(); 
+  }); 
+})(); 
+</script>
+
+## Puzzle 48  - Two-Dimensional Array Analysis (9 marks) A cinema stores seats:
+## This program counts occupied seats (X), counts free seats (O) and outputs totals.
+
+<div id="puzzle48-sortableTrash" class="sortable-code"></div> 
+<div id="puzzle48-sortable" class="sortable-code"></div> 
+<div style="clear:both;"></div> 
+<p> 
+    <input id="puzzle48-feedbackLink" value="Get Feedback" type="button" /> 
+    <input id="puzzle48-newInstanceLink" value="Reset Problem" type="button" /> 
+</p> 
+<script type="text/javascript"> 
+(function(){
+  var initial = "seats = [\n" +
+    "[&quot;X&quot;,&quot;O&quot;,&quot;O&quot;],\n" +
+    "[&quot;X&quot;,&quot;X&quot;,&quot;O&quot;],\n" +
+    "[&quot;O&quot;,&quot;O&quot;,&quot;X&quot;]\n" +
+    "]\n" +
+    "\n" +
+    "occupied = 0\n" +
+    "free = 0\n" +
+    "\n" +
+    "for row in seats:\n" +
+    "\n" +
+    "    for seat in row:\n" +
+    "\n" +
+    "        if seat == &quot;X&quot;:\n" +
+    "            occupied += 1\n" +
+    "\n" +
+    "        else:\n" +
+    "            free += 1\n" +
+    "\n" +
+    "print(&quot;Occupied =&quot;, occupied)\n" +
+    "print(&quot;Free =&quot;, free)";
+  var parsonsPuzzle = new ParsonsWidget({
+    "sortableId": "puzzle48-sortable",
+    "max_wrong_lines": 10,
+    "grader": ParsonsWidget._graders.LineBasedGrader,
+    "exec_limit": 2500,
+    "can_indent": true,
+    "x_indent": 50,
+    "lang": "en",
+    "show_feedback": true,
+    "python3": true
+  });
+  parsonsPuzzle.init(initial);
+  parsonsPuzzle.shuffleLines();
+  $("#puzzle48-newInstanceLink").click(function(event){ 
+      event.preventDefault(); 
+      parsonsPuzzle.shuffleLines(); 
+  }); 
+  $("#puzzle48-feedbackLink").click(function(event){ 
+      event.preventDefault(); 
+      parsonsPuzzle.getFeedback(); 
+  }); 
+})(); 
+</script>
+
+## Puzzle 49  - Remove Duplicates (Grade 8–9) (9 marks)
+## This program stores numbers in a list, creates a second list, only stores unique values and outputs the new list.
+
+<div id="puzzle49-sortableTrash" class="sortable-code"></div> 
+<div id="puzzle49-sortable" class="sortable-code"></div> 
+<div style="clear:both;"></div> 
+<p> 
+    <input id="puzzle49-feedbackLink" value="Get Feedback" type="button" /> 
+    <input id="puzzle49-newInstanceLink" value="Reset Problem" type="button" /> 
+</p> 
+<script type="text/javascript"> 
+(function(){
+  var initial = "numbers = [2, 4, 2, 7, 4, 9]\n" +
+    "\n" +
+    "unique = []\n" +
+    "\n" +
+    "for value in numbers:\n" +
+    "\n" +
+    "    if value not in unique:\n" +
+    "\n" +
+    "        unique.append(value)\n" +
+    "\n" +
+    "print(unique)";
+  var parsonsPuzzle = new ParsonsWidget({
+    "sortableId": "puzzle49-sortable",
+    "max_wrong_lines": 10,
+    "grader": ParsonsWidget._graders.LineBasedGrader,
+    "exec_limit": 2500,
+    "can_indent": true,
+    "x_indent": 50,
+    "lang": "en",
+    "show_feedback": true,
+    "python3": true
+  });
+  parsonsPuzzle.init(initial);
+  parsonsPuzzle.shuffleLines();
+  $("#puzzle49-newInstanceLink").click(function(event){ 
+      event.preventDefault(); 
+      parsonsPuzzle.shuffleLines(); 
+  }); 
+  $("#puzzle49-feedbackLink").click(function(event){ 
+      event.preventDefault(); 
+      parsonsPuzzle.getFeedback(); 
+  }); 
+})(); 
+</script>
+
