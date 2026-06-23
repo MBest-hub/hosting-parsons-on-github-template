@@ -1681,3 +1681,224 @@ title: Michelle
   }); 
 })(); 
 </script>
+
+## Puzzle 39 - Count Vowels (6 marks)
+## This program asks the user for a word, counts vowels, outputs the total
+
+<div id="puzzle39-sortableTrash" class="sortable-code"></div> 
+<div id="puzzle39-sortable" class="sortable-code"></div> 
+<div style="clear:both;"></div> 
+<p> 
+    <input id="puzzle39-feedbackLink" value="Get Feedback" type="button" /> 
+    <input id="puzzle39-newInstanceLink" value="Reset Problem" type="button" /> 
+</p> 
+<script type="text/javascript"> 
+(function(){
+  var initial = "word = input(&quot;Enter word: &quot;)\n" +
+    "count = 0\n" +
+    "for letter in word:\n" +
+    "    if letter in &quot;aeiouAEIOU&quot;:\n" +
+    "        count += 1\n" +
+    "print(&quot;Vowels =&quot;, count)";
+  var parsonsPuzzle = new ParsonsWidget({
+    "sortableId": "puzzle39-sortable",
+    "max_wrong_lines": 10,
+    "grader": ParsonsWidget._graders.LineBasedGrader,
+    "exec_limit": 2500,
+    "can_indent": true,
+    "x_indent": 50,
+    "lang": "en",
+    "show_feedback": true,
+    "python3": true
+  });
+  parsonsPuzzle.init(initial);
+  parsonsPuzzle.shuffleLines();
+  $("#puzzle39-newInstanceLink").click(function(event){ 
+      event.preventDefault(); 
+      parsonsPuzzle.shuffleLines(); 
+  }); 
+  $("#puzzle39-feedbackLink").click(function(event){ 
+      event.preventDefault(); 
+      parsonsPuzzle.getFeedback(); 
+  }); 
+})(); 
+</script>
+
+## Puzzle 40 - Enter and Store Names (8 marks)
+## This program allows the user to enter 5 names, stores them in a list, displays all names entered.
+
+<div id="puzzle40-sortableTrash" class="sortable-code"></div> 
+<div id="puzzle40-sortable" class="sortable-code"></div> 
+<div style="clear:both;"></div> 
+<p> 
+    <input id="puzzle40-feedbackLink" value="Get Feedback" type="button" /> 
+    <input id="puzzle40-newInstanceLink" value="Reset Problem" type="button" /> 
+</p> 
+<script type="text/javascript"> 
+(function(){
+  var initial = "names = []\n" +
+    "for count in range(5):\n" +
+    "    name = input(&quot;Enter name: &quot;)\n" +
+    "    names.append(name)\n" +
+    "for item in names:\n" +
+    "    print(item)";
+  var parsonsPuzzle = new ParsonsWidget({
+    "sortableId": "puzzle40-sortable",
+    "max_wrong_lines": 10,
+    "grader": ParsonsWidget._graders.LineBasedGrader,
+    "exec_limit": 2500,
+    "can_indent": true,
+    "x_indent": 50,
+    "lang": "en",
+    "show_feedback": true,
+    "python3": true
+  });
+  parsonsPuzzle.init(initial);
+  parsonsPuzzle.shuffleLines();
+  $("#puzzle40-newInstanceLink").click(function(event){ 
+      event.preventDefault(); 
+      parsonsPuzzle.shuffleLines(); 
+  }); 
+  $("#puzzle40-feedbackLink").click(function(event){ 
+      event.preventDefault(); 
+      parsonsPuzzle.getFeedback(); 
+  }); 
+})(); 
+</script>
+
+## Puzzle 41 - Mini Login System (8 marks) Username = admin, Password = python
+## This program asks for username and password, allows 3 attempts, outputs "Access Granted" or "Account Locked".
+
+<div id="puzzle41-sortableTrash" class="sortable-code"></div> 
+<div id="puzzle41-sortable" class="sortable-code"></div> 
+<div style="clear:both;"></div> 
+<p> 
+    <input id="puzzle41-feedbackLink" value="Get Feedback" type="button" /> 
+    <input id="puzzle41-newInstanceLink" value="Reset Problem" type="button" /> 
+</p> 
+<script type="text/javascript"> 
+(function(){
+  var initial = "attempt = 0\n" +
+    "success = False\n" +
+    "while attempt &lt; 3 and success == False:\n" +
+    "    username = input(&quot;Username: &quot;)\n" +
+    "    password = input(&quot;Password: &quot;)\n" +
+    "    if username == &quot;admin&quot; and password == &quot;python&quot;:\n" +
+    "        success = True\n" +
+    "    attempt += 1\n" +
+    "if success:\n" +
+    "    print(&quot;Access Granted&quot;)\n" +
+    "else:\n" +
+    "    print(&quot;Account Locked&quot;)";
+  var parsonsPuzzle = new ParsonsWidget({
+    "sortableId": "puzzle41-sortable",
+    "max_wrong_lines": 10,
+    "grader": ParsonsWidget._graders.LineBasedGrader,
+    "exec_limit": 2500,
+    "can_indent": true,
+    "x_indent": 50,
+    "lang": "en",
+    "show_feedback": true,
+    "python3": true
+  });
+  parsonsPuzzle.init(initial);
+  parsonsPuzzle.shuffleLines();
+  $("#puzzle41-newInstanceLink").click(function(event){ 
+      event.preventDefault(); 
+      parsonsPuzzle.shuffleLines(); 
+  }); 
+  $("#puzzle41-feedbackLink").click(function(event){ 
+      event.preventDefault(); 
+      parsonsPuzzle.getFeedback(); 
+  }); 
+})(); 
+</script>
+
+## Puzzle 42 - Find Average and Highest (8 marks)
+## This program stores 6 numbers, calculates average, outputs highest value.
+
+<div id="puzzle42-sortableTrash" class="sortable-code"></div> 
+<div id="puzzle42-sortable" class="sortable-code"></div> 
+<div style="clear:both;"></div> 
+<p> 
+    <input id="puzzle42-feedbackLink" value="Get Feedback" type="button" /> 
+    <input id="puzzle42-newInstanceLink" value="Reset Problem" type="button" /> 
+</p> 
+<script type="text/javascript"> 
+(function(){
+  var initial = "numbers = [12, 25, 8, 31, 19, 14]\n" +
+    "total = 0\n" +
+    "highest = numbers[0]\n" +
+    "for value in numbers:\n" +
+    "    total += value\n" +
+    "    if value &gt; highest:\n" +
+    "        highest = value\n" +
+    "average = total / len(numbers)\n" +
+    "print(&quot;Average =&quot;, average)\n" +
+    "print(&quot;Highest =&quot;, highest)";
+  var parsonsPuzzle = new ParsonsWidget({
+    "sortableId": "puzzle42-sortable",
+    "max_wrong_lines": 10,
+    "grader": ParsonsWidget._graders.LineBasedGrader,
+    "exec_limit": 2500,
+    "can_indent": true,
+    "x_indent": 50,
+    "lang": "en",
+    "show_feedback": true,
+    "python3": true
+  });
+  parsonsPuzzle.init(initial);
+  parsonsPuzzle.shuffleLines();
+  $("#puzzle42-newInstanceLink").click(function(event){ 
+      event.preventDefault(); 
+      parsonsPuzzle.shuffleLines(); 
+  }); 
+  $("#puzzle42-feedbackLink").click(function(event){ 
+      event.preventDefault(); 
+      parsonsPuzzle.getFeedback(); 
+  }); 
+})(); 
+</script>
+
+## Puzzle 43 - Count Letter Occurrences (8 marks)
+## This program asks for a sentence, asks for a letter, counts occurrences of the letter.
+
+<div id="puzzle43-sortableTrash" class="sortable-code"></div> 
+<div id="puzzle43-sortable" class="sortable-code"></div> 
+<div style="clear:both;"></div> 
+<p> 
+    <input id="puzzle43-feedbackLink" value="Get Feedback" type="button" /> 
+    <input id="puzzle43-newInstanceLink" value="Reset Problem" type="button" /> 
+</p> 
+<script type="text/javascript"> 
+(function(){
+  var initial = "sentence = input(&quot;Sentence: &quot;)\n" +
+    "letter = input(&quot;Letter: &quot;)\n" +
+    "count = 0\n" +
+    "for character in sentence:\n" +
+    "    if character == letter:\n" +
+    "        count += 1\n" +
+    "print(&quot;Occurrences =&quot;, count)";
+  var parsonsPuzzle = new ParsonsWidget({
+    "sortableId": "puzzle43-sortable",
+    "max_wrong_lines": 10,
+    "grader": ParsonsWidget._graders.LineBasedGrader,
+    "exec_limit": 2500,
+    "can_indent": true,
+    "x_indent": 50,
+    "lang": "en",
+    "show_feedback": true,
+    "python3": true
+  });
+  parsonsPuzzle.init(initial);
+  parsonsPuzzle.shuffleLines();
+  $("#puzzle43-newInstanceLink").click(function(event){ 
+      event.preventDefault(); 
+      parsonsPuzzle.shuffleLines(); 
+  }); 
+  $("#puzzle43-feedbackLink").click(function(event){ 
+      event.preventDefault(); 
+      parsonsPuzzle.getFeedback(); 
+  }); 
+})(); 
+</script>
