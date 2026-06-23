@@ -1424,7 +1424,7 @@ title: Michelle
 })(); 
 </script>
 
-## Puzzle 34 Find the smallest value
+## Puzzle 34 - Find the smallest value
 
 <div id="puzzle34-sortableTrash" class="sortable-code"></div> 
 <div id="puzzle34-sortable" class="sortable-code"></div> 
