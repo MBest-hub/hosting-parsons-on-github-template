@@ -87,11 +87,7 @@ title: Michelle
 
 
 ## Puzzle 3 - Countdown (3 marks)
-## This program:
-## Counts from 5 to 1
-## Displays "GO!"
-## This program:
-## Drag into order, beware of indents!
+## This program: Counts from 5 to 1, displays "GO!"
 
 <div id="puzzle3no3-sortableTrash" class="sortable-code"></div> 
 <div id="puzzle3no3-sortable" class="sortable-code"></div> 
@@ -130,11 +126,7 @@ title: Michelle
 </script>
 
 ## Puzzle 4 - Square Function (3 marks)
-## This program:
-## Write a function called square() that:
-## Accepts one parameter
-## Returns the square
-## Drag into order, beware of indents!
+## This program: writes a function called square() that: accepts one parameter, returns the square
 
 <div id="puzzle3no4-sortableTrash" class="sortable-code"></div> 
 <div id="puzzle3no4-sortable" class="sortable-code"></div> 
@@ -176,7 +168,6 @@ title: Michelle
 
 ## Puzzle 5 - Password Validation (4 marks)
 ## A program that repeatedly ask for a password until "computer" is entered.
-## Drag into order, beware of indents!
 
 <div id="puzzle3no5-sortableTrash" class="sortable-code"></div> 
 <div id="puzzle3no5-sortable" class="sortable-code"></div> 
@@ -218,7 +209,6 @@ title: Michelle
 
 ## Puzzle 6 - Running Total (4 marks)
 ## This program allows you to input 5 numbers and display the total.
-## Drag into order, beware of indents!
 
 <div id="puzzle3no6-sortableTrash" class="sortable-code"></div> 
 <div id="puzzle3no6-sortable" class="sortable-code"></div> 
