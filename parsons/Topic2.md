@@ -1751,3 +1751,396 @@ title: Michelle
   }); 
 })(); 
 </script>
+
+
+## Validation Techniques
+## Puzzle 42 - Range check - age must be between 11 and 18
+
+<div id="puzzle42-sortableTrash" class="sortable-code"></div> 
+<div id="puzzle42-sortable" class="sortable-code"></div> 
+<div style="clear:both;"></div> 
+<p> 
+    <input id="puzzle42-feedbackLink" value="Get Feedback" type="button" /> 
+    <input id="puzzle42-newInstanceLink" value="Reset Problem" type="button" /> 
+</p> 
+<script type="text/javascript"> 
+(function(){
+  var initial = "age = int(input())\n" +
+    "while age &lt; 11 or age &gt; 18:\n" +
+    "    age = int(input(&quot;Try again: &quot;))\n" +
+    "print(&quot;Accepted&quot;)";
+  var parsonsPuzzle = new ParsonsWidget({
+    "sortableId": "puzzle42-sortable",
+    "max_wrong_lines": 10,
+    "grader": ParsonsWidget._graders.LineBasedGrader,
+    "exec_limit": 2500,
+    "can_indent": true,
+    "x_indent": 50,
+    "lang": "en",
+    "show_feedback": true,
+    "python3": true
+  });
+  parsonsPuzzle.init(initial);
+  parsonsPuzzle.shuffleLines();
+  $("#puzzle42-newInstanceLink").click(function(event){ 
+      event.preventDefault(); 
+      parsonsPuzzle.shuffleLines(); 
+  }); 
+  $("#puzzle42-feedbackLink").click(function(event){ 
+      event.preventDefault(); 
+      parsonsPuzzle.getFeedback(); 
+  }); 
+})(); 
+</script>
+
+## Puzzle 43 Length check username must contain 3-8 characters
+
+<div id="puzzle43-sortableTrash" class="sortable-code"></div> 
+<div id="puzzle43-sortable" class="sortable-code"></div> 
+<div style="clear:both;"></div> 
+<p> 
+    <input id="puzzle43-feedbackLink" value="Get Feedback" type="button" /> 
+    <input id="puzzle43-newInstanceLink" value="Reset Problem" type="button" /> 
+</p> 
+<script type="text/javascript"> 
+(function(){
+  var initial = "name = input()\n" +
+    "while len(name) &lt; 3 or len(name) &gt; 8:\n" +
+    "    name = input(&quot;Try again: &quot;)\n" +
+    "print(&quot;Valid&quot;)";
+  var parsonsPuzzle = new ParsonsWidget({
+    "sortableId": "puzzle43-sortable",
+    "max_wrong_lines": 10,
+    "grader": ParsonsWidget._graders.LineBasedGrader,
+    "exec_limit": 2500,
+    "can_indent": true,
+    "x_indent": 50,
+    "lang": "en",
+    "show_feedback": true,
+    "python3": true
+  });
+  parsonsPuzzle.init(initial);
+  parsonsPuzzle.shuffleLines();
+  $("#puzzle43-newInstanceLink").click(function(event){ 
+      event.preventDefault(); 
+      parsonsPuzzle.shuffleLines(); 
+  }); 
+  $("#puzzle43-feedbackLink").click(function(event){ 
+      event.preventDefault(); 
+      parsonsPuzzle.getFeedback(); 
+  }); 
+})(); 
+</script>
+
+## Puzzle 44 Presence check, user cannot leave input blank
+
+<div id="puzzle44-sortableTrash" class="sortable-code"></div> 
+<div id="puzzle44-sortable" class="sortable-code"></div> 
+<div style="clear:both;"></div> 
+<p> 
+    <input id="puzzle44-feedbackLink" value="Get Feedback" type="button" /> 
+    <input id="puzzle44-newInstanceLink" value="Reset Problem" type="button" /> 
+</p> 
+<script type="text/javascript"> 
+(function(){
+  var initial = "name = input()\n" +
+    "while name == &quot;&quot;:\n" +
+    "    name = input(&quot;Enter name: &quot;)\n" +
+    "print(&quot;Input accepted&quot;)";
+  var parsonsPuzzle = new ParsonsWidget({
+    "sortableId": "puzzle44-sortable",
+    "max_wrong_lines": 10,
+    "grader": ParsonsWidget._graders.LineBasedGrader,
+    "exec_limit": 2500,
+    "can_indent": true,
+    "x_indent": 50,
+    "lang": "en",
+    "show_feedback": true,
+    "python3": true
+  });
+  parsonsPuzzle.init(initial);
+  parsonsPuzzle.shuffleLines();
+  $("#puzzle44-newInstanceLink").click(function(event){ 
+      event.preventDefault(); 
+      parsonsPuzzle.shuffleLines(); 
+  }); 
+  $("#puzzle44-feedbackLink").click(function(event){ 
+      event.preventDefault(); 
+      parsonsPuzzle.getFeedback(); 
+  }); 
+})(); 
+</script>
+
+## Puzzle 45 Format check, must contain @
+
+<div id="puzzle45-sortableTrash" class="sortable-code"></div> 
+<div id="puzzle45-sortable" class="sortable-code"></div> 
+<div style="clear:both;"></div> 
+<p> 
+    <input id="puzzle45-feedbackLink" value="Get Feedback" type="button" /> 
+    <input id="puzzle45-newInstanceLink" value="Reset Problem" type="button" /> 
+</p> 
+<script type="text/javascript"> 
+(function(){
+  var initial = "email = input()\n" +
+    "while &quot;@&quot; not in email:\n" +
+    "    email = input(&quot;Retry: &quot;)\n" +
+    "print(&quot;Email accepted&quot;)";
+  var parsonsPuzzle = new ParsonsWidget({
+    "sortableId": "puzzle45-sortable",
+    "max_wrong_lines": 10,
+    "grader": ParsonsWidget._graders.LineBasedGrader,
+    "exec_limit": 2500,
+    "can_indent": true,
+    "x_indent": 50,
+    "lang": "en",
+    "show_feedback": true,
+    "python3": true
+  });
+  parsonsPuzzle.init(initial);
+  parsonsPuzzle.shuffleLines();
+  $("#puzzle45-newInstanceLink").click(function(event){ 
+      event.preventDefault(); 
+      parsonsPuzzle.shuffleLines(); 
+  }); 
+  $("#puzzle45-feedbackLink").click(function(event){ 
+      event.preventDefault(); 
+      parsonsPuzzle.getFeedback(); 
+  }); 
+})(); 
+</script>
+
+## Puzzle 46 Type check, input must be numeric
+
+<div id="puzzle46-sortableTrash" class="sortable-code"></div> 
+<div id="puzzle46-sortable" class="sortable-code"></div> 
+<div style="clear:both;"></div> 
+<p> 
+    <input id="puzzle46-feedbackLink" value="Get Feedback" type="button" /> 
+    <input id="puzzle46-newInstanceLink" value="Reset Problem" type="button" /> 
+</p> 
+<script type="text/javascript"> 
+(function(){
+  var initial = "number = input()\n" +
+    "while not number.isdigit():\n" +
+    "    number = input(&quot;Numbers only: &quot;)\n" +
+    "print(&quot;Accepted&quot;)";
+  var parsonsPuzzle = new ParsonsWidget({
+    "sortableId": "puzzle46-sortable",
+    "max_wrong_lines": 10,
+    "grader": ParsonsWidget._graders.LineBasedGrader,
+    "exec_limit": 2500,
+    "can_indent": true,
+    "x_indent": 50,
+    "lang": "en",
+    "show_feedback": true,
+    "python3": true
+  });
+  parsonsPuzzle.init(initial);
+  parsonsPuzzle.shuffleLines();
+  $("#puzzle46-newInstanceLink").click(function(event){ 
+      event.preventDefault(); 
+      parsonsPuzzle.shuffleLines(); 
+  }); 
+  $("#puzzle46-feedbackLink").click(function(event){ 
+      event.preventDefault(); 
+      parsonsPuzzle.getFeedback(); 
+  }); 
+})(); 
+</script>
+
+## Puzzle 47 Lookup check, must be one of Red, Blue, Green
+
+<div id="puzzle47-sortableTrash" class="sortable-code"></div> 
+<div id="puzzle47-sortable" class="sortable-code"></div> 
+<div style="clear:both;"></div> 
+<p> 
+    <input id="puzzle47-feedbackLink" value="Get Feedback" type="button" /> 
+    <input id="puzzle47-newInstanceLink" value="Reset Problem" type="button" /> 
+</p> 
+<script type="text/javascript"> 
+(function(){
+  var initial = "allowed = [&quot;Red&quot;,&quot;Blue&quot;,&quot;Green&quot;]\n" +
+    "colour = input()\n" +
+    "while colour not in allowed:\n" +
+    "    colour = input(&quot;Retry: &quot;)\n" +
+    "print(&quot;Accepted&quot;)";
+  var parsonsPuzzle = new ParsonsWidget({
+    "sortableId": "puzzle47-sortable",
+    "max_wrong_lines": 10,
+    "grader": ParsonsWidget._graders.LineBasedGrader,
+    "exec_limit": 2500,
+    "can_indent": true,
+    "x_indent": 50,
+    "lang": "en",
+    "show_feedback": true,
+    "python3": true
+  });
+  parsonsPuzzle.init(initial);
+  parsonsPuzzle.shuffleLines();
+  $("#puzzle47-newInstanceLink").click(function(event){ 
+      event.preventDefault(); 
+      parsonsPuzzle.shuffleLines(); 
+  }); 
+  $("#puzzle47-feedbackLink").click(function(event){ 
+      event.preventDefault(); 
+      parsonsPuzzle.getFeedback(); 
+  }); 
+})(); 
+</script>
+
+## Puzzle 48 Combined validation. Pin must be exactly 4 digits and contain numbers only
+
+<div id="puzzle48-sortableTrash" class="sortable-code"></div> 
+<div id="puzzle48-sortable" class="sortable-code"></div> 
+<div style="clear:both;"></div> 
+<p> 
+    <input id="puzzle48-feedbackLink" value="Get Feedback" type="button" /> 
+    <input id="puzzle48-newInstanceLink" value="Reset Problem" type="button" /> 
+</p> 
+<script type="text/javascript"> 
+(function(){
+  var initial = "pin = input()\n" +
+    "while len(pin) != 4 or not pin.isdigit():\n" +
+    "    pin = input(&quot;Retry: &quot;)\n" +
+    "print(&quot;PIN accepted&quot;)";
+  var parsonsPuzzle = new ParsonsWidget({
+    "sortableId": "puzzle48-sortable",
+    "max_wrong_lines": 10,
+    "grader": ParsonsWidget._graders.LineBasedGrader,
+    "exec_limit": 2500,
+    "can_indent": true,
+    "x_indent": 50,
+    "lang": "en",
+    "show_feedback": true,
+    "python3": true
+  });
+  parsonsPuzzle.init(initial);
+  parsonsPuzzle.shuffleLines();
+  $("#puzzle48-newInstanceLink").click(function(event){ 
+      event.preventDefault(); 
+      parsonsPuzzle.shuffleLines(); 
+  }); 
+  $("#puzzle48-feedbackLink").click(function(event){ 
+      event.preventDefault(); 
+      parsonsPuzzle.getFeedback(); 
+  }); 
+})(); 
+</script>
+
+## Puzzle 49 Menu validation
+
+<div id="puzzle49-sortableTrash" class="sortable-code"></div> 
+<div id="puzzle49-sortable" class="sortable-code"></div> 
+<div style="clear:both;"></div> 
+<p> 
+    <input id="puzzle49-feedbackLink" value="Get Feedback" type="button" /> 
+    <input id="puzzle49-newInstanceLink" value="Reset Problem" type="button" /> 
+</p> 
+<script type="text/javascript"> 
+(function(){
+  var initial = "choice = input()\n" +
+    "while choice not in [&quot;1&quot;,&quot;2&quot;,&quot;3&quot;]:\n" +
+    "    choice = input(&quot;Select 1–3: &quot;)\n" +
+    "print(&quot;Chosen&quot;)";
+  var parsonsPuzzle = new ParsonsWidget({
+    "sortableId": "puzzle49-sortable",
+    "max_wrong_lines": 10,
+    "grader": ParsonsWidget._graders.LineBasedGrader,
+    "exec_limit": 2500,
+    "can_indent": true,
+    "x_indent": 50,
+    "lang": "en",
+    "show_feedback": true,
+    "python3": true
+  });
+  parsonsPuzzle.init(initial);
+  parsonsPuzzle.shuffleLines();
+  $("#puzzle49-newInstanceLink").click(function(event){ 
+      event.preventDefault(); 
+      parsonsPuzzle.shuffleLines(); 
+  }); 
+  $("#puzzle49-feedbackLink").click(function(event){ 
+      event.preventDefault(); 
+      parsonsPuzzle.getFeedback(); 
+  }); 
+})(); 
+</script>
+
+## Puzzle 50 Temperature Validation
+
+<div id="puzzle50-sortableTrash" class="sortable-code"></div> 
+<div id="puzzle50-sortable" class="sortable-code"></div> 
+<div style="clear:both;"></div> 
+<p> 
+    <input id="puzzle50-feedbackLink" value="Get Feedback" type="button" /> 
+    <input id="puzzle50-newInstanceLink" value="Reset Problem" type="button" /> 
+</p> 
+<script type="text/javascript"> 
+(function(){
+  var initial = "temp = int(input())\n" +
+    "while temp &lt; -20 or temp &gt; 50:\n" +
+    "    temp = int(input(&quot;Retry: &quot;))\n" +
+    "print(&quot;Stored&quot;)";
+  var parsonsPuzzle = new ParsonsWidget({
+    "sortableId": "puzzle50-sortable",
+    "max_wrong_lines": 10,
+    "grader": ParsonsWidget._graders.LineBasedGrader,
+    "exec_limit": 2500,
+    "can_indent": true,
+    "x_indent": 50,
+    "lang": "en",
+    "show_feedback": true,
+    "python3": true
+  });
+  parsonsPuzzle.init(initial);
+  parsonsPuzzle.shuffleLines();
+  $("#puzzle50-newInstanceLink").click(function(event){ 
+      event.preventDefault(); 
+      parsonsPuzzle.shuffleLines(); 
+  }); 
+  $("#puzzle50-feedbackLink").click(function(event){ 
+      event.preventDefault(); 
+      parsonsPuzzle.getFeedback(); 
+  }); 
+})(); 
+</script>
+
+## Puzzle 51 Password validation
+
+<div id="puzzle51-sortableTrash" class="sortable-code"></div> 
+<div id="puzzle51-sortable" class="sortable-code"></div> 
+<div style="clear:both;"></div> 
+<p> 
+    <input id="puzzle51-feedbackLink" value="Get Feedback" type="button" /> 
+    <input id="puzzle51-newInstanceLink" value="Reset Problem" type="button" /> 
+</p> 
+<script type="text/javascript"> 
+(function(){
+  var initial = "password = input()\n" +
+    "while len(password) &lt; 8:\n" +
+    "    password = input(&quot;Too short: &quot;)\n" +
+    "print(&quot;Password accepted&quot;)";
+  var parsonsPuzzle = new ParsonsWidget({
+    "sortableId": "puzzle51-sortable",
+    "max_wrong_lines": 10,
+    "grader": ParsonsWidget._graders.LineBasedGrader,
+    "exec_limit": 2500,
+    "can_indent": true,
+    "x_indent": 50,
+    "lang": "en",
+    "show_feedback": true,
+    "python3": true
+  });
+  parsonsPuzzle.init(initial);
+  parsonsPuzzle.shuffleLines();
+  $("#puzzle51-newInstanceLink").click(function(event){ 
+      event.preventDefault(); 
+      parsonsPuzzle.shuffleLines(); 
+  }); 
+  $("#puzzle51-feedbackLink").click(function(event){ 
+      event.preventDefault(); 
+      parsonsPuzzle.getFeedback(); 
+  }); 
+})(); 
+</script>
