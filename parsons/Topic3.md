@@ -2,14 +2,10 @@
 layout: default
 title: Michelle
 ---
-## These are GCSE style exam questions!
+## These are GCSE style exam questions 3-6 Marks!
 
-## 1. Random Dice Roll (3 marks)
-## This program:
-## Imports a module
-## Generates a random number between 1 and 6
-## Displays the result
-## Drag into order, beware of indents!
+## Puzzle 1 - Random Dice Roll (3 marks)
+## This program, imports a module, generates a random number between 1 and 6, displays the results, drag into order, beware of indents!
 
 <div id="puzzle3no1-sortableTrash" class="sortable-code"></div> 
 <div id="puzzle3no1-sortable" class="sortable-code"></div> 
@@ -48,12 +44,8 @@ title: Michelle
 </script>
  
 
-## 2. Positive Number Check (3 marks)
-## This program:
-## Gets a number from the user
-## Displays "Positive" if above 0
-## Otherwise displays "Not positive"
-## Drag into order, beware of indents!
+## Puzzle 2 - Positive Number Check (3 marks)
+## This program gets a number from the user, Displays "Positive" if above 0, Otherwise displays "Not positive", Drag into order, beware of indents!
 
 <div id="puzzle3no2-sortableTrash" class="sortable-code"></div> 
 <div id="puzzle3no2-sortable" class="sortable-code"></div> 
@@ -94,7 +86,7 @@ title: Michelle
 </script>
 
 
-## 3. Countdown (3 marks)
+## Puzzle 3 - Countdown (3 marks)
 ## This program:
 ## Counts from 5 to 1
 ## Displays "GO!"
@@ -137,7 +129,7 @@ title: Michelle
 })(); 
 </script>
 
-## 4. Square Function (3 marks)
+## Puzzle 4 - Square Function (3 marks)
 ## This program:
 ## Write a function called square() that:
 ## Accepts one parameter
@@ -182,7 +174,7 @@ title: Michelle
 </script>
 
 
-## 5. Password Validation (4 marks)
+## Puzzle 5 - Password Validation (4 marks)
 ## A program that repeatedly ask for a password until "computer" is entered.
 ## Drag into order, beware of indents!
 
@@ -224,7 +216,7 @@ title: Michelle
 </script>
 
 
-## 6. Running Total (4 marks)
+## Puzzle 6 - Running Total (4 marks)
 ## This program allows you to input 5 numbers and display the total.
 ## Drag into order, beware of indents!
 
@@ -267,7 +259,7 @@ title: Michelle
 </script>
 
 
-## 7. Random Multiplication Quiz (4 marks)
+## Puzzle 7 - Random Multiplication Quiz (4 marks)
 ## This program will generate two random numbers and check answer.
 
 <div id="puzzle3no7-sortableTrash" class="sortable-code"></div> 
@@ -313,7 +305,7 @@ title: Michelle
 </script>
 
 
-## 8. Largest Number (4 marks)
+## Puzzle 8 - Largest Number (4 marks)
 ## This program allows the users to input 5 numbers and display largest.
 
 <div id="puzzle3no8-sortableTrash" class="sortable-code"></div> 
@@ -356,7 +348,7 @@ title: Michelle
 </script>
 
 
-## 9. Average Calculator (5 marks)
+## Puzzle 9 - Average Calculator (5 marks)
 ## This program stores 5 values in a list and display average.
 
 <div id="puzzle3no9-sortableTrash" class="sortable-code"></div> 
@@ -399,7 +391,7 @@ title: Michelle
 </script>
 
 
-## 10. Number Guessing Game (5 marks)
+## Puzzle 10 - Number Guessing Game (5 marks)
 ## This program will generate a random number and count attempts to guess it.
 
 <div id="puzzle3no10-sortableTrash" class="sortable-code"></div> 
@@ -445,7 +437,7 @@ title: Michelle
 </script>
 
 
-## 11. Grade Calculator (5 marks)
+## Puzzle 11 - Grade Calculator (5 marks)
 ## This program will ask for a mark and output grade:
 ## A = 70+
 ## B = 50–69
@@ -492,7 +484,7 @@ title: Michelle
 </script>
 
 
-## 12. Character Counter (5 marks)
+## Puzzle 12 - Character Counter (5 marks)
 ## This program counts vowels in a word.
 
 <div id="puzzle3no12-sortableTrash" class="sortable-code"></div> 
@@ -534,7 +526,7 @@ title: Michelle
 </script>
 
 
-## 13. Mini Login System (6 marks)
+## Puzzle 13 - Mini Login System (6 marks)
 ## This allow 3 attempts to login.
 
 <div id="puzzle3no13-sortableTrash" class="sortable-code"></div> 
@@ -583,7 +575,7 @@ title: Michelle
 </script>
 
 
-## 14. Lottery Simulator (6 marks)
+## Puzzle 14 - Lottery Simulator (6 marks)
 ## This program will generate six random numbers.
 
 <div id="puzzle3no14-sortableTrash" class="sortable-code"></div> 
@@ -626,7 +618,7 @@ title: Michelle
 </script>
 
 
-## 15. Temperature Tracker (6 marks)
+## Puzzle 15 - Temperature Tracker (6 marks)
 ## This program stores temperatures and output highest, lowest and average.
 
 <div id="puzzle3no15-sortableTrash" class="sortable-code"></div> 
@@ -671,7 +663,7 @@ title: Michelle
 </script>
 
 
-## 16. Menu System (6 marks)
+## Puzzle 16 - Menu System (6 marks)
 ## This program will create a menu until Exit.
 
 <div id="puzzle3no16-sortableTrash" class="sortable-code"></div> 
@@ -715,7 +707,7 @@ title: Michelle
 </script>
 
 
-## 17. Caesar Cipher (6 marks)
+## Puzzle 17 - Caesar Cipher (6 marks)
 ## This program will shift letters by +1.
 
 <div id="puzzle3no17-sortableTrash" class="sortable-code"></div> 
@@ -758,7 +750,7 @@ title: Michelle
 </script>
 
 
-## 18. Number Frequency Counter (6 marks)
+## Puzzle 18 - Number Frequency Counter (6 marks)
 ## This program counts even numbers.
 
 <div id="puzzle3no18-sortableTrash" class="sortable-code"></div> 
@@ -800,7 +792,7 @@ title: Michelle
 })(); 
 </script>
 
-## Puzzle 19 Ticket booking system (6 marks)
+## Puzzle 19 - Ticket booking system (6 marks)
 ## A cinema sells tickets. Asks for the number of tickets, charges £8 per ticket, gives 10% discount if buying 5 or more, outputs the final price.
 
 <div id="puzzle19-sortableTrash" class="sortable-code"></div> 
@@ -841,7 +833,7 @@ title: Michelle
 })(); 
 </script>
 
-## Puzzle 20 Password strength checker (6 marks)
+## Puzzle 20 - Password strength checker (6 marks)
 ## This program asks for a password, checks whether it contains at least 8 characters, outputs "Strong" or "Weak".
 
 <div id="puzzle20-sortableTrash" class="sortable-code"></div> 
@@ -882,7 +874,7 @@ title: Michelle
 })(); 
 </script>
 
-## Puzzle 21 Find the largest number in a list (7 marks)
+## Puzzle 21 - Find the largest number in a list (7 marks)
 ## This program A list stores five numbers. Output the largest value.
 
 <div id="puzzle21-sortableTrash" class="sortable-code"></div> 
@@ -924,7 +916,7 @@ title: Michelle
 })(); 
 </script>
 
-## Puzzle 22 Guess the random number (6 marks)
+## Puzzle 22 - Guess the random number (6 marks)
 ## This program generates a random number between 1 and 10, allows the user up to 3 guesses, tells them if they win.
 
 <div id="puzzle22-sortableTrash" class="sortable-code"></div> 
@@ -972,7 +964,7 @@ title: Michelle
 })(); 
 </script>
 
-## Puzzle 23 Frequency counter (6 marks)
+## Puzzle 23 - Frequency counter (6 marks)
 ## This program Write stores names in a list and counts how many times "Sam" appears.
 
 <div id="puzzle23-sortableTrash" class="sortable-code"></div> 
@@ -1017,7 +1009,7 @@ title: Michelle
 })(); 
 </script>
 
-## Puzzle 24 Menu system using functions (8 marks)
+## Puzzle 24 - Menu system using functions (8 marks)
 ## This program has a menu that can add, multiply and exit
 
 <div id="puzzle24-sortableTrash" class="sortable-code"></div> 
@@ -1071,7 +1063,7 @@ title: Michelle
 })(); 
 </script>
 
-## Puzzle 25 Two-Dimensional Array Seating Plan (8 marks)
+## Puzzle 25 - Two-Dimensional Array Seating Plan (6 marks)
 ## This program stores a seating plan
 
 <div id="puzzle25-sortableTrash" class="sortable-code"></div> 
@@ -1120,3 +1112,572 @@ title: Michelle
 })(); 
 </script>
 
+## These are GCSE style exam questions 6-8 Marks!
+
+## Puzzle 26 - Count Even Numbers (6 marks) 
+## A list contains integer values.
+## This program stores the values in a list, counts how many values are even, outputs the total
+
+<div id="puzzle26-sortableTrash" class="sortable-code"></div> 
+<div id="puzzle26-sortable" class="sortable-code"></div> 
+<div style="clear:both;"></div> 
+<p> 
+    <input id="puzzle26-feedbackLink" value="Get Feedback" type="button" /> 
+    <input id="puzzle26-newInstanceLink" value="Reset Problem" type="button" /> 
+</p> 
+<script type="text/javascript"> 
+(function(){
+  var initial = "numbers = [7, 12, 15, 22, 18, 9]\n" +
+    "count = 0\n" +
+    "for number in numbers:\n" +
+    "    if number % 2 == 0:\n" +
+    "        count += 1\n" +
+    "print(&quot;Even numbers =&quot;, count)";
+  var parsonsPuzzle = new ParsonsWidget({
+    "sortableId": "puzzle26-sortable",
+    "max_wrong_lines": 10,
+    "grader": ParsonsWidget._graders.LineBasedGrader,
+    "exec_limit": 2500,
+    "can_indent": true,
+    "x_indent": 50,
+    "lang": "en",
+    "show_feedback": true,
+    "python3": true
+  });
+  parsonsPuzzle.init(initial);
+  parsonsPuzzle.shuffleLines();
+  $("#puzzle26-newInstanceLink").click(function(event){ 
+      event.preventDefault(); 
+      parsonsPuzzle.shuffleLines(); 
+  }); 
+  $("#puzzle26-feedbackLink").click(function(event){ 
+      event.preventDefault(); 
+      parsonsPuzzle.getFeedback(); 
+  }); 
+})(); 
+</script>
+
+## Puzzle 27 - Enter Scores Until Finished (6 marks)
+## This program repeatedly asks for a score, stops when the user enters -1, outputs the total score entered.
+
+<div id="puzzle27-sortableTrash" class="sortable-code"></div> 
+<div id="puzzle27-sortable" class="sortable-code"></div> 
+<div style="clear:both;"></div> 
+<p> 
+    <input id="puzzle27-feedbackLink" value="Get Feedback" type="button" /> 
+    <input id="puzzle27-newInstanceLink" value="Reset Problem" type="button" /> 
+</p> 
+<script type="text/javascript"> 
+(function(){
+  var initial = "total = 0\n" +
+    "score = int(input(&quot;Enter score (-1 to stop): &quot;))\n" +
+    "while score != -1:\n" +
+    "    total += score\n" +
+    "    score = int(input(&quot;Enter score (-1 to stop): &quot;))\n" +
+    "print(&quot;Total =&quot;, total)";
+  var parsonsPuzzle = new ParsonsWidget({
+    "sortableId": "puzzle27-sortable",
+    "max_wrong_lines": 10,
+    "grader": ParsonsWidget._graders.LineBasedGrader,
+    "exec_limit": 2500,
+    "can_indent": true,
+    "x_indent": 50,
+    "lang": "en",
+    "show_feedback": true,
+    "python3": true
+  });
+  parsonsPuzzle.init(initial);
+  parsonsPuzzle.shuffleLines();
+  $("#puzzle27-newInstanceLink").click(function(event){ 
+      event.preventDefault(); 
+      parsonsPuzzle.shuffleLines(); 
+  }); 
+  $("#puzzle27-feedbackLink").click(function(event){ 
+      event.preventDefault(); 
+      parsonsPuzzle.getFeedback(); 
+  }); 
+})(); 
+</script>
+
+## Puzzle 28 - Highest and Lowest (7 marks)
+## This puzzle asks for 5 numbers, outputs the highest and lowest values entered.
+
+<div id="puzzle28-sortableTrash" class="sortable-code"></div> 
+<div id="puzzle28-sortable" class="sortable-code"></div> 
+<div style="clear:both;"></div> 
+<p> 
+    <input id="puzzle28-feedbackLink" value="Get Feedback" type="button" /> 
+    <input id="puzzle28-newInstanceLink" value="Reset Problem" type="button" /> 
+</p> 
+<script type="text/javascript"> 
+(function(){
+  var initial = "first = int(input(&quot;Enter number: &quot;))\n" +
+    "highest = first\n" +
+    "lowest = first\n" +
+    "for count in range(4):\n" +
+    "    number = int(input(&quot;Enter number: &quot;))\n" +
+    "    if number &gt; highest:\n" +
+    "        highest = number\n" +
+    "    if number &lt; lowest:\n" +
+    "        lowest = number\n" +
+    "print(&quot;Highest =&quot;, highest)\n" +
+    "print(&quot;Lowest =&quot;, lowest)";
+  var parsonsPuzzle = new ParsonsWidget({
+    "sortableId": "puzzle28-sortable",
+    "max_wrong_lines": 10,
+    "grader": ParsonsWidget._graders.LineBasedGrader,
+    "exec_limit": 2500,
+    "can_indent": true,
+    "x_indent": 50,
+    "lang": "en",
+    "show_feedback": true,
+    "python3": true
+  });
+  parsonsPuzzle.init(initial);
+  parsonsPuzzle.shuffleLines();
+  $("#puzzle28-newInstanceLink").click(function(event){ 
+      event.preventDefault(); 
+      parsonsPuzzle.shuffleLines(); 
+  }); 
+  $("#puzzle28-feedbackLink").click(function(event){ 
+      event.preventDefault(); 
+      parsonsPuzzle.getFeedback(); 
+  }); 
+})(); 
+</script>
+
+## Puzzle 29 - Username Validation (7 marks)
+## This program asks for a username and repeats until: length is between 5 and 10 characters then outputs "Accepted"
+
+<div id="puzzle29-sortableTrash" class="sortable-code"></div> 
+<div id="puzzle29-sortable" class="sortable-code"></div> 
+<div style="clear:both;"></div> 
+<p> 
+    <input id="puzzle29-feedbackLink" value="Get Feedback" type="button" /> 
+    <input id="puzzle29-newInstanceLink" value="Reset Problem" type="button" /> 
+</p> 
+<script type="text/javascript"> 
+(function(){
+  var initial = "username = input(&quot;Enter username: &quot;)\n" +
+    "while len(username) &lt; 5 or len(username) &gt; 10:\n" +
+    "    print(&quot;Invalid&quot;)\n" +
+    "    username = input(&quot;Enter username: &quot;)\n" +
+    "print(&quot;Accepted&quot;)";
+  var parsonsPuzzle = new ParsonsWidget({
+    "sortableId": "puzzle29-sortable",
+    "max_wrong_lines": 10,
+    "grader": ParsonsWidget._graders.LineBasedGrader,
+    "exec_limit": 2500,
+    "can_indent": true,
+    "x_indent": 50,
+    "lang": "en",
+    "show_feedback": true,
+    "python3": true
+  });
+  parsonsPuzzle.init(initial);
+  parsonsPuzzle.shuffleLines();
+  $("#puzzle29-newInstanceLink").click(function(event){ 
+      event.preventDefault(); 
+      parsonsPuzzle.shuffleLines(); 
+  }); 
+  $("#puzzle29-feedbackLink").click(function(event){ 
+      event.preventDefault(); 
+      parsonsPuzzle.getFeedback(); 
+  }); 
+})(); 
+</script>
+
+## Puzzle 30 - Search a List (7 marks)
+## This program is a list containing names, asks for a name, searches the list, outputs "Found" or "Not Found".
+
+<div id="puzzle30-sortableTrash" class="sortable-code"></div> 
+<div id="puzzle30-sortable" class="sortable-code"></div> 
+<div style="clear:both;"></div> 
+<p> 
+    <input id="puzzle30-feedbackLink" value="Get Feedback" type="button" /> 
+    <input id="puzzle30-newInstanceLink" value="Reset Problem" type="button" /> 
+</p> 
+<script type="text/javascript"> 
+(function(){
+  var initial = "names = [&quot;Ali&quot;, &quot;Mia&quot;, &quot;Jake&quot;, &quot;Ava&quot;]\n" +
+    "search = input(&quot;Enter name: &quot;)\n" +
+    "found = False\n" +
+    "for name in names:\n" +
+    "    if name == search:\n" +
+    "        found = True\n" +
+    "if found:\n" +
+    "    print(&quot;Found&quot;)\n" +
+    "else:\n" +
+    "    print(&quot;Not Found&quot;)";
+  var parsonsPuzzle = new ParsonsWidget({
+    "sortableId": "puzzle30-sortable",
+    "max_wrong_lines": 10,
+    "grader": ParsonsWidget._graders.LineBasedGrader,
+    "exec_limit": 2500,
+    "can_indent": true,
+    "x_indent": 50,
+    "lang": "en",
+    "show_feedback": true,
+    "python3": true
+  });
+  parsonsPuzzle.init(initial);
+  parsonsPuzzle.shuffleLines();
+  $("#puzzle30-newInstanceLink").click(function(event){ 
+      event.preventDefault(); 
+      parsonsPuzzle.shuffleLines(); 
+  }); 
+  $("#puzzle30-feedbackLink").click(function(event){ 
+      event.preventDefault(); 
+      parsonsPuzzle.getFeedback(); 
+  }); 
+})(); 
+</script>
+
+## Puzzle 31 - Calculate Average Temperature (8 marks)
+## This program stores 7 temperatures in a list, calculates the average, outputs temperatures above the average.
+
+<div id="puzzle31-sortableTrash" class="sortable-code"></div> 
+<div id="puzzle31-sortable" class="sortable-code"></div> 
+<div style="clear:both;"></div> 
+<p> 
+    <input id="puzzle31-feedbackLink" value="Get Feedback" type="button" /> 
+    <input id="puzzle31-newInstanceLink" value="Reset Problem" type="button" /> 
+</p> 
+<script type="text/javascript"> 
+(function(){
+  var initial = "temps = [16, 18, 21, 19, 23, 17, 20]\n" +
+    "total = 0\n" +
+    "for value in temps:\n" +
+    "    total += value\n" +
+    "average = total / len(temps)\n" +
+    "print(&quot;Average =&quot;, average)\n" +
+    "for value in temps:\n" +
+    "    if value &gt; average:\n" +
+    "        print(value)";
+  var parsonsPuzzle = new ParsonsWidget({
+    "sortableId": "puzzle31-sortable",
+    "max_wrong_lines": 10,
+    "grader": ParsonsWidget._graders.LineBasedGrader,
+    "exec_limit": 2500,
+    "can_indent": true,
+    "x_indent": 50,
+    "lang": "en",
+    "show_feedback": true,
+    "python3": true
+  });
+  parsonsPuzzle.init(initial);
+  parsonsPuzzle.shuffleLines();
+  $("#puzzle31-newInstanceLink").click(function(event){ 
+      event.preventDefault(); 
+      parsonsPuzzle.shuffleLines(); 
+  }); 
+  $("#puzzle31-feedbackLink").click(function(event){ 
+      event.preventDefault(); 
+      parsonsPuzzle.getFeedback(); 
+  }); 
+})(); 
+</script>
+
+## Puzzle 32 - Password Attempts (8 marks) Correct password = "AQA8525"
+## This program allows 3 attempts, stops if password entered correctly, outputs "Access Granted" or "Locked".
+
+<div id="puzzle32-sortableTrash" class="sortable-code"></div> 
+<div id="puzzle32-sortable" class="sortable-code"></div> 
+<div style="clear:both;"></div> 
+<p> 
+    <input id="puzzle32-feedbackLink" value="Get Feedback" type="button" /> 
+    <input id="puzzle32-newInstanceLink" value="Reset Problem" type="button" /> 
+</p> 
+<script type="text/javascript"> 
+(function(){
+  var initial = "password = &quot;AQA8525&quot;\n" +
+    "attempt = 0\n" +
+    "success = False\n" +
+    "while attempt &lt; 3 and success == False:\n" +
+    "    entry = input(&quot;Password: &quot;)\n" +
+    "    if entry == password:\n" +
+    "        success = True\n" +
+    "    attempt += 1\n" +
+    "if success:\n" +
+    "    print(&quot;Access Granted&quot;)\n" +
+    "else:\n" +
+    "    print(&quot;Locked&quot;)";
+  var parsonsPuzzle = new ParsonsWidget({
+    "sortableId": "puzzle32-sortable",
+    "max_wrong_lines": 10,
+    "grader": ParsonsWidget._graders.LineBasedGrader,
+    "exec_limit": 2500,
+    "can_indent": true,
+    "x_indent": 50,
+    "lang": "en",
+    "show_feedback": true,
+    "python3": true
+  });
+  parsonsPuzzle.init(initial);
+  parsonsPuzzle.shuffleLines();
+  $("#puzzle32-newInstanceLink").click(function(event){ 
+      event.preventDefault(); 
+      parsonsPuzzle.shuffleLines(); 
+  }); 
+  $("#puzzle32-feedbackLink").click(function(event){ 
+      event.preventDefault(); 
+      parsonsPuzzle.getFeedback(); 
+  }); 
+})(); 
+</script>
+
+## Puzzle 33 - Shopping Basket (8 marks)
+## This program stores prices in a list, calculates total, applies: 10% discount if total exceeds £50.
+
+<div id="puzzle33-sortableTrash" class="sortable-code"></div> 
+<div id="puzzle33-sortable" class="sortable-code"></div> 
+<div style="clear:both;"></div> 
+<p> 
+    <input id="puzzle33-feedbackLink" value="Get Feedback" type="button" /> 
+    <input id="puzzle33-newInstanceLink" value="Reset Problem" type="button" /> 
+</p> 
+<script type="text/javascript"> 
+(function(){
+  var initial = "prices = [10, 15, 20, 25]\n" +
+    "total = 0\n" +
+    "for price in prices:\n" +
+    "    total += price\n" +
+    "if total &gt; 50:\n" +
+    "    total = total * 0.9\n" +
+    "print(&quot;Total = £&quot;, round(total, 2))";
+  var parsonsPuzzle = new ParsonsWidget({
+    "sortableId": "puzzle33-sortable",
+    "max_wrong_lines": 10,
+    "grader": ParsonsWidget._graders.LineBasedGrader,
+    "exec_limit": 2500,
+    "can_indent": true,
+    "x_indent": 50,
+    "lang": "en",
+    "show_feedback": true,
+    "python3": true
+  });
+  parsonsPuzzle.init(initial);
+  parsonsPuzzle.shuffleLines();
+  $("#puzzle33-newInstanceLink").click(function(event){ 
+      event.preventDefault(); 
+      parsonsPuzzle.shuffleLines(); 
+  }); 
+  $("#puzzle33-feedbackLink").click(function(event){ 
+      event.preventDefault(); 
+      parsonsPuzzle.getFeedback(); 
+  }); 
+})(); 
+</script>
+
+## Puzzle 34 - Count Positive and Negative Numbers (6 marks)
+## This program stores numbers in a list, counts positive values, counts negative values, outputs both totals.
+
+<div id="puzzle34-sortableTrash" class="sortable-code"></div> 
+<div id="puzzle34-sortable" class="sortable-code"></div> 
+<div style="clear:both;"></div> 
+<p> 
+    <input id="puzzle34-feedbackLink" value="Get Feedback" type="button" /> 
+    <input id="puzzle34-newInstanceLink" value="Reset Problem" type="button" /> 
+</p> 
+<script type="text/javascript"> 
+(function(){
+  var initial = "numbers = [-5, 7, 3, -2, 8, -1]\n" +
+    "positive = 0\n" +
+    "negative = 0\n" +
+    "for value in numbers:\n" +
+    "    if value &gt; 0:\n" +
+    "        positive += 1\n" +
+    "    elif value &lt; 0:\n" +
+    "        negative += 1\n" +
+    "print(&quot;Positive =&quot;, positive)\n" +
+    "print(&quot;Negative =&quot;, negative)";
+  var parsonsPuzzle = new ParsonsWidget({
+    "sortableId": "puzzle34-sortable",
+    "max_wrong_lines": 10,
+    "grader": ParsonsWidget._graders.LineBasedGrader,
+    "exec_limit": 2500,
+    "can_indent": true,
+    "x_indent": 50,
+    "lang": "en",
+    "show_feedback": true,
+    "python3": true
+  });
+  parsonsPuzzle.init(initial);
+  parsonsPuzzle.shuffleLines();
+  $("#puzzle34-newInstanceLink").click(function(event){ 
+      event.preventDefault(); 
+      parsonsPuzzle.shuffleLines(); 
+  }); 
+  $("#puzzle34-feedbackLink").click(function(event){ 
+      event.preventDefault(); 
+      parsonsPuzzle.getFeedback(); 
+  }); 
+})(); 
+</script>
+
+## Puzzle 35 - Find Multiples of 5 (6 marks)
+## This program asks the user to enter 8 numbers, counts how many are multiples of 5, outputs the total.
+
+<div id="puzzle35-sortableTrash" class="sortable-code"></div> 
+<div id="puzzle35-sortable" class="sortable-code"></div> 
+<div style="clear:both;"></div> 
+<p> 
+    <input id="puzzle35-feedbackLink" value="Get Feedback" type="button" /> 
+    <input id="puzzle35-newInstanceLink" value="Reset Problem" type="button" /> 
+</p> 
+<script type="text/javascript"> 
+(function(){
+  var initial = "count = 0\n" +
+    "for number in range(8):\n" +
+    "    value = int(input(&quot;Enter number: &quot;))\n" +
+    "    if value % 5 == 0:\n" +
+    "        count += 1\n" +
+    "print(&quot;Multiples of 5 =&quot;, count)";
+  var parsonsPuzzle = new ParsonsWidget({
+    "sortableId": "puzzle35-sortable",
+    "max_wrong_lines": 10,
+    "grader": ParsonsWidget._graders.LineBasedGrader,
+    "exec_limit": 2500,
+    "can_indent": true,
+    "x_indent": 50,
+    "lang": "en",
+    "show_feedback": true,
+    "python3": true
+  });
+  parsonsPuzzle.init(initial);
+  parsonsPuzzle.shuffleLines();
+  $("#puzzle35-newInstanceLink").click(function(event){ 
+      event.preventDefault(); 
+      parsonsPuzzle.shuffleLines(); 
+  }); 
+  $("#puzzle35-feedbackLink").click(function(event){ 
+      event.preventDefault(); 
+      parsonsPuzzle.getFeedback(); 
+  }); 
+})(); 
+</script>
+
+## Puzzle 36 - Secret Number Game (7 marks)
+## This program stores the secret number 24, repeatedly asks for guesses, stops when correct, outputs the number of attempts.
+
+<div id="puzzle36-sortableTrash" class="sortable-code"></div> 
+<div id="puzzle36-sortable" class="sortable-code"></div> 
+<div style="clear:both;"></div> 
+<p> 
+    <input id="puzzle36-feedbackLink" value="Get Feedback" type="button" /> 
+    <input id="puzzle36-newInstanceLink" value="Reset Problem" type="button" /> 
+</p> 
+<script type="text/javascript"> 
+(function(){
+  var initial = "secret = 24\n" +
+    "attempts = 0\n" +
+    "guess = -1\n" +
+    "while guess != secret:\n" +
+    "    guess = int(input(&quot;Guess: &quot;))\n" +
+    "    attempts += 1\n" +
+    "print(&quot;Correct&quot;)\n" +
+    "print(&quot;Attempts =&quot;, attempts)";
+  var parsonsPuzzle = new ParsonsWidget({
+    "sortableId": "puzzle36-sortable",
+    "max_wrong_lines": 10,
+    "grader": ParsonsWidget._graders.LineBasedGrader,
+    "exec_limit": 2500,
+    "can_indent": true,
+    "x_indent": 50,
+    "lang": "en",
+    "show_feedback": true,
+    "python3": true
+  });
+  parsonsPuzzle.init(initial);
+  parsonsPuzzle.shuffleLines();
+  $("#puzzle36-newInstanceLink").click(function(event){ 
+      event.preventDefault(); 
+      parsonsPuzzle.shuffleLines(); 
+  }); 
+  $("#puzzle36-feedbackLink").click(function(event){ 
+      event.preventDefault(); 
+      parsonsPuzzle.getFeedback(); 
+  }); 
+})(); 
+</script>
+
+## Puzzle 37 - Total Cost with Validation (7 marks)
+## This program asks for quantity, quantity must be between 1 and 10, calculates total cost (£6 each)
+
+<div id="puzzle37-sortableTrash" class="sortable-code"></div> 
+<div id="puzzle37-sortable" class="sortable-code"></div> 
+<div style="clear:both;"></div> 
+<p> 
+    <input id="puzzle37-feedbackLink" value="Get Feedback" type="button" /> 
+    <input id="puzzle37-newInstanceLink" value="Reset Problem" type="button" /> 
+</p> 
+<script type="text/javascript"> 
+(function(){
+  var initial = "quantity = int(input(&quot;Quantity: &quot;))\n" +
+    "while quantity &lt; 1 or quantity &gt; 10:\n" +
+    "    print(&quot;Invalid&quot;)\n" +
+    "    quantity = int(input(&quot;Quantity: &quot;))\n" +
+    "total = quantity * 6\n" +
+    "print(&quot;Total = £&quot;, total)";
+  var parsonsPuzzle = new ParsonsWidget({
+    "sortableId": "puzzle37-sortable",
+    "max_wrong_lines": 10,
+    "grader": ParsonsWidget._graders.LineBasedGrader,
+    "exec_limit": 2500,
+    "can_indent": true,
+    "x_indent": 50,
+    "lang": "en",
+    "show_feedback": true,
+    "python3": true
+  });
+  parsonsPuzzle.init(initial);
+  parsonsPuzzle.shuffleLines();
+  $("#puzzle37-newInstanceLink").click(function(event){ 
+      event.preventDefault(); 
+      parsonsPuzzle.shuffleLines(); 
+  }); 
+  $("#puzzle37-feedbackLink").click(function(event){ 
+      event.preventDefault(); 
+      parsonsPuzzle.getFeedback(); 
+  }); 
+})(); 
+</script>
+
+## Puzzle 38 - Reverse a List (7 marks)
+## This program stores numbers in a list, outputs them in reverse order.
+
+<div id="puzzle38-sortableTrash" class="sortable-code"></div> 
+<div id="puzzle38-sortable" class="sortable-code"></div> 
+<div style="clear:both;"></div> 
+<p> 
+    <input id="puzzle38-feedbackLink" value="Get Feedback" type="button" /> 
+    <input id="puzzle38-newInstanceLink" value="Reset Problem" type="button" /> 
+</p> 
+<script type="text/javascript"> 
+(function(){
+  var initial = "numbers = [3, 6, 9, 12]\n" +
+    "for index in range(len(numbers)-1, -1, -1):\n" +
+    "    print(numbers[index])";
+  var parsonsPuzzle = new ParsonsWidget({
+    "sortableId": "puzzle38-sortable",
+    "max_wrong_lines": 10,
+    "grader": ParsonsWidget._graders.LineBasedGrader,
+    "exec_limit": 2500,
+    "can_indent": true,
+    "x_indent": 50,
+    "lang": "en",
+    "show_feedback": true,
+    "python3": true
+  });
+  parsonsPuzzle.init(initial);
+  parsonsPuzzle.shuffleLines();
+  $("#puzzle38-newInstanceLink").click(function(event){ 
+      event.preventDefault(); 
+      parsonsPuzzle.shuffleLines(); 
+  }); 
+  $("#puzzle38-feedbackLink").click(function(event){ 
+      event.preventDefault(); 
+      parsonsPuzzle.getFeedback(); 
+  }); 
+})(); 
+</script>
